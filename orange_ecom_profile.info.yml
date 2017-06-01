@@ -49,6 +49,7 @@ dependencies:
   - telephone
   - text
   - toolbar
+  - update
   - user
   - views
   - views_ui
@@ -80,10 +81,12 @@ dependencies:
   - google_analytics
   - honeypot
   - imce
+  - mailsystem
   - menu_block
   - metatag
   - paragraphs
   - pathauto
+  - swiftmailer
   - taxonomy_menu
   - token
   - userprotect

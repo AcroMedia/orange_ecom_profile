@@ -1,8 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-name: 'Product Category'
-vid: product_category
-description: 'A category associated with Products.'
-hierarchy: 0
-weight: 0

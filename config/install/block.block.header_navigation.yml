@@ -11,7 +11,7 @@ _core:
 id: header_navigation
 theme: orange_ecom_starter
 region: header_nav
-weight: -6
+weight: 0
 provider: null
 plugin: 'menu_block:header'
 settings:

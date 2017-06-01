@@ -1,8 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-_core:
-id: online
-label: Online
-description: ''
-traits: {  }

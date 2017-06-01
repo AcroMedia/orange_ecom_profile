@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - node
-_core:
 id: blog_posts
 label: 'Blog Posts'
 type: 'canonical_entities:node'
@@ -18,5 +17,5 @@ selection_criteria:
       node: node
     uuid: cd3f6828-9d87-475d-bdc4-2bfc205af8fc
 selection_logic: and
-weight: -7
+weight: -10
 relationships: {  }

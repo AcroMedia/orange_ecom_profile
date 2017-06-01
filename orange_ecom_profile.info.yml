@@ -49,7 +49,6 @@ dependencies:
   - telephone
   - text
   - toolbar
-  - update
   - user
   - views
   - views_ui

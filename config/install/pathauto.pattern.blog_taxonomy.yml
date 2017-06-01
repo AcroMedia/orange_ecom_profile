@@ -4,7 +4,6 @@ dependencies:
   module:
     - ctools
     - taxonomy
-_core:
 id: blog_taxonomy
 label: 'Blog Taxonomy'
 type: 'canonical_entities:taxonomy_term'
@@ -19,5 +18,5 @@ selection_criteria:
       taxonomy_term: taxonomy_term
     uuid: d4ee358a-42a4-420d-bfa0-8012e6f332ac
 selection_logic: and
-weight: -4
+weight: -7
 relationships: {  }

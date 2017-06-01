@@ -27,9 +27,3 @@ filters:
       allowed_html: '<a hreflang href> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol type start> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <img src alt data-entity-type data-entity-uuid> <u> <s> <p> <h1> <pre> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr>'
       filter_html_help: true
       filter_html_nofollow: false
-  filter_align:
-    id: filter_align
-    provider: filter
-    status: true
-    weight: 0
-    settings: {  }

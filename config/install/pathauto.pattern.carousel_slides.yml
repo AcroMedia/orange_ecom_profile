@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - node
-_core:
 id: carousel_slides
 label: 'Carousel Slides'
 type: 'canonical_entities:node'
@@ -18,5 +17,5 @@ selection_criteria:
       node: node
     uuid: a9c56ff1-31b0-4395-afcb-1278f0a7c0b7
 selection_logic: and
-weight: -6
+weight: -9
 relationships: {  }

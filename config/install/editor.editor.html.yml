@@ -39,7 +39,7 @@ settings:
         -
           name: Media
           items:
-            - DrupalImage
+            - ImceImage
             - Blockquote
             - Table
         -
@@ -50,8 +50,6 @@ settings:
             - HorizontalRule
             - Source
   plugins:
-    language:
-      language_list: un
     stylescombo:
       styles: ''
 image_upload:

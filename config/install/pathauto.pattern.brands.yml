@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: brands
+label: Brands
+type: 'canonical_entities:taxonomy_term'
+pattern: 'store/brand/[term:name]'
+selection_criteria:
+  54440122-2793-4990-8df4-0850eea98c66:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      brand: brand
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 54440122-2793-4990-8df4-0850eea98c66
+selection_logic: and
+weight: -8
+relationships: {  }

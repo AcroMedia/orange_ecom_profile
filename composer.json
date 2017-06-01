@@ -1,0 +1,28 @@
+{
+  "name": "acromedia/orange_ecom_profile",
+  "type": "drupal-profile",
+  "description": "Orange E-Commerce install profile.",
+  "homepage": "https://github.com/AcroMedia/orange_ecom_profile",
+  "license": "GPL-2.0+",
+  "require": {
+    "drupal/admin_toolbar": "^1.15.0",
+    "drupal/ctools": "^3.0.0-alpha26",
+    "drupal/entity_reference_revisions": "^1.3",
+    "drupal/field_group": "1.x-dev",
+    "drupal/google_analytics": "^2.0.0",
+    "drupal/honeypot": "^1.23.0",
+    "drupal/imce": "^1.2.0",
+    "drupal/menu_block": "^1.4",
+    "drupal/metatag": "dev-1.x",
+    "drupal/paragraphs": "^1.1",
+    "drupal/pathauto": "^1.0.0-alpha3",
+    "drupal/simple_sitemap": "^2.5.0",
+    "drupal/taxonomy_menu": "dev-3.x",
+    "drupal/token": "^1.0.0-alpha2",
+    "drupal/userprotect": "^1.0.0-rc1",
+    "drupal/webform": "5.x-dev",
+    "acromedia/orange_ecom_starter": "dev-8.x-1.x",
+    "acromedia/orange_framework": "dev-8.x-1.x",
+    "acromedia/acro_live_css": "dev-8.x-1.x"
+  }
+}

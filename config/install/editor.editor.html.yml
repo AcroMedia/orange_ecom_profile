@@ -1,0 +1,64 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.html
+  module:
+    - ckeditor
+_core:
+format: html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Format
+            - Bold
+            - Underline
+            - Italic
+            - Strike
+        -
+          name: Alignment
+          items:
+            - JustifyRight
+            - JustifyCenter
+            - JustifyLeft
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - DrupalImage
+            - Blockquote
+            - Table
+        -
+          name: Tools
+          items:
+            - PasteFromWord
+            - SpecialChar
+            - HorizontalRule
+            - Source
+  plugins:
+    language:
+      language_list: un
+    stylescombo:
+      styles: ''
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

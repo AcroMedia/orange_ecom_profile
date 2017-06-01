@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Brand
+vid: brand
+description: 'Brand/company that can be associated with Products etc.'
+hierarchy: 0
+weight: 0

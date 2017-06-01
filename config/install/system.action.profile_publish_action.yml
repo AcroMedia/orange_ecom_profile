@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - profile
+_core:
+id: profile_publish_action
+label: 'Publish selected profile'
+type: profile
+plugin: profile_publish_action
+configuration: {  }

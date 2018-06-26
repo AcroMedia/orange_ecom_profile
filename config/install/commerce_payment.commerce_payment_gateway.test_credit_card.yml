@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_payment_example
+_core:
+id: test_credit_card
+label: 'Test Credit Card'
+weight: null
+plugin: example_onsite
+configuration:
+  api_key: abcd
+  display_label: Example
+  mode: test
+  payment_method_types:
+    - credit_card
+conditions: {  }
+conditionOperator: AND

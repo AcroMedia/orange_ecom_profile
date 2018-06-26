@@ -11,14 +11,14 @@ use Drupal\Tests\BrowserTestBase;
  */
 class OrangeEcomTest extends BrowserTestBase {
 
-    protected $profile = 'orange_ecom';
+  protected $profile = 'orange_ecom';
 
-    /**
-     * Tests pages exist.
-     */
-    public function testOrangeEcomPages() {
-        $this->drupalGet('livecss');
-        $this->assertSession()->statusCodeEquals(200);
-    }
+  /**
+   * Tests pages exist.
+   */
+  public function testOrangeEcomPages() {
+    $this->drupalGet('livecss');
+    $this->assertSession()->statusCodeEquals(200);
+  }
 
 }

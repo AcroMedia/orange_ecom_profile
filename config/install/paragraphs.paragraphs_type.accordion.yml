@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: accordion
+label: Accordion
+icon_uuid: null
+description: 'Component: Display items within an accordion component.'
+behavior_plugins: {  }

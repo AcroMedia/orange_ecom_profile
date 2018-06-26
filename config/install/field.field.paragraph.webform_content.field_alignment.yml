@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_alignment
+    - paragraphs.paragraphs_type.webform_content
+  module:
+    - options
+id: paragraph.webform_content.field_alignment
+field_name: field_alignment
+entity_type: paragraph
+bundle: webform_content
+label: Alignment
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

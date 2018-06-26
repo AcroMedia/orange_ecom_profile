@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_long_formatted
+    - paragraphs.paragraphs_type.webform
+  module:
+    - text
+id: paragraph.webform.field_text_long_formatted
+field_name: field_text_long_formatted
+entity_type: paragraph
+bundle: webform
+label: 'Intro Content'
+description: '<p>Optional content that will be displayed before the webform. Typically a title and brief description of the expected user interaction can go here.</p>'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

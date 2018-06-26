@@ -9,11 +9,12 @@ open: null
 close: null
 uid: null
 template: false
+archive: false
 id: contact
 title: 'Contact Us'
 description: 'Basic email contact webform.'
 category: null
-elements: "name:\n  '#type': textfield\n  '#title': 'Full Name'\n  '#description': 'Your first and last name'\n  '#placeholder': 'John Anderson'\n  '#required': true\nemail:\n  '#type': email\n  '#title': 'Email Address'\n  '#placeholder': email@address.com\n  '#required': true\nyour_phone_number:\n  '#type': tel\n  '#title': 'Phone Number'\n  '#placeholder': 250-801-1234\nmessage:\n  '#type': textarea\n  '#title': Message\n  '#required': true\n  '#test': 'Please ignore this email.'\n"
+elements: "name:\n  '#type': textfield\n  '#title': 'Full Name'\n  '#description': 'Your first and last name'\n  '#placeholder': 'John Anderson'\n  '#required': true\nemail:\n  '#type': email\n  '#title': 'Email Address'\n  '#placeholder': email@address.com\n  '#required': true\nyour_phone_number:\n  '#type': tel\n  '#title': 'Phone Number'\n  '#placeholder': 555-555-5555\n  '#autocomplete': 'off'\nmessage:\n  '#type': textarea\n  '#title': Message\n  '#required': true\n  '#test': 'Please ignore this email.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send Message'\n"
 css: ''
 javascript: ''
 settings:
@@ -60,9 +61,9 @@ settings:
   draft_button_attributes: {  }
   draft_saved_message: ''
   draft_loaded_message: ''
-  confirmation_type: url_message
+  confirmation_type: message
   confirmation_title: ''
-  confirmation_message: 'Your message has been sent.'
+  confirmation_message: 'Thank you. Your message has been sent.'
   confirmation_url: '<front>'
   confirmation_attributes: {  }
   confirmation_back: true
@@ -79,6 +80,45 @@ settings:
   results_disabled: false
   results_disabled_ignore: false
   token_update: false
+  ajax: false
+  ajax_scroll_top: form
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_submit_back: false
+  form_login: false
+  form_login_message: ''
+  submission_label: ''
+  submission_log: false
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_login: false
+  submission_login_message: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  preview_label: ''
+  preview_title: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft_multiple: false
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  limit_total_interval: null
+  limit_user_interval: null
+  entity_limit_total_interval: null
+  entity_limit_user_interval: null
 access:
   create:
     roles:
@@ -107,37 +147,12 @@ access:
     roles: {  }
     users: {  }
 handlers:
-  email_confirmation:
-    id: email
-    label: 'Email confirmation'
-    handler_id: email_confirmation
-    status: true
-    weight: 1
-    settings:
-      states:
-        - completed
-      to_mail: '[webform_submission:values:email:raw]'
-      to_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      from_mail: default
-      from_options: {  }
-      from_name: default
-      subject: '[webform_submission:values:subject:value]'
-      body: '[webform_submission:values:message:value]'
-      excluded_elements: {  }
-      html: true
-      attachments: false
-      debug: false
-      reply_to: ''
-      return_path: ''
   email_notification:
     id: email
     label: 'Email notification'
     handler_id: email_notification
     status: true
+    conditions: {  }
     weight: 1
     settings:
       states:
@@ -150,12 +165,18 @@ handlers:
       bcc_options: {  }
       from_mail: '[webform_submission:values:email:raw]'
       from_options: {  }
-      from_name: '[webform_submission:values:name:value]'
-      subject: '[webform_submission:values:subject:value]'
-      body: '[webform_submission:values:message:value]'
+      from_name: '[webform_submission:values:name:raw]'
+      subject: 'Contact Us submission from [webform_submission:values:name:raw]'
+      body: '[webform_submission:values]'
       excluded_elements: {  }
       html: true
       attachments: false
       debug: false
       reply_to: ''
       return_path: ''
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      twig: false
+      sender_mail: ''
+      sender_name: ''

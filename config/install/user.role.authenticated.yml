@@ -12,11 +12,12 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access shortcuts'
-  - 'access site-wide contact form'
+  - 'manage own commerce_payment_method'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
-  - 'use text format html'
   - userprotect.account.edit
   - userprotect.mail.edit
   - userprotect.pass.edit
+  - 'view commerce_product'
+  - 'view own commerce_order'

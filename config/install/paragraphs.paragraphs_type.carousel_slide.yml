@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: carousel_slide
+label: 'Carousel Slide'
+icon_uuid: null
+description: 'Sub-Component: A slide element that displays within a Carousel.'
+behavior_plugins: {  }

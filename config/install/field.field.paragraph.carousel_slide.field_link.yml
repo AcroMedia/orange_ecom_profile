@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.carousel_slide
+  module:
+    - link
+id: paragraph.carousel_slide.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: carousel_slide
+label: Link
+description: 'The link for this slide. Enter link text to change the button label.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

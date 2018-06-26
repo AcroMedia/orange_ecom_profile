@@ -1,18 +1,24 @@
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - orange_ecom_starter
-_core:
 id: pagetitle
 theme: orange_ecom_starter
-region: content
-weight: -1
+region: above_content
+weight: -6
 provider: null
 plugin: page_title_block
 settings:
   id: page_title_block
-  label: 'Page title'
+  label: 'Page Title'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/products\r\n/products/*\r\n/checkout/*/complete"
+    negate: true
+    context_mapping: {  }

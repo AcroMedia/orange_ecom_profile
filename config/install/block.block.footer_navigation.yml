@@ -24,4 +24,5 @@ settings:
   expand: 0
   parent: 'footer:'
   suggestion: footer
+  label_type: block
 visibility: {  }

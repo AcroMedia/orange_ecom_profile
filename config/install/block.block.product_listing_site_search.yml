@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.store
+  module:
+    - views
+  theme:
+    - orange_ecom_starter
+_core:
+id: product_listing_site_search
+theme: orange_ecom_starter
+region: site_search
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:store-product_listing'
+settings:
+  id: 'views_exposed_filter_block:store-product_listing'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility: {  }

@@ -9,6 +9,9 @@ use Drupal\user\Entity\User;
 use Drupal\user\RoleInterface;
 use Drupal\node\Entity\Node;
 use Drupal\menu_link_content\Entity\MenuLinkContent;
+use Drupal\paragraphs\Entity\Paragraph;
+use Drupal\taxonomy\Entity\Term;
+use Drupal\commerce_store\Entity\Store;
 
 /**
  * Implements hook_install().
@@ -18,20 +21,23 @@ use Drupal\menu_link_content\Entity\MenuLinkContent;
  * @see system_install()
  */
 function orange_ecom_profile_install() {
-  // First, do everything in standard profile.
+  // First, do everything in the standard profile.
   include_once DRUPAL_ROOT . '/core/profiles/standard/standard.install';
   standard_install();
 
+  user_role_revoke_permissions(RoleInterface::ANONYMOUS_ID, ['access site-wide contact form']);
+  user_role_revoke_permissions(RoleInterface::AUTHENTICATED_ID, ['access site-wide contact form']);
+
   // Create Homepage page.
   $node_homepage = Node::create([
-    'type' => 'page',
+    'type' => 'homepage',
     'uid' => 1,
     'revision' => 0,
     'status' => TRUE,
     'promote' => 0,
     'created' => time(),
     'langcode' => 'en',
-    'title' => 'Welcome',
+    'title' => 'Homepage',
   ]);
 
   $node_homepage->set('body', [
@@ -122,14 +128,14 @@ function orange_ecom_profile_install() {
   $source_blog = '/node/' . $node_blog->get('nid')->value;
   \Drupal::service('path.alias_storage')->save($source_blog, '/blog', 'en');
 
-  $menu_link_blog = MenuLinkContent::create([
+  $menu_link_header_blog = MenuLinkContent::create([
     'title' => 'Blog',
     'link' => ['uri' => 'internal:/node/' . $node_blog->get('nid')->value],
-    'menu_name' => 'main',
+    'menu_name' => 'header',
     'expanded' => FALSE,
-    'weight' => 1,
+    'weight' => 0,
   ]);
-  $menu_link_blog->save();
+  $menu_link_header_blog->save();
 
   // Create Contact Us page.
   $node_contact_us = Node::create([
@@ -143,15 +149,40 @@ function orange_ecom_profile_install() {
     'title' => 'Contact Us',
   ]);
 
-  $node_contact_us->set('body', [
-    'value' => '<h3>Questions? Send us a message!</h3><p>All fields required, unless indicated.</p>',
-    'format' => 'html'
+  // Create a Standard Content paragraph.
+  $paragraph_standard_content = Paragraph::create(['type' => 'standard_content']);
+  $paragraph_standard_content->set('field_text_long_formatted', [
+    'value' => '<h3>Company Name</h3><p>555 Sample St.<br /> Kelowna, BC<br /> V1V 3C3<br /> Canada</p><p><strong>Email:</strong> <a href="mailto:info@company-name.com">info@company-name.com</a></p><p><iframe allowfullscreen="" frameborder="0" height="450" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.7333618239945!2d-119.43648028428908!3d49.88503367940133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537d8cce5c35df55%3A0xb5f3bd59fc50cd10!2sAcro+Media+Inc.!5e0!3m2!1sen!2sca!4v1529745178877" style="border:0" width="600"></iframe></p>',
+    'format' => 'html',
   ]);
-  $node_contact_us->set('field_attach_webform', [
-    'target_id' => 'contact',
-    'status' => 'open'
-  ]);
+  $paragraph_standard_content->isNew();
+  $paragraph_standard_content->save();
 
+  // Create a Webform + Content paragraph.
+  $paragraph_webform_content = Paragraph::create(['type' => 'webform_content']);
+  $paragraph_webform_content->set('field_alignment', [
+    'value' => 'right',
+  ]);
+  $paragraph_webform_content->set('field_webform_reference', [
+    'target_id' => 'contact',
+    'status' => 'open',
+  ]);
+  $paragraph_webform_content->set('field_text_long_formatted', [
+    'value' => '<h3>Questions? Send us a message!</h3><p>All fields required, unless indicated.</p>',
+    'format' => 'html',
+  ]);
+  $paragraph_webform_content->set('field_paragraphs_reference', [
+    'target_id' => $paragraph_standard_content->id(),
+    'target_revision_id' => $paragraph_standard_content->getRevisionId(),
+  ]);
+  $paragraph_webform_content->isNew();
+  $paragraph_webform_content->save();
+
+  // Add paragraphs to Contact Us node.
+  $node_contact_us->set('field_paragraphs_reference', [
+    'target_id' => $paragraph_webform_content->id(),
+    'target_revision_id' => $paragraph_webform_content->getRevisionId(),
+  ]);
   $node_contact_us->save();
 
   $source_contact_us = '/node/' . $node_contact_us->get('nid')->value;
@@ -171,7 +202,7 @@ function orange_ecom_profile_install() {
     'link' => ['uri' => 'internal:/node/' . $node_contact_us->get('nid')->value],
     'menu_name' => 'header',
     'expanded' => FALSE,
-    'weight' => 0,
+    'weight' => 1,
   ]);
   $menu_link_header_contact_us->save();
 
@@ -236,5 +267,76 @@ function orange_ecom_profile_install() {
 
   // Disable the contact link in the footer menu.
   $menu_link_manager = \Drupal::service('plugin.manager.menu.link');
-  $menu_link_manager->updateDefinition('contact.site_page', array('enabled' => FALSE));
+  $menu_link_manager->updateDefinition('contact.site_page', ['enabled' => FALSE]);
+
+  // Create sample blog categories.
+  $blog_category_term = Term::create([
+    'name' => 'Company News',
+    'vid' => 'blog_categories',
+  ]);
+  $blog_category_term->save();
+
+  $blog_category_term_2 = Term::create([
+    'name' => 'Marketing',
+    'vid' => 'blog_categories',
+  ]);
+  $blog_category_term_2->save();
+
+  // Create sample product categories.
+  $product_category_term = Term::create([
+    'name' => 'Clothing',
+    'vid' => 'product_categories',
+  ]);
+  $product_category_term->save();
+
+  $product_category_term_2 = Term::create([
+    'name' => 'Equipment',
+    'vid' => 'product_categories',
+  ]);
+  $product_category_term_2->save();
+
+  // Create sample brands.
+  $brand_term = Term::create([
+    'name' => 'Google',
+    'vid' => 'brands',
+  ]);
+  $brand_term->save();
+
+  $brand_term_2 = Term::create([
+    'name' => 'Amazon',
+    'vid' => 'brands',
+  ]);
+  $brand_term_2->save();
+
+  // Create a store for Commerce.
+  // The store's address.
+  $address = [
+    'country_code' => 'CA',
+    'address_line1' => '123 Test Street',
+    'locality' => 'Kelowna',
+    'administrative_area' => 'BC',
+    'postal_code' => 'V1X5V1',
+  ];
+
+  // The currency code.
+  $currency = 'CAD';
+
+  // If needed, this will import the currency.
+  $currency_importer = \Drupal::service('commerce_price.currency_importer');
+  $currency_importer->import($currency);
+
+  $store = Store::create([
+    'type' => 'online',
+    'uid' => 1,
+    'name' => 'Store',
+    'mail' => 'webadmin@acromedia.com',
+    'address' => $address,
+    'default_currency' => $currency,
+    'billing_countries' => ['CA'],
+  ]);
+  $store->save();
+
+  // If needed, this sets the store as the default store.
+  $store_storage = \Drupal::service('entity_type.manager')->getStorage('commerce_store');
+  $store_storage->markAsDefault($store);
 }

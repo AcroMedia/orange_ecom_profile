@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.product_review
+    - field.storage.comment.field_review_rating
+  module:
+    - fivestar
+_core:
+id: comment.product_review.field_review_rating
+field_name: field_review_rating
+entity_type: comment
+bundle: product_review
+label: 'Review Rating'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    rating: '60'
+    target: null
+default_value_callback: ''
+settings:
+  stars: '5'
+  allow_clear: 0
+  allow_revote: 0
+  allow_ownvote: 1
+  rated_while: viewing
+  target: ''
+field_type: fivestar

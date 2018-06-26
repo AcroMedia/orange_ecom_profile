@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.standard_content.field_text_long_formatted
+    - paragraphs.paragraphs_type.standard_content
+  module:
+    - text
+id: paragraph.standard_content.default
+targetEntityType: paragraph
+bundle: standard_content
+mode: default
+content:
+  field_text_long_formatted:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

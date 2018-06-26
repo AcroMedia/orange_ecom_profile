@@ -1,0 +1,44 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.webform_content.field_alignment
+    - field.field.paragraph.webform_content.field_paragraphs_reference
+    - field.field.paragraph.webform_content.field_text_long_formatted
+    - field.field.paragraph.webform_content.field_webform_reference
+    - paragraphs.paragraphs_type.webform_content
+  module:
+    - entity_reference_revisions
+    - text
+    - webform
+id: paragraph.webform_content.default
+targetEntityType: paragraph
+bundle: webform_content
+mode: default
+content:
+  field_paragraphs_reference:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_text_long_formatted:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_webform_reference:
+    weight: 1
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+hidden:
+  field_alignment: true

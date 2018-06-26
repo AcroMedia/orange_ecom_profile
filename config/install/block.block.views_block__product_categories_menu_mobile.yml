@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.product_categories_menu
+  module:
+    - views
+  theme:
+    - orange_ecom_starter
+_core:
+id: views_block__product_categories_menu_mobile
+theme: orange_ecom_starter
+region: mobile_nav
+weight: -9
+provider: null
+plugin: 'views_block:product_categories_menu-block_product_categories_menu'
+settings:
+  id: 'views_block:product_categories_menu-block_product_categories_menu'
+  label: 'Shop Now'
+  provider: views
+  label_display: visible
+  views_label: 'Shop Now'
+  items_per_page: none
+visibility: {  }

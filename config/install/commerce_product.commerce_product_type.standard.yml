@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+id: standard
+label: Standard
+description: 'A standard product.'
+variationType: standard
+injectVariationFields: true
+traits: {  }
+locked: false

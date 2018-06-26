@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: carousel_slide_mobile
+label: 'Carousel Slide - For Mobile'
+effects:
+  00674e66-0529-4706-bada-941a38a2bd9a:
+    uuid: 00674e66-0529-4706-bada-941a38a2bd9a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 768
+      height: 565

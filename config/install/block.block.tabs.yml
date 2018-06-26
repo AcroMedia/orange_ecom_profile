@@ -6,8 +6,8 @@ dependencies:
 _core:
 id: tabs
 theme: orange_ecom_starter
-region: content
-weight: 0
+region: above_content
+weight: -7
 provider: null
 plugin: local_tasks_block
 settings:

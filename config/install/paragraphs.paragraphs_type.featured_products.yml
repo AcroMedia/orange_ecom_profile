@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+id: featured_products
+label: 'Featured Products'
+icon_uuid: null
+description: 'Component: Feature various products.'
+behavior_plugins: {  }

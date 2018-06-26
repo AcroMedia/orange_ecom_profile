@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.product_review
+_core:
+id: comment.product_review
+target_entity_type_id: comment
+target_bundle: product_review
+default_langcode: site_default
+language_alterable: false

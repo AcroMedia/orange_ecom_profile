@@ -1,0 +1,128 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.commerce_product.variations
+    - field.storage.commerce_product.field_terms_reference
+    - field.storage.commerce_product.field_terms_reference_2
+    - search_api.server.solr
+  module:
+    - commerce_product
+    - search_api
+_core:
+id: products
+name: Products
+description: ''
+read_only: false
+field_settings:
+  title:
+    label: Title
+    datasource_id: 'entity:commerce_product'
+    property_path: title
+    type: text
+  sku:
+    label: 'Variations » Product variation » SKU'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:sku'
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.commerce_product.variations
+      module:
+        - commerce_product
+  number:
+    label: 'Variations » Product variation » Price » Number'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:price:number'
+    type: decimal
+    dependencies:
+      config:
+        - field.storage.commerce_product.variations
+      module:
+        - commerce_product
+  status:
+    label: Published
+    datasource_id: 'entity:commerce_product'
+    property_path: status
+    type: boolean
+  created:
+    label: Created
+    datasource_id: 'entity:commerce_product'
+    property_path: created
+    type: date
+  field_terms_reference:
+    label: Categories
+    datasource_id: 'entity:commerce_product'
+    property_path: field_terms_reference
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_terms_reference
+  field_terms_reference_2:
+    label: Brands
+    datasource_id: 'entity:commerce_product'
+    property_path: field_terms_reference_2
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_terms_reference_2
+datasource_settings:
+  'entity:commerce_product':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  highlight:
+    highlight: always
+    highlight_partial: false
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  ignorecase:
+    all_fields: false
+    fields:
+      - title
+      - sku
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  rendered_item: {  }
+  stemmer:
+    all_fields: false
+    fields:
+      - title
+    exceptions:
+      texan: texa
+      mexican: mexic
+    weights:
+      preprocess_index: 0
+      preprocess_query: 0
+  transliteration:
+    all_fields: false
+    fields:
+      - title
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  hierarchy:
+    fields:
+      field_terms_reference: taxonomy_term-parent
+    weights:
+      preprocess_index: -45
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: solr

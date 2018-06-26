@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - footer
+      - header
+      - main
+    parent: 'main:'
+_core:
+name: Homepage
+type: homepage
+description: 'A page using the homepage template. Usually containing rich media elements.'
+help: 'A page that is based upon the approved homepage design concept.'
+new_revision: false
+preview_mode: 0
+display_submitted: false

@@ -168,14 +168,14 @@ display:
           entity_field: type
           plugin_id: bundle
       sorts:
-        field_post_date_value:
-          id: field_post_date_value
-          table: node__field_post_date
-          field: field_post_date_value
+        field_date_value:
+          id: field_date_value
+          table: node__field_date
+          field: field_date_value
           relationship: none
           group_type: group
           admin_label: ''
-          order: ASC
+          order: DESC
           exposed: false
           expose:
             label: ''
@@ -184,7 +184,18 @@ display:
       title: 'Recent Posts'
       header: {  }
       footer: {  }
-      empty: {  }
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content: '<p>There are currently no blog posts to display. Check back soon.</p>'
+          plugin_id: text_custom
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
@@ -308,6 +319,7 @@ display:
         pager: false
         style: false
         row: false
+        empty: false
       style:
         type: default
         options:
@@ -320,6 +332,7 @@ display:
           relationship: none
           view_mode: teaser
       block_hide_empty: true
+      empty: {  }
     cache_metadata:
       max-age: -1
       contexts:

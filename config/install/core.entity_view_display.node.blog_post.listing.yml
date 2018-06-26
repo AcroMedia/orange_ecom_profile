@@ -4,12 +4,15 @@ dependencies:
   config:
     - core.entity_view_mode.node.listing
     - field.field.node.blog_post.body
-    - field.field.node.blog_post.field_blog_category
-    - field.field.node.blog_post.field_blog_comments
-    - field.field.node.blog_post.field_blog_image
-    - field.field.node.blog_post.field_post_date
+    - field.field.node.blog_post.field_date
+    - field.field.node.blog_post.field_image
+    - field.field.node.blog_post.field_node_comments
+    - field.field.node.blog_post.field_terms_reference
+    - image.style.banner
     - node.type.blog_post
   module:
+    - datetime
+    - image
     - text
     - user
 _core:
@@ -20,19 +23,39 @@ mode: listing
 content:
   body:
     label: hidden
-    type: text_default
+    type: text_summary_or_trimmed
+    weight: 2
+    settings:
+      trim_length: 400
+    third_party_settings: {  }
+    region: content
+  field_date:
+    type: datetime_default
     weight: 1
-    settings: {  }
-    third_party_settings: {  }
     region: content
-  links:
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+  field_image:
+    type: image
     weight: 0
-    settings: {  }
-    third_party_settings: {  }
     region: content
+    label: hidden
+    settings:
+      image_style: banner
+      image_link: content
+    third_party_settings: {  }
+  field_terms_reference:
+    type: entity_reference_label
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
 hidden:
-  field_blog_category: true
-  field_blog_comments: true
-  field_blog_image: true
-  field_post_date: true
+  field_node_comments: true
   langcode: true
+  links: true

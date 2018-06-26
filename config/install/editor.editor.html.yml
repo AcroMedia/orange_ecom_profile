@@ -16,10 +16,16 @@ settings:
           name: Formatting
           items:
             - Format
+            - Font
+            - FontSize
+            - TextColor
             - Bold
             - Underline
             - Italic
             - Strike
+            - Superscript
+            - Subscript
+            - RemoveFormat
         -
           name: Alignment
           items:
@@ -29,7 +35,7 @@ settings:
         -
           name: Links
           items:
-            - DrupalLink
+            - Linkit
             - DrupalUnlink
         -
           name: Lists
@@ -39,19 +45,30 @@ settings:
         -
           name: Media
           items:
-            - ImceImage
+            - DrupalImage
+            - Embed
             - Blockquote
             - Table
         -
           name: Tools
           items:
+            - PasteText
             - PasteFromWord
             - SpecialChar
             - HorizontalRule
+            - ShowBlocks
             - Source
   plugins:
+    language:
+      language_list: un
     stylescombo:
       styles: ''
+    autoembed:
+      status: embed
+    colorbutton:
+      colors: ''
+    linkit:
+      linkit_profile: content
 image_upload:
   status: false
   scheme: public

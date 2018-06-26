@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_order
+_core:
+id: commerce_order.user
+label: User
+targetEntityType: commerce_order
+cache: true

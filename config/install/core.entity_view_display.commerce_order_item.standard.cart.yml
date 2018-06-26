@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_item_type.standard
+    - core.entity_view_mode.commerce_order_item.cart
+_core:
+id: commerce_order_item.standard.cart
+targetEntityType: commerce_order_item
+bundle: standard
+mode: cart
+content:
+  created:
+    label: hidden
+    type: timestamp
+    weight: 1
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  purchased_entity:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: cart
+      link: false
+    third_party_settings: {  }
+hidden:
+  adjustments: true
+  quantity: true
+  total_price: true
+  unit_price: true

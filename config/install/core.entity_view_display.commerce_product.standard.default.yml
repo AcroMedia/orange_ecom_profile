@@ -1,0 +1,86 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.standard
+    - core.entity_view_display.comment.product_review.default
+    - field.field.commerce_product.standard.body
+    - field.field.commerce_product.standard.field_images
+    - field.field.commerce_product.standard.field_meta_tags
+    - field.field.commerce_product.standard.field_paragraph_reference
+    - field.field.commerce_product.standard.field_paragraphs_reference
+    - field.field.commerce_product.standard.field_product_reviews
+    - field.field.commerce_product.standard.field_terms_reference
+    - field.field.commerce_product.standard.field_terms_reference_2
+    - field.field.commerce_product.standard.field_text_long
+    - field.field.commerce_product.standard.stores
+    - field.field.commerce_product.standard.variations
+  module:
+    - comment
+    - commerce_product
+    - entity_reference_revisions
+    - text
+_core:
+id: commerce_product.standard.default
+targetEntityType: commerce_product
+bundle: standard
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_paragraph_reference:
+    type: entity_reference_revisions_entity_view
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_product_reviews:
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  field_text_long:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  variations:
+    type: commerce_add_to_cart
+    weight: 2
+    label: hidden
+    settings:
+      combine: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_images: true
+  field_meta_tags: true
+  field_paragraphs_reference: true
+  field_terms_reference: true
+  field_terms_reference_2: true
+  langcode: true
+  stores: true
+  uid: true

@@ -1,0 +1,45 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraphs_reference
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.accordion_item
+  module:
+    - entity_reference_revisions
+id: paragraph.accordion.field_paragraphs_reference
+field_name: field_paragraphs_reference
+entity_type: paragraph
+bundle: accordion
+label: 'Accordion Items'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      accordion_item: accordion_item
+    target_bundles_drag_drop:
+      accordion:
+        weight: 6
+        enabled: false
+      accordion_item:
+        enabled: true
+        weight: 7
+      featured_products:
+        weight: 7
+        enabled: false
+      tab:
+        weight: 8
+        enabled: false
+      tabs:
+        weight: 9
+        enabled: false
+      webform:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

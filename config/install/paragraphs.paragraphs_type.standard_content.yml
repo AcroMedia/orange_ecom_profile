@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: standard_content
+label: 'Standard Content'
+icon_uuid: null
+description: 'Component: Display standard WYSIWYG content.'
+behavior_plugins: {  }

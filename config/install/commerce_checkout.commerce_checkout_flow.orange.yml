@@ -1,0 +1,48 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_payment
+    - commerce_promotion
+    - commerce_shipping
+    - orange_checkout_flow
+id: orange
+label: Orange
+plugin: orange_checkout_flow
+configuration:
+  display_checkout_progress: true
+  panes:
+    completion_message:
+      step: complete
+      weight: '7'
+    contact_information:
+      double_entry: false
+      step: order_information
+      weight: '1'
+    login:
+      allow_guest_checkout: true
+      allow_registration: false
+      step: checkout_as
+      weight: '0'
+    order_summary:
+      view: ''
+      step: _sidebar
+      weight: '8'
+    review:
+      step: review
+      weight: '5'
+    payment_information:
+      step: order_information
+      weight: '3'
+    payment_process:
+      capture: true
+      step: payment
+      weight: '6'
+    coupon_redemption:
+      allow_multiple: false
+      step: order_information
+      weight: '4'
+    shipping_information:
+      require_shipping_profile: true
+      step: order_information
+      weight: '2'

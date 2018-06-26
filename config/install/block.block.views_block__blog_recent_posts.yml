@@ -4,14 +4,15 @@ dependencies:
   config:
     - views.view.blog
   module:
+    - system
     - views
   theme:
     - orange_ecom_starter
 _core:
 id: views_block__blog_recent_posts
 theme: orange_ecom_starter
-region: blog_sidebar
-weight: 0
+region: right_sidebar
+weight: -6
 provider: null
 plugin: 'views_block:blog-recent_posts'
 settings:
@@ -21,4 +22,9 @@ settings:
   label_display: visible
   views_label: ''
   items_per_page: none
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/blog\r\n/blog/*"
+    negate: false
+    context_mapping: {  }

@@ -18,6 +18,7 @@ dependencies:
   - content_translation
   - contextual
   - datetime
+  - datetime_range
   - dblog
   - dynamic_page_cache
   - editor
@@ -28,12 +29,12 @@ dependencies:
   - help
   - history
   - image
+  - inline_form_errors
   - language
   - link
   - locale
   - menu_link_content
   - menu_ui
-  - metatag
   - node
   - options
   - page_cache
@@ -50,6 +51,7 @@ dependencies:
   - text
   - toolbar
   - user
+  - update
   - views
   - views_ui
 
@@ -68,32 +70,61 @@ dependencies:
   - commerce_price
   - commerce_store
   - commerce_payment
+  - commerce_payment_example
   - commerce_promotion
   - commerce_tax
+  - commerce_shipping
+  - physical
 
   # Contrib.
   - admin_toolbar
   - admin_toolbar_tools
+  - better_exposed_filters
   - ctools
+  - ckeditor_font
+  - ckeditor_media_embed
+  - color_field
+  - colorbutton
+  - contribute
+  - comments_order
   - entity_reference_revisions
+  - editor_advanced_link
+  - facets
+  - facets_pretty_paths
+  - facets_range_widget
+  - facets_summary
   - field_group
+  - fivestar
   - google_analytics
   - honeypot
+  - image_effects
   - imce
+  - linkit
+  - magnific_popup
   - mailsystem
   - menu_block
+  - menu_trail_by_path
   - metatag
+  - metatag_open_graph
+  - metatag_open_graph_products
+  - panelbutton
   - paragraphs
   - pathauto
+  - search_api
+  - search_api_solr
   - swiftmailer
   - taxonomy_menu
   - token
+  - twig_tweak
   - userprotect
+  - views_infinite_scroll
+  - votingapi
   - webform
   - webform_ui
 
   # Custom.
   - acro_live_css
+  - orange_checkout_flow
 
 themes:
   - seven

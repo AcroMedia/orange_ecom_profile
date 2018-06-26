@@ -1,0 +1,44 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.carousel.field_paragraphs_reference
+    - paragraphs.paragraphs_type.carousel
+  module:
+    - field_group
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_carousel_slides:
+      children:
+        - field_paragraphs_reference
+      parent_name: ''
+      weight: 20
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Carousel Slides'
+id: paragraph.carousel.default
+targetEntityType: paragraph
+bundle: carousel
+mode: default
+content:
+  field_paragraphs_reference:
+    weight: 0
+    settings:
+      title: Slide
+      title_plural: Slides
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: carousel_slide
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

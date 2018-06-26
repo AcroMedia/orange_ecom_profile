@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_effects
+_core:
+name: product_thumbnail
+label: 'Product Thumbnail'
+effects:
+  fd8c2331-d66a-42cf-996e-a6d29af10726:
+    uuid: fd8c2331-d66a-42cf-996e-a6d29af10726
+    id: image_scale
+    weight: 1
+    data:
+      width: 550
+      height: 550
+      upscale: false
+  8bd2dc6e-5ca4-4687-91da-998480ac448d:
+    uuid: 8bd2dc6e-5ca4-4687-91da-998480ac448d
+    id: image_effects_set_canvas
+    weight: 2
+    data:
+      canvas_size: exact
+      exact:
+        width: '600'
+        height: '600'
+        placement: center-center
+        x_offset: 0
+        y_offset: 0
+      relative:
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+      canvas_color: '#FFFFFFFF'

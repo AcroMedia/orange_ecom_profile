@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.product_review
+    - field.field.comment.product_review.comment_body
+    - field.field.comment.product_review.field_review_rating
+  module:
+    - fivestar
+    - text
+_core:
+id: comment.product_review.default
+targetEntityType: comment
+bundle: product_review
+mode: default
+content:
+  author:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  comment_body:
+    type: text_textarea
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_review_rating:
+    weight: 1
+    settings:
+      fivestar_widget: modules/contrib/fivestar/widgets/basic/basic.css
+    third_party_settings: {  }
+    type: fivestar_stars
+    region: content
+hidden:
+  langcode: true
+  subject: true

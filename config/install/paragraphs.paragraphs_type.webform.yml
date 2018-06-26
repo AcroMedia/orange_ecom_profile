@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: webform
+label: Webform
+icon_uuid: null
+description: 'Component: Displays a Webform.'
+behavior_plugins: {  }

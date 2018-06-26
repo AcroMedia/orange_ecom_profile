@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+name: full
+label: Full
+effects:
+  1ae81060-971a-4898-8a8f-b03d6a3574dc:
+    uuid: 1ae81060-971a-4898-8a8f-b03d6a3574dc
+    id: image_scale
+    weight: 1
+    data:
+      width: 1400
+      height: 1400
+      upscale: false

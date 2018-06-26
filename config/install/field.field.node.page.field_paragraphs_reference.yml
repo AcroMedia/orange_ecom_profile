@@ -1,0 +1,57 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs_reference
+    - node.type.page
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.standard_content
+    - paragraphs.paragraphs_type.webform
+    - paragraphs.paragraphs_type.webform_content
+  module:
+    - entity_reference_revisions
+id: node.page.field_paragraphs_reference
+field_name: field_paragraphs_reference
+entity_type: node
+bundle: page
+label: Components
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      standard_content: standard_content
+      accordion: accordion
+      webform: webform
+      webform_content: webform_content
+    target_bundles_drag_drop:
+      standard_content:
+        enabled: true
+        weight: -17
+      accordion:
+        enabled: true
+        weight: -16
+      webform:
+        enabled: true
+        weight: -15
+      webform_content:
+        enabled: true
+        weight: -14
+      featured_products:
+        weight: -13
+        enabled: false
+      tab:
+        weight: -12
+        enabled: false
+      tabs:
+        weight: -11
+        enabled: false
+      accordion_item:
+        weight: -10
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.brands
+_core:
+id: taxonomy_term.brands
+target_entity_type_id: taxonomy_term
+target_bundle: brands
+default_langcode: site_default
+language_alterable: false

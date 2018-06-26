@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - imce
+    - node
+third_party_settings:
+  imce:
+    use: true
+    scheme: public
+id: content
+label: Content
+description: ''
+attributes:
+  id:
+    id: id
+    weight: -8
+    settings: {  }
+  target:
+    id: target
+    weight: -10
+    settings:
+      widget_type: simple_checkbox
+  title:
+    id: title
+    weight: -9
+    settings:
+      automatic_title: false
+matchers:
+  ae7a9a68-5aeb-487f-9c76-0590a1ff224f:
+    uuid: ae7a9a68-5aeb-487f-9c76-0590a1ff224f
+    id: 'entity:node'
+    weight: 0
+    settings:
+      result_description: Content
+      bundles: {  }
+      group_by_bundle: false
+      include_unpublished: false

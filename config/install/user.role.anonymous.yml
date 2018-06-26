@@ -11,6 +11,6 @@ permissions:
   - 'access checkout'
   - 'access comments'
   - 'access content'
-  - 'access site-wide contact form'
   - 'post comments'
   - 'search content'
+  - 'view commerce_product'

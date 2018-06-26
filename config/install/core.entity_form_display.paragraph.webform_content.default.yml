@@ -1,0 +1,97 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.webform_content.field_alignment
+    - field.field.paragraph.webform_content.field_paragraphs_reference
+    - field.field.paragraph.webform_content.field_text_long_formatted
+    - field.field.paragraph.webform_content.field_webform_reference
+    - paragraphs.paragraphs_type.webform_content
+  module:
+    - field_group
+    - paragraphs
+    - text
+    - webform
+third_party_settings:
+  field_group:
+    group_component_details:
+      children:
+        - group_webform
+        - group_content
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Component Details'
+    group_webform:
+      children:
+        - field_alignment
+        - field_text_long_formatted
+        - field_webform_reference
+      parent_name: group_component_details
+      weight: 4
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Webform
+    group_content:
+      children:
+        - field_paragraphs_reference
+      parent_name: group_component_details
+      weight: 5
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Content
+id: paragraph.webform_content.default
+targetEntityType: paragraph
+bundle: webform_content
+mode: default
+content:
+  field_alignment:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_paragraphs_reference:
+    weight: 2
+    settings:
+      title: Component
+      title_plural: Components
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  field_text_long_formatted:
+    weight: 2
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_webform_reference:
+    weight: 3
+    settings:
+      default_data: false
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

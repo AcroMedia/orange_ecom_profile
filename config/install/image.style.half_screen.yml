@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+name: half_screen
+label: 'Half Screen'
+effects:
+  26eff45b-0379-4155-b7f2-c98e4dbbc94f:
+    uuid: 26eff45b-0379-4155-b7f2-c98e4dbbc94f
+    id: image_scale
+    weight: 1
+    data:
+      width: 765
+      height: null
+      upscale: false

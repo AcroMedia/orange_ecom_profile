@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+name: 'Product Categories'
+vid: product_categories
+description: ''
+hierarchy: 0
+weight: 0

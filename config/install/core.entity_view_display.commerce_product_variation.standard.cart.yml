@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.standard
+    - core.entity_view_mode.commerce_product_variation.cart
+    - field.field.commerce_product_variation.standard.field_images
+    - field.field.commerce_product_variation.standard.weight
+_core:
+id: commerce_product_variation.standard.cart
+targetEntityType: commerce_product_variation
+bundle: standard
+mode: cart
+content:
+  sku:
+    type: string
+    weight: 1
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: true
+    third_party_settings: {  }
+hidden:
+  field_images: true
+  langcode: true
+  price: true
+  product_id: true
+  weight: true

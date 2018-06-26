@@ -11,7 +11,7 @@ _core:
 id: header_navigation
 theme: orange_ecom_starter
 region: header_nav
-weight: 0
+weight: -9
 provider: null
 plugin: 'menu_block:header'
 settings:
@@ -24,4 +24,5 @@ settings:
   expand: 0
   parent: 'header:'
   suggestion: header
+  label_type: block
 visibility: {  }

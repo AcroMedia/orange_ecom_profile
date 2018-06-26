@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_long_formatted
+    - paragraphs.paragraphs_type.carousel_slide
+  module:
+    - text
+id: paragraph.carousel_slide.field_text_long_formatted
+field_name: field_text_long_formatted
+entity_type: paragraph
+bundle: carousel_slide
+label: 'Body Content'
+description: 'Optional descriptive text that will be displayed for this slide.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

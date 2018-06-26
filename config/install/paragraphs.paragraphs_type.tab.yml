@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+id: tab
+label: Tab
+icon_uuid: null
+description: 'Sub-Component: A tab item that displays within tabs.'
+behavior_plugins: {  }

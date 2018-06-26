@@ -4,13 +4,14 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.blog_post.body
-    - field.field.node.blog_post.field_blog_category
-    - field.field.node.blog_post.field_blog_comments
-    - field.field.node.blog_post.field_blog_image
-    - field.field.node.blog_post.field_post_date
+    - field.field.node.blog_post.field_date
+    - field.field.node.blog_post.field_image
+    - field.field.node.blog_post.field_node_comments
+    - field.field.node.blog_post.field_terms_reference
+    - image.style.banner
     - node.type.blog_post
   module:
-    - text
+    - image
     - user
 _core:
 id: node.blog_post.teaser
@@ -18,21 +19,19 @@ targetEntityType: node
 bundle: blog_post
 mode: teaser
 content:
-  body:
+  field_image:
+    type: image
+    weight: 0
+    region: content
     label: hidden
-    type: text_default
-    weight: 101
-    settings: {  }
+    settings:
+      image_style: banner
+      image_link: content
     third_party_settings: {  }
-    region: content
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
-    region: content
 hidden:
-  field_blog_category: true
-  field_blog_comments: true
-  field_blog_image: true
-  field_post_date: true
+  body: true
+  field_date: true
+  field_node_comments: true
+  field_terms_reference: true
   langcode: true
+  links: true

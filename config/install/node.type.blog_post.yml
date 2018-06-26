@@ -12,7 +12,7 @@ _core:
 name: 'Blog Post'
 type: blog_post
 description: 'Blog posts that appear under the Blog section of the site and associated views.'
-help: ''
+help: 'Blog posts will automatically display within the blog page listing.'
 new_revision: false
-preview_mode: 1
+preview_mode: 0
 display_submitted: false

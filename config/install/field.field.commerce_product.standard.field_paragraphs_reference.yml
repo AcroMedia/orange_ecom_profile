@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.standard
+    - field.storage.commerce_product.field_paragraphs_reference
+    - paragraphs.paragraphs_type.tab
+  module:
+    - entity_reference_revisions
+_core:
+id: commerce_product.standard.field_paragraphs_reference
+field_name: field_paragraphs_reference
+entity_type: commerce_product
+bundle: standard
+label: Tabs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      tab: tab
+    target_bundles_drag_drop:
+      tabs:
+        weight: 3
+        enabled: false
+      tab:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

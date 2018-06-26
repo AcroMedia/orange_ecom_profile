@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+id: standard
+label: Standard
+orderItemType: standard
+generateTitle: true
+traits:
+  - purchasable_entity_shippable
+locked: false

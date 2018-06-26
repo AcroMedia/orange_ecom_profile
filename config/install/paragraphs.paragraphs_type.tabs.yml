@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+id: tabs
+label: Tabs
+icon_uuid: null
+description: 'Component: Displays a tabs using a JS component.'
+behavior_plugins: {  }

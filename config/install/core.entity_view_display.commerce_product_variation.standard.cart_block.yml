@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.standard
+    - core.entity_view_mode.commerce_product_variation.cart_block
+    - field.field.commerce_product_variation.standard.field_images
+    - field.field.commerce_product_variation.standard.weight
+    - image.style.thumbnail
+  module:
+    - image
+_core:
+id: commerce_product_variation.standard.cart_block
+targetEntityType: commerce_product_variation
+bundle: standard
+mode: cart_block
+content:
+  field_images:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  sku:
+    type: string
+    weight: 1
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: true
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  price: true
+  product_id: true
+  weight: true

@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.standard
+    - field.storage.commerce_product.field_terms_reference
+    - taxonomy.vocabulary.product_categories
+_core:
+id: commerce_product.standard.field_terms_reference
+field_name: field_terms_reference
+entity_type: commerce_product
+bundle: standard
+label: Categories
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      product_categories: product_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

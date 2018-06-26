@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: carousel
+label: Carousel
+icon_uuid: null
+description: 'Component: A carousel component that contains rotating slides.'
+behavior_plugins: {  }

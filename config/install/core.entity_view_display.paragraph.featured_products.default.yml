@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.featured_products.field_products_reference
+    - field.field.paragraph.featured_products.field_text
+    - paragraphs.paragraphs_type.featured_products
+_core:
+id: paragraph.featured_products.default
+targetEntityType: paragraph
+bundle: featured_products
+mode: default
+content:
+  field_products_reference:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_text:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

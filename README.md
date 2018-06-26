@@ -11,7 +11,7 @@ Used by [AcroMedia/drupal-orange-project](https://github.com/AcroMedia/drupal-or
 > Priority configuration if you just want to skip the potatoes and get right to the good stuff.
 
 - **Libraries**
-  - After the Drupal install is finished, make sure to download and setup the libraries that are needed for the following modules:
+  - You'll need the following libraries setup before installing with the profile.
     - [CKEditor Color Button](https://www.drupal.org/project/colorbutton)
       - `/web/libraries/colorbutton`
       - [Color Button Download](http://ckeditor.com/addon/colorbutton)

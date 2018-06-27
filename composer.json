@@ -32,7 +32,7 @@
     "drupal/ckeditor_font": "^1.0",
     "drupal/ckeditor_media_embed": "^1.1",
     "drupal/comments_order": "^1.0@beta",
-    "drupal/contribute": "^5.0@beta",
+    "drupal/contribute": "~1.0.0",
     "drupal/editor_advanced_link": "^1.4",
     "drupal/facets": "^1.0@beta",
     "drupal/facets_pretty_paths": "1.x-dev",

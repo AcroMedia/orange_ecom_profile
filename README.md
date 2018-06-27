@@ -10,23 +10,6 @@ Used by [AcroMedia/drupal-orange-project](https://github.com/AcroMedia/drupal-or
 
 > Priority configuration if you just want to skip the potatoes and get right to the good stuff.
 
-- **Libraries**
-  - You'll need the following libraries setup before installing with the profile.
-    - [CKEditor Color Button](https://www.drupal.org/project/colorbutton)
-      - `/web/libraries/colorbutton`
-      - [Color Button Download](http://ckeditor.com/addon/colorbutton)
-    - [CKEditor Font](https://www.drupal.org/project/ckeditor_font)
-      - `/web/libraries/font`
-      - [Font Download](http://ckeditor.com/addon/font)
-    - [Magnific Popup](https://www.drupal.org/project/magnific_popup)
-      - `/web/libraries/magnific-popup`
-      - [Magnific Popup Download](https://github.com/dimsemenov/Magnific-Popup)
-    - [CKEditor Panel Button](https://www.drupal.org/project/panelbutton)
-      - `/web/libraries/panelbutton`
-      - [CKEditor Panel Button Download](http://ckeditor.com/addon/panelbutton)
-    - [Spectrum for Color Field](https://www.drupal.org/project/color_field)
-      - `/web/libraries/spectrum`
-      - [Spectrum Download](http://bgrins.github.io/spectrum/)
 - **Store Catalog/Product Listing**
   - View: *Structure > Views: Store*
   - View URL: `/admin/structure/views/view/store`
@@ -39,6 +22,26 @@ Used by [AcroMedia/drupal-orange-project](https://github.com/AcroMedia/drupal-or
   - View: *Structure > Views: Product Categories Menu*
   - View URL: `/admin/structure/views/view/product_categories_menu`
   - Setup to be the primary navigation by default, based on the Product Categories terms and linked to the Solr facets URL. Configure/edit as needed.
+- **Libraries**
+  - You'll need the following libraries setup before installing with the profile. They should be brought in with composer, but details below for reference:
+    - [CKEditor Media Embed Plugin](https://www.drupal.org/project/ckeditor_media_embed)
+      - `/web/libraries/ckeditor`
+      - [Download Library](https://github.com/ckeditor/ckeditor-dev/archive/release/4.5.x.zip)
+    - [CKEditor Color Button](https://www.drupal.org/project/colorbutton)
+      - `/web/libraries/colorbutton`
+      - [Download Library](http://ckeditor.com/addon/colorbutton)
+    - [CKEditor Font](https://www.drupal.org/project/ckeditor_font)
+      - `/web/libraries/font`
+      - [Download Library](http://ckeditor.com/addon/font)
+    - [CKEditor Panel Button](https://www.drupal.org/project/panelbutton)
+      - `/web/libraries/panelbutton`
+      - [Download Library](http://ckeditor.com/addon/panelbutton)
+    - [Spectrum for Color Field](https://www.drupal.org/project/color_field)
+      - `/web/libraries/spectrum`
+      - [Download Library](http://bgrins.github.io/spectrum/)
+    - [Magnific Popup](https://www.drupal.org/project/magnific_popup)
+      - `/web/libraries/magnific-popup`
+      - [Download Library](https://github.com/dimsemenov/Magnific-Popup)      
 
 ## Quick Start Guide
 

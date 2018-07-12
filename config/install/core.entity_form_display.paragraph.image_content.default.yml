@@ -1,0 +1,126 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_content.field_alignment
+    - field.field.paragraph.image_content.field_bg_color
+    - field.field.paragraph.image_content.field_color
+    - field.field.paragraph.image_content.field_content_layout
+    - field.field.paragraph.image_content.field_image
+    - field.field.paragraph.image_content.field_paragraphs_reference
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.image_content
+  module:
+    - color_field
+    - field_group
+    - image
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_component_details:
+      children:
+        - field_content_layout
+        - field_bg_color
+        - field_color
+        - group_image
+        - group_content
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Component Details'
+    group_image:
+      children:
+        - field_image
+        - field_alignment
+      parent_name: group_component_details
+      weight: 8
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Image
+    group_content:
+      children:
+        - field_paragraphs_reference
+      parent_name: group_component_details
+      weight: 9
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Content
+_core:
+id: paragraph.image_content.default
+targetEntityType: paragraph
+bundle: image_content
+mode: default
+content:
+  field_alignment:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_bg_color:
+    weight: 6
+    settings:
+      show_input: '1'
+      palette: ''
+      show_buttons: '1'
+      allow_empty: '1'
+      show_palette: '0'
+      show_palette_only: '0'
+    third_party_settings: {  }
+    type: color_field_widget_spectrum
+    region: content
+  field_color:
+    weight: 7
+    settings:
+      show_input: '1'
+      palette: ''
+      show_buttons: '1'
+      allow_empty: '1'
+      show_palette: '0'
+      show_palette_only: '0'
+    third_party_settings: {  }
+    type: color_field_widget_spectrum
+    region: content
+  field_content_layout:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_image:
+    weight: 4
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_paragraphs_reference:
+    weight: 3
+    settings:
+      title: Component
+      title_plural: Components
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,6 +1,7 @@
 langcode: en
 status: true
 dependencies: {  }
+_core:
 id: webform_content
 label: 'Webform + Content'
 icon_uuid: null

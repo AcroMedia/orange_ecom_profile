@@ -11,6 +11,7 @@ third_party_settings:
   comments_order:
     order: DESC
     children_natural_order: 1
+_core:
 id: node.blog_post.field_node_comments
 field_name: field_node_comments
 entity_type: node

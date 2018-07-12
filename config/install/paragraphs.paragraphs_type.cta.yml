@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+id: cta
+label: CTA
+icon_uuid: null
+description: 'Sub-Component: A basic Call-To-Action.'
+behavior_plugins: {  }

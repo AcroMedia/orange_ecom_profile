@@ -3,12 +3,11 @@ status: true
 dependencies:
   config:
     - field.storage.commerce_product.variations
-    - field.storage.commerce_product.field_terms_reference
-    - field.storage.commerce_product.field_terms_reference_2
     - search_api.server.solr
   module:
     - commerce_product
     - search_api
+    - search_api_solr
 _core:
 id: products
 name: Products
@@ -51,22 +50,6 @@ field_settings:
     datasource_id: 'entity:commerce_product'
     property_path: created
     type: date
-  field_terms_reference:
-    label: Categories
-    datasource_id: 'entity:commerce_product'
-    property_path: field_terms_reference
-    type: string
-    dependencies:
-      config:
-        - field.storage.commerce_product.field_terms_reference
-  field_terms_reference_2:
-    label: Brands
-    datasource_id: 'entity:commerce_product'
-    property_path: field_terms_reference_2
-    type: string
-    dependencies:
-      config:
-        - field.storage.commerce_product.field_terms_reference_2
 datasource_settings:
   'entity:commerce_product':
     bundles:
@@ -114,11 +97,7 @@ processor_settings:
     weights:
       preprocess_index: -20
       preprocess_query: -20
-  hierarchy:
-    fields:
-      field_terms_reference: taxonomy_term-parent
-    weights:
-      preprocess_index: -45
+  solr_date_range: {  }
 tracker_settings:
   default:
     indexing_order: fifo

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_color
+    - paragraphs.paragraphs_type.strap
+  module:
+    - color_field
+_core:
+id: paragraph.strap.field_color
+field_name: field_color
+entity_type: paragraph
+bundle: strap
+label: 'Text Color'
+description: '<p>Text color changes all text except for button text.</p>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

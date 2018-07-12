@@ -1,0 +1,80 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraphs_reference
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.image_strap
+    - paragraphs.paragraphs_type.standard_content
+    - paragraphs.paragraphs_type.webform
+  module:
+    - entity_reference_revisions
+_core:
+id: paragraph.image_strap.field_paragraphs_reference
+field_name: field_paragraphs_reference
+entity_type: paragraph
+bundle: image_strap
+label: 'Strap Content'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      standard_content: standard_content
+      accordion: accordion
+      webform: webform
+    target_bundles_drag_drop:
+      standard_content:
+        enabled: true
+        weight: -33
+      accordion:
+        enabled: true
+        weight: -32
+      webform:
+        enabled: true
+        weight: -31
+      button:
+        weight: -30
+        enabled: false
+      image_strap:
+        weight: -29
+        enabled: false
+      accordion_item:
+        weight: -28
+        enabled: false
+      carousel:
+        weight: -27
+        enabled: false
+      carousel_slide:
+        weight: -26
+        enabled: false
+      cta:
+        weight: -25
+        enabled: false
+      cta_strap:
+        weight: -24
+        enabled: false
+      featured_products:
+        weight: -23
+        enabled: false
+      image_content:
+        weight: -22
+        enabled: false
+      strap:
+        weight: -21
+        enabled: false
+      tab:
+        weight: -20
+        enabled: false
+      tabs:
+        weight: -19
+        enabled: false
+      webform_content:
+        weight: -18
+        enabled: false
+field_type: entity_reference_revisions

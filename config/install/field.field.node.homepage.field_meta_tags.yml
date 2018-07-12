@@ -6,6 +6,7 @@ dependencies:
     - node.type.homepage
   module:
     - metatag
+_core:
 id: node.homepage.field_meta_tags
 field_name: field_meta_tags
 entity_type: node

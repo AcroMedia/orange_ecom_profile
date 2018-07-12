@@ -4,6 +4,7 @@ dependencies:
   module:
     - datetime
     - node
+_core:
 id: node.field_date
 field_name: field_date
 entity_type: node

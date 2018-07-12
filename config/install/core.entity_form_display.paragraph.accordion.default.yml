@@ -22,6 +22,7 @@ third_party_settings:
         open: false
         required_fields: true
       label: 'Accordion Content'
+_core:
 id: paragraph.accordion.default
 targetEntityType: paragraph
 bundle: accordion

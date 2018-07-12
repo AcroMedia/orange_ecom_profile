@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.commerce_product.listing
     - field.field.commerce_product.standard.body
     - field.field.commerce_product.standard.field_images
+    - field.field.commerce_product.standard.field_meta_tags
     - field.field.commerce_product.standard.field_paragraph_reference
     - field.field.commerce_product.standard.field_paragraphs_reference
     - field.field.commerce_product.standard.field_product_reviews
@@ -42,6 +43,7 @@ hidden:
   body: true
   created: true
   field_images: true
+  field_meta_tags: true
   field_paragraph_reference: true
   field_paragraphs_reference: true
   field_product_reviews: true

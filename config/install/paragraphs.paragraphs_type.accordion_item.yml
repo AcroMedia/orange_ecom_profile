@@ -1,6 +1,7 @@
 langcode: en
 status: true
 dependencies: {  }
+_core:
 id: accordion_item
 label: 'Accordion Item'
 icon_uuid: null

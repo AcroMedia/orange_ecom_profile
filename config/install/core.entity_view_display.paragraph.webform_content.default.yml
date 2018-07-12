@@ -11,6 +11,7 @@ dependencies:
     - entity_reference_revisions
     - text
     - webform
+_core:
 id: paragraph.webform_content.default
 targetEntityType: paragraph
 bundle: webform_content

@@ -7,6 +7,7 @@ dependencies:
     - menu_block
   theme:
     - orange_ecom_starter
+_core:
 id: header_mobile_navigation
 theme: orange_ecom_starter
 region: mobile_nav

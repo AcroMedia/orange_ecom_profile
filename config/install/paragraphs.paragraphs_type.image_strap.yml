@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+id: image_strap
+label: 'Image Strap'
+icon_uuid: null
+description: 'Component: A strap with an image featured.'
+behavior_plugins: {  }

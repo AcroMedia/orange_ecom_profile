@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.blog_post.body
     - field.field.node.blog_post.field_date
     - field.field.node.blog_post.field_image
+    - field.field.node.blog_post.field_meta_tags
     - field.field.node.blog_post.field_node_comments
     - field.field.node.blog_post.field_terms_reference
     - image.style.banner
@@ -31,6 +32,7 @@ content:
 hidden:
   body: true
   field_date: true
+  field_meta_tags: true
   field_node_comments: true
   field_terms_reference: true
   langcode: true

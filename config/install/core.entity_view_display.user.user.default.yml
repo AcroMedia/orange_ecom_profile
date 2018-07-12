@@ -5,6 +5,7 @@ dependencies:
     - field.field.user.user.commerce_remote_id
   module:
     - user
+_core:
 id: user.user.default
 targetEntityType: user
 bundle: user

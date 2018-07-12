@@ -5,6 +5,7 @@ dependencies:
     - entity_reference_revisions
     - node
     - paragraphs
+_core:
 id: node.field_paragraphs_reference
 field_name: field_paragraphs_reference
 entity_type: node

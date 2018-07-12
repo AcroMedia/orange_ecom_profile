@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+name: background
+label: Background
+effects:
+  efe3c3eb-824f-4bf4-818e-94bc1ad9d211:
+    uuid: efe3c3eb-824f-4bf4-818e-94bc1ad9d211
+    id: image_scale
+    weight: 1
+    data:
+      width: 2000
+      height: 2000
+      upscale: false

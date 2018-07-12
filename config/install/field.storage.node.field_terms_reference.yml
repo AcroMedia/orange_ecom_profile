@@ -4,6 +4,7 @@ dependencies:
   module:
     - node
     - taxonomy
+_core:
 id: node.field_terms_reference
 field_name: field_terms_reference
 entity_type: node

@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+id: image_content
+label: 'Image + Content'
+icon_uuid: null
+description: 'Component: Display an image along with some content.'
+behavior_plugins: {  }

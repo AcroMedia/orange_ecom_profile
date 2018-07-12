@@ -53,6 +53,7 @@ third_party_settings:
         open: false
         required_fields: true
       label: Content
+_core:
 id: paragraph.webform_content.default
 targetEntityType: paragraph
 bundle: webform_content

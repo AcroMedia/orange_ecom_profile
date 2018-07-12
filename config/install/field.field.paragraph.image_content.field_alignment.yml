@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_alignment
+    - paragraphs.paragraphs_type.image_content
+  module:
+    - options
+_core:
+id: paragraph.image_content.field_alignment
+field_name: field_alignment
+entity_type: paragraph
+bundle: image_content
+label: Alignment
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

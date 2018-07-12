@@ -4,6 +4,7 @@ dependencies:
   module:
     - link
     - paragraphs
+_core:
 id: paragraph.field_link
 field_name: field_link
 entity_type: paragraph

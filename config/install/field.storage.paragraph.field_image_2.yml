@@ -5,6 +5,7 @@ dependencies:
     - file
     - image
     - paragraphs
+_core:
 id: paragraph.field_image_2
 field_name: field_image_2
 entity_type: paragraph

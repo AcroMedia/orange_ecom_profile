@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_long_formatted
+    - paragraphs.paragraphs_type.cta
+  module:
+    - text
+_core:
+id: paragraph.cta.field_text_long_formatted
+field_name: field_text_long_formatted
+entity_type: paragraph
+bundle: cta
+label: 'CTA Content'
+description: 'Optional content that appears below the image.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

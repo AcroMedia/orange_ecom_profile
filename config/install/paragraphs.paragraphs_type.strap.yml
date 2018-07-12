@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+id: strap
+label: Strap
+icon_uuid: null
+description: 'Component: A full-width strap that contains various content options.'
+behavior_plugins: {  }

@@ -3,6 +3,7 @@ status: true
 dependencies:
   module:
     - user
+_core:
 name: admin
 label: Admin
 protectedEntityTypeId: user

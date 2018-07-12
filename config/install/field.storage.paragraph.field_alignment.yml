@@ -4,6 +4,7 @@ dependencies:
   module:
     - options
     - paragraphs
+_core:
 id: paragraph.field_alignment
 field_name: field_alignment
 entity_type: paragraph

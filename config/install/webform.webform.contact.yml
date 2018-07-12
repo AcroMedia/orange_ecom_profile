@@ -7,6 +7,7 @@ dependencies:
 _core:
 open: null
 close: null
+weight: 0
 uid: null
 template: false
 archive: false
@@ -157,7 +158,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: default
+      to_mail: _default
       to_options: {  }
       cc_mail: ''
       cc_options: {  }

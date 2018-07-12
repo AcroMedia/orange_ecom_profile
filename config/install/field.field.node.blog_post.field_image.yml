@@ -6,6 +6,7 @@ dependencies:
     - node.type.blog_post
   module:
     - image
+_core:
 id: node.blog_post.field_image
 field_name: field_image
 entity_type: node

@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+id: paragraph.field_content_layout
+field_name: field_content_layout
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 50|50
+      label: '50/50 Image + Content'
+    -
+      value: '1_4'
+      label: '1/4 Image + Content'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

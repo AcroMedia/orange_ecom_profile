@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bg_color
+    - paragraphs.paragraphs_type.strap
+  module:
+    - color_field
+_core:
+id: paragraph.strap.field_bg_color
+field_name: field_bg_color
+entity_type: paragraph
+bundle: strap
+label: 'Background Color'
+description: '<p>Sets the background color for this strap.</p>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

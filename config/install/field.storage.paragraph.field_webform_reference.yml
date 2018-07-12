@@ -4,6 +4,7 @@ dependencies:
   module:
     - paragraphs
     - webform
+_core:
 id: paragraph.field_webform_reference
 field_name: field_webform_reference
 entity_type: paragraph

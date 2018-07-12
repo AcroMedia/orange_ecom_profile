@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+id: button
+label: Button
+icon_uuid: null
+description: 'Sub-Component: Button link with associated options.'
+behavior_plugins: {  }

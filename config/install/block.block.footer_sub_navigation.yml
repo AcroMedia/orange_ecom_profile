@@ -7,6 +7,7 @@ dependencies:
     - menu_block
   theme:
     - orange_ecom_starter
+_core:
 id: footer_sub_navigation
 theme: orange_ecom_starter
 region: left_sidebar

@@ -10,12 +10,13 @@ dependencies:
     - paragraphs.paragraphs_type.webform_content
   module:
     - entity_reference_revisions
+_core:
 id: node.page.field_paragraphs_reference
 field_name: field_paragraphs_reference
 entity_type: node
 bundle: page
-label: Components
-description: ''
+label: 'Body Components'
+description: 'Components that appear within the page body area.<br>'
 required: false
 translatable: false
 default_value: {  }
@@ -53,5 +54,29 @@ settings:
         enabled: false
       accordion_item:
         weight: -10
+        enabled: false
+      button:
+        weight: 19
+        enabled: false
+      carousel:
+        weight: 20
+        enabled: false
+      carousel_slide:
+        weight: 21
+        enabled: false
+      cta:
+        weight: 22
+        enabled: false
+      cta_strap:
+        weight: 23
+        enabled: false
+      image_content:
+        weight: 25
+        enabled: false
+      image_strap:
+        weight: 26
+        enabled: false
+      strap:
+        weight: 28
         enabled: false
 field_type: entity_reference_revisions

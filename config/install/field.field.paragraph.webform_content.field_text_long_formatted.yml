@@ -6,6 +6,7 @@ dependencies:
     - paragraphs.paragraphs_type.webform_content
   module:
     - text
+_core:
 id: paragraph.webform_content.field_text_long_formatted
 field_name: field_text_long_formatted
 entity_type: paragraph

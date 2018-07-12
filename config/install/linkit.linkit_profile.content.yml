@@ -8,6 +8,7 @@ third_party_settings:
   imce:
     use: true
     scheme: public
+_core:
 id: content
 label: Content
 description: ''

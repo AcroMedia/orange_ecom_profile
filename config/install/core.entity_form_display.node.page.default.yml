@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.page.field_image
     - field.field.node.page.field_meta_tags
     - field.field.node.page.field_paragraphs_reference
+    - field.field.node.page.field_paragraphs_reference_2
     - image.style.thumbnail
     - node.type.page
   module:
@@ -44,14 +45,26 @@ content:
     type: image_image
     region: content
   field_meta_tags:
-    weight: 26
+    weight: 10
     settings: {  }
     third_party_settings: {  }
     type: metatag_firehose
     region: content
   field_paragraphs_reference:
     type: entity_reference_paragraphs
-    weight: 27
+    weight: 11
+    settings:
+      title: Component
+      title_plural: Components
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  field_paragraphs_reference_2:
+    type: entity_reference_paragraphs
+    weight: 13
     settings:
       title: Component
       title_plural: Components
@@ -85,7 +98,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 10
+    weight: 9
     region: content
     third_party_settings: {  }
   sticky:

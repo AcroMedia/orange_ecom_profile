@@ -5,6 +5,7 @@ dependencies:
     - system
   theme:
     - orange_ecom_starter
+_core:
 id: pagetitle
 theme: orange_ecom_starter
 region: above_content

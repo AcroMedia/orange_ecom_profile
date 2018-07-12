@@ -3,6 +3,7 @@ status: true
 dependencies:
   module:
     - paragraphs
+_core:
 id: paragraph.field_text
 field_name: field_text
 entity_type: paragraph

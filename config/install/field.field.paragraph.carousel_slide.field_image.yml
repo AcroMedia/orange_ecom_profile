@@ -6,6 +6,7 @@ dependencies:
     - paragraphs.paragraphs_type.carousel_slide
   module:
     - image
+_core:
 id: paragraph.carousel_slide.field_image
 field_name: field_image
 entity_type: paragraph

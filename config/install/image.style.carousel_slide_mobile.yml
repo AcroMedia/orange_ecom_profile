@@ -1,6 +1,7 @@
 langcode: en
 status: true
 dependencies: {  }
+_core:
 name: carousel_slide_mobile
 label: 'Carousel Slide - For Mobile'
 effects:

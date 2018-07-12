@@ -6,6 +6,7 @@ dependencies:
     - commerce_promotion
     - commerce_shipping
     - orange_checkout_flow
+_core:
 id: orange
 label: Orange
 plugin: orange_checkout_flow

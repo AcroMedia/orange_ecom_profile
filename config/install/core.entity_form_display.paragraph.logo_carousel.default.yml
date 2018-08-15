@@ -2,51 +2,42 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.tabs.field_paragraphs_reference
-    - field.field.paragraph.tabs.field_tabs_layout
-    - paragraphs.paragraphs_type.tabs
+    - field.field.paragraph.logo_carousel.field_paragraphs_reference
+    - paragraphs.paragraphs_type.logo_carousel
   module:
     - field_group
     - paragraphs
 third_party_settings:
   field_group:
-    group_tabs_content:
+    group_component_details:
       children:
-        - field_tabs_layout
         - field_paragraphs_reference
       parent_name: ''
-      weight: 0
+      weight: 20
       format_type: details
       format_settings:
         id: ''
         classes: ''
         open: false
         required_fields: true
-      label: 'Tabs Content'
-_core:
-id: paragraph.tabs.default
+      label: 'Component Details'
+id: paragraph.logo_carousel.default
 targetEntityType: paragraph
-bundle: tabs
+bundle: logo_carousel
 mode: default
 content:
   field_paragraphs_reference:
-    type: entity_reference_paragraphs
-    weight: 1
+    weight: 0
     settings:
-      title: Tab
-      title_plural: Tabs
+      title: Logo
+      title_plural: Logos
       edit_mode: closed
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: tab
+      default_paragraph_type: _none
     third_party_settings: {  }
+    type: entity_reference_paragraphs
     region: content
-  field_tabs_layout:
-    type: options_select
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   created: true
   status: true

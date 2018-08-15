@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: logo
+label: Logo
+icon_uuid: null
+description: 'Sub-Component: A logo and optional link.'
+behavior_plugins: {  }

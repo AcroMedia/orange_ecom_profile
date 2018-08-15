@@ -2,25 +2,22 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.tabs.field_paragraphs_reference
-    - field.field.paragraph.tabs.field_tabs_layout
-    - paragraphs.paragraphs_type.tabs
+    - field.field.paragraph.content_carousel.field_paragraphs_reference
+    - paragraphs.paragraphs_type.content_carousel
   module:
     - entity_reference_revisions
-_core:
-id: paragraph.tabs.default
+id: paragraph.content_carousel.default
 targetEntityType: paragraph
-bundle: tabs
+bundle: content_carousel
 mode: default
 content:
   field_paragraphs_reference:
-    type: entity_reference_revisions_entity_view
     weight: 0
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
     region: content
-hidden:
-  field_tabs_layout: true
+hidden: {  }

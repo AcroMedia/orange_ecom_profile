@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tabs_layout
+    - paragraphs.paragraphs_type.tabs
+  module:
+    - options
+id: paragraph.tabs.field_tabs_layout
+field_name: field_tabs_layout
+entity_type: paragraph
+bundle: tabs
+label: 'Tabs Layout'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: horizontal
+default_value_callback: ''
+settings: {  }
+field_type: list_string

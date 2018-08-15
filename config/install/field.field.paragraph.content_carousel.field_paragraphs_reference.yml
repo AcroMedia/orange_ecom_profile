@@ -1,0 +1,78 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraphs_reference
+    - paragraphs.paragraphs_type.content_carousel
+    - paragraphs.paragraphs_type.standard_content
+  module:
+    - entity_reference_revisions
+id: paragraph.content_carousel.field_paragraphs_reference
+field_name: field_paragraphs_reference
+entity_type: paragraph
+bundle: content_carousel
+label: 'Carousel Slides'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      standard_content: standard_content
+    target_bundles_drag_drop:
+      content_carousel:
+        weight: 18
+        enabled: false
+      accordion:
+        weight: 19
+        enabled: false
+      accordion_item:
+        weight: 20
+        enabled: false
+      button:
+        weight: 21
+        enabled: false
+      carousel:
+        weight: 22
+        enabled: false
+      carousel_slide:
+        weight: 23
+        enabled: false
+      cta:
+        weight: 24
+        enabled: false
+      cta_strap:
+        weight: 25
+        enabled: false
+      featured_products:
+        weight: 26
+        enabled: false
+      image_content:
+        weight: 27
+        enabled: false
+      image_strap:
+        weight: 28
+        enabled: false
+      standard_content:
+        enabled: true
+        weight: 29
+      strap:
+        weight: 30
+        enabled: false
+      tab:
+        weight: 31
+        enabled: false
+      tabs:
+        weight: 32
+        enabled: false
+      webform:
+        weight: 33
+        enabled: false
+      webform_content:
+        weight: 34
+        enabled: false
+field_type: entity_reference_revisions

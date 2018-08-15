@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: content_carousel
+label: 'Content Carousel'
+icon_uuid: null
+description: 'Component: Display content in a carousel.'
+behavior_plugins: {  }

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: logo_carousel
+label: 'Logo Carousel'
+icon_uuid: null
+description: 'Component: Display logos within a carousel.'
+behavior_plugins: {  }

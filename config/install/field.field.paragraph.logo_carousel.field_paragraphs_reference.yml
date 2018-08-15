@@ -1,0 +1,84 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraphs_reference
+    - paragraphs.paragraphs_type.logo
+    - paragraphs.paragraphs_type.logo_carousel
+  module:
+    - entity_reference_revisions
+id: paragraph.logo_carousel.field_paragraphs_reference
+field_name: field_paragraphs_reference
+entity_type: paragraph
+bundle: logo_carousel
+label: Logos
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      logo: logo
+    target_bundles_drag_drop:
+      logo_carousel:
+        weight: 20
+        enabled: false
+      accordion:
+        weight: 21
+        enabled: false
+      accordion_item:
+        weight: 22
+        enabled: false
+      button:
+        weight: 23
+        enabled: false
+      carousel:
+        weight: 24
+        enabled: false
+      carousel_slide:
+        weight: 25
+        enabled: false
+      content_carousel:
+        weight: 26
+        enabled: false
+      cta:
+        weight: 27
+        enabled: false
+      cta_strap:
+        weight: 28
+        enabled: false
+      featured_products:
+        weight: 29
+        enabled: false
+      image_content:
+        weight: 30
+        enabled: false
+      image_strap:
+        weight: 31
+        enabled: false
+      logo:
+        enabled: true
+        weight: 32
+      standard_content:
+        weight: 33
+        enabled: false
+      strap:
+        weight: 34
+        enabled: false
+      tab:
+        weight: 35
+        enabled: false
+      tabs:
+        weight: 36
+        enabled: false
+      webform:
+        weight: 37
+        enabled: false
+      webform_content:
+        weight: 38
+        enabled: false
+field_type: entity_reference_revisions

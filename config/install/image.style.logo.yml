@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_effects
+name: logo
+label: Logo
+effects:
+  c1da6423-e9ed-4ba0-9956-493e27a5148d:
+    uuid: c1da6423-e9ed-4ba0-9956-493e27a5148d
+    id: image_scale
+    weight: 1
+    data:
+      width: 230
+      height: 80
+      upscale: false
+  883ec340-ff2c-42b6-a8e7-afe09a673b34:
+    uuid: 883ec340-ff2c-42b6-a8e7-afe09a673b34
+    id: image_effects_set_canvas
+    weight: 2
+    data:
+      canvas_size: exact
+      exact:
+        width: '230'
+        height: '80'
+        placement: center-center
+        x_offset: 0
+        y_offset: 0
+      relative:
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+      canvas_color: ''

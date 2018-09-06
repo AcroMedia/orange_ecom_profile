@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_opacity
+    - paragraphs.paragraphs_type.content_strap_column
+id: paragraph.content_strap_column.field_opacity
+field_name: field_opacity
+entity_type: paragraph
+bundle: content_strap_column
+label: 'Background Image Opacity'
+description: 'Sets the opacity (transparency) for the background image. Use this to make the background image transparent and partially let the background color bleed through it.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 100
+default_value_callback: ''
+settings:
+  min: 0
+  max: 100
+  prefix: ''
+  suffix: '%'
+field_type: integer

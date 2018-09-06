@@ -6,6 +6,7 @@ dependencies:
     - paragraphs.paragraphs_type.tabs
   module:
     - options
+_core:
 id: paragraph.tabs.field_tabs_layout
 field_name: field_tabs_layout
 entity_type: paragraph

@@ -9,6 +9,7 @@ dependencies:
   module:
     - image
     - link
+_core:
 id: paragraph.logo.default
 targetEntityType: paragraph
 bundle: logo

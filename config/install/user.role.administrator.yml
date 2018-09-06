@@ -17,7 +17,6 @@ permissions:
   - 'access commerce_store overview'
   - 'access content overview'
   - 'access contextual links'
-  - 'access files overview'
   - 'access profile overview'
   - 'access site in maintenance mode'
   - 'access taxonomy overview'

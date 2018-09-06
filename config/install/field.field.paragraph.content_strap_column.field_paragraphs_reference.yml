@@ -1,0 +1,91 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraphs_reference
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.content_strap_column
+    - paragraphs.paragraphs_type.standard_content
+    - paragraphs.paragraphs_type.webform
+  module:
+    - entity_reference_revisions
+id: paragraph.content_strap_column.field_paragraphs_reference
+field_name: field_paragraphs_reference
+entity_type: paragraph
+bundle: content_strap_column
+label: Content
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      standard_content: standard_content
+      accordion: accordion
+      webform: webform
+    target_bundles_drag_drop:
+      standard_content:
+        enabled: true
+        weight: -41
+      accordion:
+        enabled: true
+        weight: -40
+      webform:
+        enabled: true
+        weight: -39
+      content_strap_column:
+        weight: -38
+        enabled: false
+      accordion_item:
+        weight: -37
+        enabled: false
+      button:
+        weight: -36
+        enabled: false
+      carousel:
+        weight: -35
+        enabled: false
+      carousel_slide:
+        weight: -34
+        enabled: false
+      content_carousel:
+        weight: -33
+        enabled: false
+      cta:
+        weight: -32
+        enabled: false
+      cta_strap:
+        weight: -31
+        enabled: false
+      featured_products:
+        weight: -30
+        enabled: false
+      image_content:
+        weight: -29
+        enabled: false
+      image_strap:
+        weight: -28
+        enabled: false
+      logo:
+        weight: -27
+        enabled: false
+      logo_carousel:
+        weight: -26
+        enabled: false
+      strap:
+        weight: -25
+        enabled: false
+      tab:
+        weight: -24
+        enabled: false
+      tabs:
+        weight: -23
+        enabled: false
+      webform_content:
+        weight: -22
+        enabled: false
+field_type: entity_reference_revisions

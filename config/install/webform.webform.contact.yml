@@ -181,3 +181,4 @@ handlers:
       twig: false
       sender_mail: ''
       sender_name: ''
+      theme: ''

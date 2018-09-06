@@ -6,6 +6,7 @@ dependencies:
     - paragraphs.paragraphs_type.logo
   module:
     - link
+_core:
 id: paragraph.logo.field_link
 field_name: field_link
 entity_type: paragraph

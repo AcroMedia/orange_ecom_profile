@@ -5,7 +5,13 @@ dependencies:
     - field.storage.node.field_paragraphs_reference
     - node.type.page
     - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.content_carousel
+    - paragraphs.paragraphs_type.content_strap
+    - paragraphs.paragraphs_type.cta_strap
+    - paragraphs.paragraphs_type.image_content
     - paragraphs.paragraphs_type.standard_content
+    - paragraphs.paragraphs_type.strap
+    - paragraphs.paragraphs_type.tabs
     - paragraphs.paragraphs_type.webform
     - paragraphs.paragraphs_type.webform_content
   module:
@@ -28,64 +34,76 @@ settings:
     target_bundles:
       standard_content: standard_content
       accordion: accordion
+      tabs: tabs
+      image_content: image_content
       webform: webform
       webform_content: webform_content
+      strap: strap
+      content_strap: content_strap
+      cta_strap: cta_strap
+      content_carousel: content_carousel
     target_bundles_drag_drop:
       standard_content:
         enabled: true
-        weight: -39
+        weight: -43
       accordion:
         enabled: true
-        weight: -38
+        weight: -42
+      tabs:
+        enabled: true
+        weight: -41
+      image_content:
+        enabled: true
+        weight: -40
       webform:
         enabled: true
-        weight: -37
+        weight: -39
       webform_content:
         enabled: true
+        weight: -38
+      strap:
+        enabled: true
+        weight: -37
+      content_strap:
+        enabled: true
         weight: -36
-      tabs:
+      cta_strap:
+        enabled: true
         weight: -35
-        enabled: false
-      featured_products:
+      content_carousel:
+        enabled: true
         weight: -34
-        enabled: false
-      tab:
+      featured_products:
         weight: -33
         enabled: false
-      accordion_item:
+      tab:
         weight: -32
         enabled: false
-      button:
+      accordion_item:
         weight: -31
         enabled: false
-      carousel:
+      button:
         weight: -30
         enabled: false
-      carousel_slide:
+      carousel:
         weight: -29
         enabled: false
-      cta:
+      carousel_slide:
         weight: -28
         enabled: false
-      cta_strap:
+      cta:
         weight: -27
         enabled: false
-      content_carousel:
+      image_strap:
         weight: -26
         enabled: false
-      image_content:
+      logo:
         weight: -25
         enabled: false
-      image_strap:
+      logo_carousel:
         weight: -24
         enabled: false
-      strap:
+      content_strap_column:
         weight: -23
-        enabled: false
-      logo:
-        weight: -22
-        enabled: false
-      logo_carousel:
-        weight: -21
         enabled: false
 field_type: entity_reference_revisions

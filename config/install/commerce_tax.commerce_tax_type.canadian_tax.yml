@@ -6,4 +6,4 @@ id: canadian_tax
 label: 'Canadian Tax'
 plugin: canadian_sales_tax
 configuration:
-  display_inclusive: true
+  display_inclusive: false

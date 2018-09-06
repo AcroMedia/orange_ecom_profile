@@ -1,0 +1,104 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.standard
+    - field.storage.commerce_product.field_paragraphs_reference_2
+    - paragraphs.paragraphs_type.content_carousel
+    - paragraphs.paragraphs_type.content_strap
+    - paragraphs.paragraphs_type.cta_strap
+    - paragraphs.paragraphs_type.image_content
+    - paragraphs.paragraphs_type.image_strap
+    - paragraphs.paragraphs_type.logo_carousel
+    - paragraphs.paragraphs_type.strap
+    - paragraphs.paragraphs_type.tabs
+  module:
+    - entity_reference_revisions
+id: commerce_product.standard.field_paragraphs_reference_2
+field_name: field_paragraphs_reference_2
+entity_type: commerce_product
+bundle: standard
+label: 'Footer Components'
+description: 'Components that display below the product content.<br>See the <a href="/livecss#components" target="_blank">Live CSS</a> for component information & previews.<br>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      strap: strap
+      content_strap: content_strap
+      cta_strap: cta_strap
+      image_strap: image_strap
+      image_content: image_content
+      content_carousel: content_carousel
+      logo_carousel: logo_carousel
+      tabs: tabs
+    target_bundles_drag_drop:
+      strap:
+        enabled: true
+        weight: -43
+      content_strap:
+        enabled: true
+        weight: -42
+      cta_strap:
+        enabled: true
+        weight: -41
+      image_strap:
+        enabled: true
+        weight: -40
+      image_content:
+        enabled: true
+        weight: -39
+      content_carousel:
+        enabled: true
+        weight: -38
+      logo_carousel:
+        enabled: true
+        weight: -37
+      tabs:
+        enabled: true
+        weight: -36
+      accordion:
+        weight: -35
+        enabled: false
+      accordion_item:
+        weight: -34
+        enabled: false
+      button:
+        weight: -33
+        enabled: false
+      carousel:
+        weight: -32
+        enabled: false
+      carousel_slide:
+        weight: -31
+        enabled: false
+      content_strap_column:
+        weight: -30
+        enabled: false
+      cta:
+        weight: -29
+        enabled: false
+      featured_products:
+        weight: -28
+        enabled: false
+      logo:
+        weight: -27
+        enabled: false
+      standard_content:
+        weight: -26
+        enabled: false
+      tab:
+        weight: -25
+        enabled: false
+      webform:
+        weight: -24
+        enabled: false
+      webform_content:
+        weight: -23
+        enabled: false
+field_type: entity_reference_revisions

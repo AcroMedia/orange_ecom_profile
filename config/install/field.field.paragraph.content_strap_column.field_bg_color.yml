@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bg_color
+    - paragraphs.paragraphs_type.content_strap_column
+  module:
+    - color_field
+id: paragraph.content_strap_column.field_bg_color
+field_name: field_bg_color
+entity_type: paragraph
+bundle: content_strap_column
+label: 'Background Color'
+description: '<p>Sets the background color for this item.</p>'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

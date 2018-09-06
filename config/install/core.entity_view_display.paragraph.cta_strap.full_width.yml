@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full_width
+    - field.field.paragraph.cta_strap.field_bg_color
+    - field.field.paragraph.cta_strap.field_color
+    - field.field.paragraph.cta_strap.field_paragraphs_reference
+    - paragraphs.paragraphs_type.cta_strap
+  module:
+    - entity_reference_revisions
+_core:
+id: paragraph.cta_strap.full_width
+targetEntityType: paragraph
+bundle: cta_strap
+mode: full_width
+content:
+  field_paragraphs_reference:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden:
+  field_bg_color: true
+  field_color: true

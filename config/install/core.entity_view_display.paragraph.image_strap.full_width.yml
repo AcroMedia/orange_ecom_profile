@@ -1,0 +1,53 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full_width
+    - field.field.paragraph.image_strap.field_alignment
+    - field.field.paragraph.image_strap.field_bg_color
+    - field.field.paragraph.image_strap.field_color
+    - field.field.paragraph.image_strap.field_image
+    - field.field.paragraph.image_strap.field_paragraphs_reference
+    - field.field.paragraph.image_strap.field_paragraphs_reference_2
+    - image.style.half_screen
+    - paragraphs.paragraphs_type.image_strap
+  module:
+    - entity_reference_revisions
+    - image
+_core:
+id: paragraph.image_strap.full_width
+targetEntityType: paragraph
+bundle: image_strap
+mode: full_width
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: half_screen
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_paragraphs_reference:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_paragraphs_reference_2:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden:
+  field_alignment: true
+  field_bg_color: true
+  field_color: true

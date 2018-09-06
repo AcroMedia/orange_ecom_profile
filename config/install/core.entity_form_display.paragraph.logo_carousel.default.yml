@@ -21,6 +21,7 @@ third_party_settings:
         open: false
         required_fields: true
       label: 'Component Details'
+_core:
 id: paragraph.logo_carousel.default
 targetEntityType: paragraph
 bundle: logo_carousel

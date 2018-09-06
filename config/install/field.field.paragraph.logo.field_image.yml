@@ -13,6 +13,7 @@ third_party_settings:
       alt: alt
       title: title
       file: '0'
+_core:
 id: paragraph.logo.field_image
 field_name: field_image
 entity_type: paragraph

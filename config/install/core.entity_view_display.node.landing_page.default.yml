@@ -2,10 +2,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.landing_page.field_meta_tags
     - field.field.node.landing_page.field_paragraphs_reference
     - node.type.landing_page
   module:
     - entity_reference_revisions
+    - metatag
     - user
 _core:
 id: node.landing_page.default
@@ -13,11 +15,18 @@ targetEntityType: node
 bundle: landing_page
 mode: default
 content:
+  field_meta_tags:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
   field_paragraphs_reference:
     weight: 0
     label: hidden
     settings:
-      view_mode: default
+      view_mode: full_width
       link: ''
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view

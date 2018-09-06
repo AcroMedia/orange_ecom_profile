@@ -1,0 +1,52 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.standard
+    - core.entity_view_mode.commerce_product.summary
+    - field.field.commerce_product.standard.body
+    - field.field.commerce_product.standard.field_images
+    - field.field.commerce_product.standard.field_meta_tags
+    - field.field.commerce_product.standard.field_paragraph_reference
+    - field.field.commerce_product.standard.field_paragraphs_reference
+    - field.field.commerce_product.standard.field_paragraphs_reference_2
+    - field.field.commerce_product.standard.field_product_reviews
+    - field.field.commerce_product.standard.field_terms_reference
+    - field.field.commerce_product.standard.field_terms_reference_2
+    - field.field.commerce_product.standard.field_text_long
+    - field.field.commerce_product.standard.stores
+    - field.field.commerce_product.standard.variations
+    - image.style.product_thumbnail
+  module:
+    - image
+_core:
+id: commerce_product.standard.summary
+targetEntityType: commerce_product
+bundle: standard
+mode: summary
+content:
+  field_images:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: product_thumbnail
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  field_meta_tags: true
+  field_paragraph_reference: true
+  field_paragraphs_reference: true
+  field_paragraphs_reference_2: true
+  field_product_reviews: true
+  field_terms_reference: true
+  field_terms_reference_2: true
+  field_text_long: true
+  langcode: true
+  stores: true
+  title: true
+  uid: true
+  variations: true

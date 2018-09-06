@@ -1,0 +1,44 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_strap.field_paragraphs_reference
+    - paragraphs.paragraphs_type.content_strap
+  module:
+    - field_group
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_content_strap_details:
+      children:
+        - field_paragraphs_reference
+      parent_name: ''
+      weight: 20
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Content Strap Details'
+id: paragraph.content_strap.default
+targetEntityType: paragraph
+bundle: content_strap
+mode: default
+content:
+  field_paragraphs_reference:
+    weight: 0
+    settings:
+      title: 'Strap Column'
+      title_plural: 'Strap Columns'
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

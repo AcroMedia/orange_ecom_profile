@@ -3,6 +3,7 @@ status: true
 dependencies:
   module:
     - image_effects
+_core:
 name: logo
 label: Logo
 effects:

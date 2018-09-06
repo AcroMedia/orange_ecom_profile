@@ -1,6 +1,7 @@
 langcode: en
 status: true
 dependencies: {  }
+_core:
 id: logo_carousel
 label: 'Logo Carousel'
 icon_uuid: null

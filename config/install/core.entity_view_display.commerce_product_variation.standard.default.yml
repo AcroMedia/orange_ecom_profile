@@ -41,5 +41,6 @@ content:
 hidden:
   field_images: true
   langcode: true
+  list_price: true
   product_id: true
   weight: true

@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_strap_column.field_bg_color
+    - field.field.paragraph.content_strap_column.field_color
+    - field.field.paragraph.content_strap_column.field_image
+    - field.field.paragraph.content_strap_column.field_opacity
+    - field.field.paragraph.content_strap_column.field_paragraphs_reference
+    - paragraphs.paragraphs_type.content_strap_column
+  module:
+    - entity_reference_revisions
+id: paragraph.content_strap_column.default
+targetEntityType: paragraph
+bundle: content_strap_column
+mode: default
+content:
+  field_paragraphs_reference:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden:
+  field_bg_color: true
+  field_color: true
+  field_image: true
+  field_opacity: true

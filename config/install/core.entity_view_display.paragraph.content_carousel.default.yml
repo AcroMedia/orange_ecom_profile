@@ -6,6 +6,7 @@ dependencies:
     - paragraphs.paragraphs_type.content_carousel
   module:
     - entity_reference_revisions
+_core:
 id: paragraph.content_carousel.default
 targetEntityType: paragraph
 bundle: content_carousel

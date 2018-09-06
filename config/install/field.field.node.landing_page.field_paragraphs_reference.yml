@@ -5,6 +5,7 @@ dependencies:
     - field.storage.node.field_paragraphs_reference
     - node.type.landing_page
     - paragraphs.paragraphs_type.content_carousel
+    - paragraphs.paragraphs_type.content_strap
     - paragraphs.paragraphs_type.cta_strap
     - paragraphs.paragraphs_type.image_content
     - paragraphs.paragraphs_type.image_strap
@@ -19,7 +20,7 @@ field_name: field_paragraphs_reference
 entity_type: node
 bundle: landing_page
 label: Components
-description: '<p>See the <a href="/modules/contrib/acro_live_css/gfx/live-css-components-guide.jpg" target="_blank">Components Guide</a> for component information & previews.</p>'
+description: '<p>See the <a href="/livecss#components" target="_blank">Live CSS</a> for component information & previews.</p>'
 required: false
 translatable: true
 default_value: {  }
@@ -30,6 +31,7 @@ settings:
     negate: 0
     target_bundles:
       strap: strap
+      content_strap: content_strap
       image_strap: image_strap
       cta_strap: cta_strap
       image_content: image_content
@@ -39,59 +41,65 @@ settings:
     target_bundles_drag_drop:
       strap:
         enabled: true
-        weight: -39
+        weight: -43
+      content_strap:
+        enabled: true
+        weight: -42
       image_strap:
         enabled: true
-        weight: -38
+        weight: -41
       cta_strap:
         enabled: true
-        weight: -37
+        weight: -40
       image_content:
         enabled: true
-        weight: -36
+        weight: -39
       content_carousel:
         enabled: true
-        weight: -35
+        weight: -38
       logo_carousel:
         enabled: true
-        weight: -34
+        weight: -37
       tabs:
         enabled: true
-        weight: -33
+        weight: -36
       featured_products:
-        weight: -32
+        weight: -35
         enabled: false
       accordion:
-        weight: -31
+        weight: -34
         enabled: false
       accordion_item:
-        weight: -30
+        weight: -33
         enabled: false
       carousel:
-        weight: -29
+        weight: -32
         enabled: false
       carousel_slide:
-        weight: -28
+        weight: -31
         enabled: false
       standard_content:
-        weight: -27
+        weight: -30
         enabled: false
       tab:
-        weight: -26
+        weight: -29
         enabled: false
       webform:
-        weight: -25
+        weight: -28
         enabled: false
       webform_content:
-        weight: -24
+        weight: -27
         enabled: false
       button:
-        weight: -23
+        weight: -26
         enabled: false
       cta:
-        weight: -22
+        weight: -25
         enabled: false
       logo:
-        weight: -21
+        weight: -24
+        enabled: false
+      content_strap_column:
+        weight: -23
         enabled: false
 field_type: entity_reference_revisions

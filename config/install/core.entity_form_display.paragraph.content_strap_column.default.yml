@@ -1,0 +1,106 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_strap_column.field_bg_color
+    - field.field.paragraph.content_strap_column.field_color
+    - field.field.paragraph.content_strap_column.field_image
+    - field.field.paragraph.content_strap_column.field_opacity
+    - field.field.paragraph.content_strap_column.field_paragraphs_reference
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.content_strap_column
+  module:
+    - color_field
+    - field_group
+    - image
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_content_strap_details:
+      children:
+        - field_color
+        - field_bg_color
+        - field_image
+        - field_opacity
+        - group_content
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Content Strap Details'
+    group_content:
+      children:
+        - field_paragraphs_reference
+      parent_name: group_content_strap_details
+      weight: 11
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Content
+id: paragraph.content_strap_column.default
+targetEntityType: paragraph
+bundle: content_strap_column
+mode: default
+content:
+  field_bg_color:
+    weight: 7
+    settings:
+      show_input: '1'
+      palette: ''
+      show_buttons: '1'
+      allow_empty: '1'
+      show_palette: '0'
+      show_palette_only: '0'
+    third_party_settings: {  }
+    type: color_field_widget_spectrum
+    region: content
+  field_color:
+    weight: 6
+    settings:
+      show_input: '1'
+      palette: ''
+      show_buttons: '1'
+      allow_empty: '1'
+      show_palette: '0'
+      show_palette_only: '0'
+    third_party_settings: {  }
+    type: color_field_widget_spectrum
+    region: content
+  field_image:
+    weight: 8
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_opacity:
+    weight: 9
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_paragraphs_reference:
+    weight: 10
+    settings:
+      title: Component
+      title_plural: Components
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

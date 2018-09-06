@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: content_strap_column
+label: 'Content Strap Column'
+icon_uuid: null
+description: 'Sub-Component: Column for the Content Strap.'
+behavior_plugins: {  }

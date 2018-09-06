@@ -8,6 +8,7 @@ dependencies:
     - field.field.commerce_product.standard.field_meta_tags
     - field.field.commerce_product.standard.field_paragraph_reference
     - field.field.commerce_product.standard.field_paragraphs_reference
+    - field.field.commerce_product.standard.field_paragraphs_reference_2
     - field.field.commerce_product.standard.field_product_reviews
     - field.field.commerce_product.standard.field_terms_reference
     - field.field.commerce_product.standard.field_terms_reference_2
@@ -105,7 +106,7 @@ content:
     type: image_image
     region: content
   field_meta_tags:
-    weight: 96
+    weight: 17
     settings: {  }
     third_party_settings: {  }
     type: metatag_firehose
@@ -128,6 +129,18 @@ content:
     settings:
       title: Tab
       title_plural: Tabs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  field_paragraphs_reference_2:
+    type: entity_reference_paragraphs
+    weight: 16
+    settings:
+      title: Component
+      title_plural: Components
       edit_mode: closed
       add_mode: dropdown
       form_display_mode: default

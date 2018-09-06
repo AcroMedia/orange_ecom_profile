@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full_width
+    - field.field.paragraph.strap.field_bg_color
+    - field.field.paragraph.strap.field_color
+    - field.field.paragraph.strap.field_image
+    - field.field.paragraph.strap.field_opacity
+    - field.field.paragraph.strap.field_paragraphs_reference
+    - field.field.paragraph.strap.field_paragraphs_reference_2
+    - paragraphs.paragraphs_type.strap
+  module:
+    - entity_reference_revisions
+_core:
+id: paragraph.strap.full_width
+targetEntityType: paragraph
+bundle: strap
+mode: full_width
+content:
+  field_paragraphs_reference:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_paragraphs_reference_2:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_bg_color: true
+  field_color: true
+  field_image: true
+  field_opacity: true

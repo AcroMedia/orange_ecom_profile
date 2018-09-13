@@ -2,29 +2,27 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_paragraphs_reference
-    - node.type.landing_page
+    - field.storage.taxonomy_term.field_paragraphs_reference
     - paragraphs.paragraphs_type.content_carousel
     - paragraphs.paragraphs_type.content_strap
     - paragraphs.paragraphs_type.cta_strap
+    - paragraphs.paragraphs_type.featured_products
     - paragraphs.paragraphs_type.image_content
     - paragraphs.paragraphs_type.image_strap
     - paragraphs.paragraphs_type.logo_carousel
-    - paragraphs.paragraphs_type.standard_content
     - paragraphs.paragraphs_type.strap
-    - paragraphs.paragraphs_type.tabs
-    - paragraphs.paragraphs_type.webform
+    - taxonomy.vocabulary.product_categories
   module:
     - entity_reference_revisions
 _core:
-id: node.landing_page.field_paragraphs_reference
+id: taxonomy_term.product_categories.field_paragraphs_reference
 field_name: field_paragraphs_reference
-entity_type: node
-bundle: landing_page
+entity_type: taxonomy_term
+bundle: product_categories
 label: Components
-description: '<p>See the <a href="/livecss#components" target="_blank">Live CSS</a> for component information & previews.</p>'
+description: 'Components that will be displayed below the category body content.<br>See the <a href="/livecss#components" target="_blank">Live CSS</a> for component information & previews.<br>'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -32,30 +30,28 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      standard_content: standard_content
+      featured_products: featured_products
       strap: strap
-      content_strap: content_strap
-      image_strap: image_strap
       cta_strap: cta_strap
+      image_strap: image_strap
+      content_strap: content_strap
       image_content: image_content
       content_carousel: content_carousel
       logo_carousel: logo_carousel
-      tabs: tabs
-      webform: webform
     target_bundles_drag_drop:
-      standard_content:
+      featured_products:
         enabled: true
         weight: -43
       strap:
         enabled: true
         weight: -42
-      content_strap:
+      cta_strap:
         enabled: true
         weight: -41
       image_strap:
         enabled: true
         weight: -40
-      cta_strap:
+      content_strap:
         enabled: true
         weight: -39
       image_content:
@@ -67,43 +63,43 @@ settings:
       logo_carousel:
         enabled: true
         weight: -36
-      tabs:
-        enabled: true
-        weight: -35
-      webform:
-        enabled: true
-        weight: -34
-      featured_products:
-        weight: -33
-        enabled: false
       accordion:
-        weight: -32
+        weight: -35
         enabled: false
       accordion_item:
-        weight: -31
-        enabled: false
-      carousel:
-        weight: -30
-        enabled: false
-      carousel_slide:
-        weight: -29
-        enabled: false
-      tab:
-        weight: -28
-        enabled: false
-      webform_content:
-        weight: -27
+        weight: -34
         enabled: false
       button:
-        weight: -26
+        weight: -33
         enabled: false
-      cta:
-        weight: -25
+      carousel:
+        weight: -32
         enabled: false
-      logo:
-        weight: -24
+      carousel_slide:
+        weight: -31
         enabled: false
       content_strap_column:
+        weight: -30
+        enabled: false
+      cta:
+        weight: -29
+        enabled: false
+      logo:
+        weight: -28
+        enabled: false
+      standard_content:
+        weight: -27
+        enabled: false
+      tab:
+        weight: -26
+        enabled: false
+      tabs:
+        weight: -25
+        enabled: false
+      webform:
+        weight: -24
+        enabled: false
+      webform_content:
         weight: -23
         enabled: false
 field_type: entity_reference_revisions

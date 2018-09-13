@@ -2,8 +2,8 @@ langcode: en
 status: true
 dependencies:
   module:
-    - taxonomy
-id: taxonomy_term.token
+    - shortcut
+id: shortcut.token
 label: Token
-targetEntityType: taxonomy_term
+targetEntityType: shortcut
 cache: true

@@ -3,6 +3,7 @@ status: true
 dependencies:
   module:
     - commerce_product
+_core:
 id: commerce_product.summary
 label: Summary
 targetEntityType: commerce_product

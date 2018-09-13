@@ -2,13 +2,13 @@ langcode: en
 status: true
 dependencies:
   module:
-    - commerce_product
     - entity_reference_revisions
     - paragraphs
+    - taxonomy
 _core:
-id: commerce_product.field_paragraphs_reference_2
-field_name: field_paragraphs_reference_2
-entity_type: commerce_product
+id: taxonomy_term.field_paragraphs_reference
+field_name: field_paragraphs_reference
+entity_type: taxonomy_term
 type: entity_reference_revisions
 settings:
   target_type: paragraph

@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.blog_categories.field_meta_tags
+    - taxonomy.vocabulary.blog_categories
+  module:
+    - metatag
+    - text
+_core:
+id: taxonomy_term.blog_categories.default
+targetEntityType: taxonomy_term
+bundle: blog_categories
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_meta_tags:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+hidden:
+  langcode: true

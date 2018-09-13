@@ -5,5 +5,5 @@ _core:
 name: 'Product Categories'
 vid: product_categories
 description: ''
-hierarchy: 0
+hierarchy: 1
 weight: 0

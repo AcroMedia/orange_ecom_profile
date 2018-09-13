@@ -3,6 +3,7 @@ status: true
 dependencies:
   module:
     - paragraphs
+_core:
 id: paragraph.full_width
 label: 'Full Width'
 targetEntityType: paragraph

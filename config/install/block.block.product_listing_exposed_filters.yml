@@ -12,7 +12,7 @@ _core:
 id: product_listing_exposed_filters
 theme: orange_ecom_starter
 region: store_filters
-weight: -7
+weight: -9
 provider: null
 plugin: 'views_exposed_filter_block:store-product_listing'
 settings:

@@ -7,6 +7,7 @@ dependencies:
     - paragraphs.paragraphs_type.content_strap_column
   module:
     - entity_reference_revisions
+_core:
 id: paragraph.content_strap.field_paragraphs_reference
 field_name: field_paragraphs_reference
 entity_type: paragraph

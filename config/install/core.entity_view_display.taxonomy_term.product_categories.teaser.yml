@@ -1,0 +1,48 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.teaser
+    - field.field.taxonomy_term.product_categories.field_image
+    - field.field.taxonomy_term.product_categories.field_meta_tags
+    - field.field.taxonomy_term.product_categories.field_paragraphs_reference
+    - image.style.half_screen
+    - taxonomy.vocabulary.product_categories
+  module:
+    - entity_reference_revisions
+    - image
+    - text
+_core:
+id: taxonomy_term.product_categories.teaser
+targetEntityType: taxonomy_term
+bundle: product_categories
+mode: teaser
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: half_screen
+      image_link: ''
+    third_party_settings: {  }
+  field_paragraphs_reference:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+hidden:
+  field_meta_tags: true
+  langcode: true

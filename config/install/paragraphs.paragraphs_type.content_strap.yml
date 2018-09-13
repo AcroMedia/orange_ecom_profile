@@ -1,6 +1,7 @@
 langcode: en
 status: true
 dependencies: {  }
+_core:
 id: content_strap
 label: 'Content Strap'
 icon_uuid: null

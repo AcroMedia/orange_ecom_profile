@@ -9,6 +9,7 @@ dependencies:
     - paragraphs.paragraphs_type.webform
   module:
     - entity_reference_revisions
+_core:
 id: paragraph.content_strap_column.field_paragraphs_reference
 field_name: field_paragraphs_reference
 entity_type: paragraph

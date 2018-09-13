@@ -2,15 +2,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_meta_tags
-    - node.type.landing_page
+    - field.storage.taxonomy_term.field_meta_tags
+    - taxonomy.vocabulary.blog_categories
   module:
     - metatag
 _core:
-id: node.landing_page.field_meta_tags
+id: taxonomy_term.blog_categories.field_meta_tags
 field_name: field_meta_tags
-entity_type: node
-bundle: landing_page
+entity_type: taxonomy_term
+bundle: blog_categories
 label: 'Meta Tags'
 description: ''
 required: false

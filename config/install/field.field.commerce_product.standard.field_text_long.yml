@@ -6,16 +6,16 @@ dependencies:
     - field.storage.commerce_product.field_text_long
   module:
     - text
-_core:
 id: commerce_product.standard.field_text_long
 field_name: field_text_long
 entity_type: commerce_product
 bundle: standard
-label: Summary
+label: 'Product Summary'
 description: 'A short summary describing the product as an introduction to the customer.'
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: text_long
+settings:
+  display_summary: false
+field_type: text_with_summary

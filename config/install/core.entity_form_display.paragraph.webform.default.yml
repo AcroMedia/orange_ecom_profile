@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.webform.field_text_long_formatted
+    - field.field.paragraph.webform.field_text_long
     - field.field.paragraph.webform.field_webform_reference
     - paragraphs.paragraphs_type.webform
   module:
@@ -13,7 +13,7 @@ third_party_settings:
   field_group:
     group_webform_details:
       children:
-        - field_text_long_formatted
+        - field_text_long
         - field_webform_reference
       parent_name: ''
       weight: 20
@@ -30,16 +30,17 @@ targetEntityType: paragraph
 bundle: webform
 mode: default
 content:
-  field_text_long_formatted:
-    weight: 21
+  field_text_long:
+    weight: 23
     settings:
-      rows: 5
+      rows: 9
+      summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
+    type: text_textarea_with_summary
     region: content
   field_webform_reference:
-    weight: 22
+    weight: 24
     settings:
       default_data: false
     third_party_settings: {  }

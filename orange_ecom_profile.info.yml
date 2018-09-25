@@ -42,7 +42,6 @@ dependencies:
   - quickedit
   - rdf
   - responsive_image
-  - search
   - shortcut
   - syslog
   - system
@@ -79,6 +78,10 @@ dependencies:
   # Contrib.
   - admin_toolbar
   - admin_toolbar_tools
+  - advagg
+  - advagg_bundler
+  - advagg_css_minify
+  - advagg_js_minify
   - better_exposed_filters
   - ctools
   - ckeditor_font

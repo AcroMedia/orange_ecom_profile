@@ -5,8 +5,8 @@ dependencies:
     - field.field.paragraph.carousel_slide.field_image
     - field.field.paragraph.carousel_slide.field_image_2
     - field.field.paragraph.carousel_slide.field_link
-    - field.field.paragraph.carousel_slide.field_text
-    - field.field.paragraph.carousel_slide.field_text_long_formatted
+    - field.field.paragraph.carousel_slide.field_string
+    - field.field.paragraph.carousel_slide.field_text_long
     - image.style.carousel_slide_mobile
     - paragraphs.paragraphs_type.carousel_slide
   module:
@@ -49,7 +49,7 @@ content:
     third_party_settings: {  }
     type: link
     region: content
-  field_text:
+  field_string:
     weight: 2
     label: hidden
     settings:
@@ -57,7 +57,7 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-  field_text_long_formatted:
+  field_text_long:
     weight: 3
     label: hidden
     settings: {  }

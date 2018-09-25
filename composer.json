@@ -6,6 +6,7 @@
   "license": "GPL-2.0+",
   "require": {
     "drupal/admin_toolbar": "^1.24",
+    "drupal/advagg": "^3.5",
     "drupal/commerce": "^2.0",
     "drupal/commerce_payment": "^2.7",
     "drupal/commerce_shipping": "2.x-dev",

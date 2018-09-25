@@ -151,7 +151,7 @@ function orange_ecom_profile_install() {
 
   // Create a Standard Content paragraph.
   $paragraph_standard_content = Paragraph::create(['type' => 'standard_content']);
-  $paragraph_standard_content->set('field_text_long_formatted', [
+  $paragraph_standard_content->set('field_text_long', [
     'value' => '<h3>Company Name</h3><p>555 Sample St.<br /> Kelowna, BC<br /> V1V 3C3<br /> Canada</p><p><strong>Email:</strong> <a href="mailto:info@company-name.com">info@company-name.com</a></p><p><iframe allowfullscreen="" frameborder="0" height="450" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.7333618239945!2d-119.43648028428908!3d49.88503367940133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537d8cce5c35df55%3A0xb5f3bd59fc50cd10!2sAcro+Media+Inc.!5e0!3m2!1sen!2sca!4v1529745178877" style="border:0" width="600"></iframe></p>',
     'format' => 'html',
   ]);
@@ -167,7 +167,7 @@ function orange_ecom_profile_install() {
     'target_id' => 'contact',
     'status' => 'open',
   ]);
-  $paragraph_webform_content->set('field_text_long_formatted', [
+  $paragraph_webform_content->set('field_text_long', [
     'value' => '<h3>Questions? Send us a message!</h3><p>All fields required, unless indicated.</p>',
     'format' => 'html',
   ]);

@@ -2,11 +2,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_text
+    - field.storage.paragraph.field_string
     - paragraphs.paragraphs_type.carousel_slide
-_core:
-id: paragraph.carousel_slide.field_text
-field_name: field_text
+id: paragraph.carousel_slide.field_string
+field_name: field_string
 entity_type: paragraph
 bundle: carousel_slide
 label: Title

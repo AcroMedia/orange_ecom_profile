@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.featured_products.field_products_reference
-    - field.field.paragraph.featured_products.field_text
+    - field.field.paragraph.featured_products.field_string
     - paragraphs.paragraphs_type.featured_products
 _core:
 id: paragraph.featured_products.default
@@ -20,7 +20,7 @@ content:
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: content
-  field_text:
+  field_string:
     weight: 0
     label: hidden
     settings:

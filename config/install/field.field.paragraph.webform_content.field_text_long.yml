@@ -2,13 +2,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_text_long_formatted
+    - field.storage.paragraph.field_text_long
     - paragraphs.paragraphs_type.webform_content
   module:
     - text
-_core:
-id: paragraph.webform_content.field_text_long_formatted
-field_name: field_text_long_formatted
+id: paragraph.webform_content.field_text_long
+field_name: field_text_long
 entity_type: paragraph
 bundle: webform_content
 label: 'Webform Intro Content'
@@ -17,5 +16,6 @@ required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: text_long
+settings:
+  display_summary: false
+field_type: text_with_summary

@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.standard_content.field_text_long_formatted
+    - field.field.paragraph.standard_content.field_text_long
     - paragraphs.paragraphs_type.standard_content
   module:
     - text
@@ -12,7 +12,7 @@ targetEntityType: paragraph
 bundle: standard_content
 mode: default
 content:
-  field_text_long_formatted:
+  field_text_long:
     weight: 0
     label: hidden
     settings: {  }

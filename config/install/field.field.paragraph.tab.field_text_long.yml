@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_long
+    - paragraphs.paragraphs_type.tab
+  module:
+    - text
+id: paragraph.tab.field_text_long
+field_name: field_text_long
+entity_type: paragraph
+bundle: tab
+label: 'Tab Body Content'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

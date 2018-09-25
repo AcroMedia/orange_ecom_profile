@@ -2,8 +2,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.tab.field_text
-    - field.field.paragraph.tab.field_text_long_formatted
+    - field.field.paragraph.tab.field_string
+    - field.field.paragraph.tab.field_text_long
     - paragraphs.paragraphs_type.tab
   module:
     - text
@@ -13,16 +13,16 @@ targetEntityType: paragraph
 bundle: tab
 mode: default
 content:
-  field_text:
-    weight: 2
+  field_string:
+    weight: 0
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-  field_text_long_formatted:
-    weight: 3
+  field_text_long:
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }

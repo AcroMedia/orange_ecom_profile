@@ -4,5 +4,5 @@ dependencies: {  }
 _core:
 id: admin
 label: Administration
-description: 'Administrative task links'
+description: 'Administrative task links.'
 locked: true

@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.webform.field_text_long_formatted
+    - field.field.paragraph.webform.field_text_long
     - field.field.paragraph.webform.field_webform_reference
     - paragraphs.paragraphs_type.webform
   module:
@@ -14,7 +14,7 @@ targetEntityType: paragraph
 bundle: webform
 mode: default
 content:
-  field_text_long_formatted:
+  field_text_long:
     weight: 0
     label: hidden
     settings: {  }

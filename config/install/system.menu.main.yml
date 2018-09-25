@@ -3,6 +3,6 @@ status: true
 dependencies: {  }
 _core:
 id: main
-label: 'Main navigation'
-description: 'Site section links'
+label: 'Main Navigation'
+description: 'The main navigation for the site.'
 locked: true

@@ -2,8 +2,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.accordion_item.field_text
-    - field.field.paragraph.accordion_item.field_text_long_formatted
+    - field.field.paragraph.accordion_item.field_string
+    - field.field.paragraph.accordion_item.field_text_long
     - paragraphs.paragraphs_type.accordion_item
   module:
     - text
@@ -13,16 +13,16 @@ targetEntityType: paragraph
 bundle: accordion_item
 mode: default
 content:
-  field_text:
-    weight: 0
+  field_string:
+    weight: 2
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-  field_text_long_formatted:
-    weight: 1
+  field_text_long:
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }

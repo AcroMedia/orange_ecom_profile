@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.accordion.field_paragraphs_reference
-    - field.field.paragraph.accordion.field_text
+    - field.field.paragraph.accordion.field_string
     - paragraphs.paragraphs_type.accordion
   module:
     - entity_reference_revisions
@@ -22,7 +22,7 @@ content:
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
     region: content
-  field_text:
+  field_string:
     weight: 0
     label: hidden
     settings:

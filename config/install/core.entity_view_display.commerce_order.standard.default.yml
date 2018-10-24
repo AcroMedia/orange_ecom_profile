@@ -85,3 +85,4 @@ hidden:
   order_number: true
   shipments: true
   store_id: true
+  total_paid: true

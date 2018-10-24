@@ -6,6 +6,7 @@ dependencies:
     - paragraphs.paragraphs_type.cta
   module:
     - text
+_core:
 id: paragraph.cta.field_text_long
 field_name: field_text_long
 entity_type: paragraph

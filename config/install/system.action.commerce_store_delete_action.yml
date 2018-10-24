@@ -5,6 +5,7 @@ dependencies:
     module:
       - commerce_store
   module:
+    - commerce_store
     - entity
 _core:
 id: commerce_store_delete_action

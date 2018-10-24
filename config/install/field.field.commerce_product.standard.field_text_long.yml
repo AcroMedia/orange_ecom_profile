@@ -6,6 +6,7 @@ dependencies:
     - field.storage.commerce_product.field_text_long
   module:
     - text
+_core:
 id: commerce_product.standard.field_text_long
 field_name: field_text_long
 entity_type: commerce_product

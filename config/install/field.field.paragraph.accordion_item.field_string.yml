@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.storage.paragraph.field_string
     - paragraphs.paragraphs_type.accordion_item
+_core:
 id: paragraph.accordion_item.field_string
 field_name: field_string
 entity_type: paragraph

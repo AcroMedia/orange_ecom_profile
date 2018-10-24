@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.storage.paragraph.field_string
     - paragraphs.paragraphs_type.featured_products
+_core:
 id: paragraph.featured_products.field_string
 field_name: field_string
 entity_type: paragraph

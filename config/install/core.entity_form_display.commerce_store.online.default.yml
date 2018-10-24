@@ -5,6 +5,7 @@ dependencies:
     - commerce_store.commerce_store_type.online
   module:
     - address
+    - path
 _core:
 id: commerce_store.online.default
 targetEntityType: commerce_store
@@ -52,6 +53,12 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
     third_party_settings: {  }
   prices_include_tax:
     type: boolean_checkbox

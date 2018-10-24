@@ -6,6 +6,7 @@ dependencies:
     - paragraphs.paragraphs_type.standard_content
   module:
     - text
+_core:
 id: paragraph.standard_content.field_text_long
 field_name: field_text_long
 entity_type: paragraph

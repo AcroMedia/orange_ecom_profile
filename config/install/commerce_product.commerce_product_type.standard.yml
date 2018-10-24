@@ -6,6 +6,7 @@ id: standard
 label: Standard
 description: 'A standard product.'
 variationType: standard
+multipleVariations: true
 injectVariationFields: true
 traits: {  }
 locked: false

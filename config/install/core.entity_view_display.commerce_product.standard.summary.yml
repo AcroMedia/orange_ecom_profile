@@ -13,6 +13,7 @@ dependencies:
     - field.field.commerce_product.standard.field_product_reviews
     - field.field.commerce_product.standard.field_terms_reference
     - field.field.commerce_product.standard.field_terms_reference_2
+    - field.field.commerce_product.standard.field_text_long
     - field.field.commerce_product.standard.stores
     - field.field.commerce_product.standard.variations
     - image.style.product_thumbnail
@@ -43,6 +44,7 @@ hidden:
   field_product_reviews: true
   field_terms_reference: true
   field_terms_reference_2: true
+  field_text_long: true
   langcode: true
   stores: true
   title: true

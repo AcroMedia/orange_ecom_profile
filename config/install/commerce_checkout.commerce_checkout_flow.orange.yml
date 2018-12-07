@@ -12,38 +12,39 @@ label: Orange
 plugin: orange_checkout_flow
 configuration:
   display_checkout_progress: true
+  display_checkout_progress_breadcrumb_links: 1
   panes:
-    completion_message:
-      step: complete
-      weight: '7'
-    contact_information:
-      double_entry: false
-      step: order_information
-      weight: '1'
     login:
       allow_guest_checkout: true
       allow_registration: false
       step: checkout_as
       weight: '0'
-    order_summary:
-      view: ''
-      step: _sidebar
-      weight: '8'
-    review:
-      step: review
-      weight: '5'
-    payment_information:
+    contact_information:
+      double_entry: false
       step: order_information
-      weight: '3'
-    payment_process:
-      capture: true
-      step: payment
-      weight: '6'
-    coupon_redemption:
-      allow_multiple: false
-      step: order_information
-      weight: '4'
+      weight: '1'
     shipping_information:
       require_shipping_profile: true
       step: order_information
       weight: '2'
+    payment_information:
+      step: order_information
+      weight: '3'
+    coupon_redemption:
+      allow_multiple: false
+      step: order_information
+      weight: '4'
+    review:
+      step: review
+      weight: '5'
+    payment_process:
+      capture: true
+      step: payment
+      weight: '6'
+    completion_message:
+      step: complete
+      weight: '7'
+    order_summary:
+      view: ''
+      step: _sidebar
+      weight: '8'

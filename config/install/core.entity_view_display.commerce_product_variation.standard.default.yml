@@ -13,6 +13,15 @@ targetEntityType: commerce_product_variation
 bundle: standard
 mode: default
 content:
+  list_price:
+    type: commerce_price_default
+    weight: 3
+    region: content
+    label: inline
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
   price:
     label: hidden
     type: commerce_price_default
@@ -41,6 +50,5 @@ content:
 hidden:
   field_images: true
   langcode: true
-  list_price: true
   product_id: true
   weight: true

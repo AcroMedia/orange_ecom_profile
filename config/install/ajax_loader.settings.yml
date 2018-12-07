@@ -1,0 +1,6 @@
+throbber: throbber_circle
+hide_ajax_message: true
+always_fullscreen: true
+show_admin_paths: false
+throbber_position: body
+_core:

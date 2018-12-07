@@ -71,11 +71,11 @@ function orange_ecom_profile_install() {
     'promote' => 0,
     'created' => time(),
     'langcode' => 'en',
-    'title' => 'Page Not Found',
+    'title' => 'Oh Snap!',
   ]);
 
   $node_404->set('body', [
-    'value' => '<p>The requested document was not found on our server.</p><p>If you are using a bookmarked page, the page may have been deleted or moved. If you believe you have received this message in error, please <a href="/contact-us">contact us</a> regarding the page. Please remember to include the URL.</p>',
+    'value' => '<p>&nbsp;</p><p><img src="/themes/contrib/orange_ecom_starter/gfx/404.jpg" alt="Page Not Found" class="align-left" />We can\'t find the page you\'re looking for. If you are using a bookmarked page, the page may have been deleted or moved.</p><p>If you believe you have received this message in error, please <a href="/contact-us">contact us</a> regarding the page. Please remember to include the URL.</p>',
     'format' => 'html'
   ]);
 
@@ -93,11 +93,11 @@ function orange_ecom_profile_install() {
     'promote' => 0,
     'created' => time(),
     'langcode' => 'en',
-    'title' => 'Access Denied',
+    'title' => "Sorry, you're not on the list",
   ]);
 
   $node_403->set('body', [
-    'value' => '<p>Access to this page has been denied.</p><p>If you are using a bookmarked page, the page may have been deleted or moved. If you believe you have received this message in error, please <a href="/contact-us">contact us</a> regarding the page. Please remember to include the URL.</p>',
+    'value' => '<p>&nbsp;</p><p><img src="/themes/contrib/orange_ecom_starter/gfx/403.jpg" alt="Access Denied" class="align-left" />Sorry, you can\'t go in there. Perhaps you need to <a href="/user">login</a>?</p><p>If you believe you have received this message in error, please <a href="/contact-us">contact us</a> regarding the page. Please remember to include the URL.</p>',
     'format' => 'html'
   ]);
 

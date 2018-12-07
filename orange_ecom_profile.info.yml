@@ -82,6 +82,7 @@ dependencies:
   - advagg_bundler
   - advagg_css_minify
   - advagg_js_minify
+  - ajax_loader
   - better_exposed_filters
   - ctools
   - ckeditor_font

@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+name: site_logo
+label: 'Site Logo'
+effects:
+  138064e8-f401-49b5-94ab-c5afcdcd7c0d:
+    uuid: 138064e8-f401-49b5-94ab-c5afcdcd7c0d
+    id: image_scale
+    weight: 1
+    data:
+      width: 270
+      height: 200
+      upscale: false

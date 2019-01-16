@@ -10,7 +10,7 @@
     "drupal/ajax_loader": "^1.4",
     "drupal/commerce": "^2.0",
     "drupal/commerce_payment": "^2.7",
-    "drupal/commerce_shipping": "2.x-dev",
+    "drupal/commerce_shipping": "^2.0",
     "drupal/config_inspector": "1.x-dev",
     "drupal/ctools": "^3.0",
     "drupal/entity": "1.x",

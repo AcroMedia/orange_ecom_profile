@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: color
+label: Color
+effects:
+  64477221-8b8d-4ba6-8417-806443167184:
+    uuid: 64477221-8b8d-4ba6-8417-806443167184
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 80
+      height: 80
+      anchor: center-center

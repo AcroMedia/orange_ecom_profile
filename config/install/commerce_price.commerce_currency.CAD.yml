@@ -4,5 +4,5 @@ dependencies: {  }
 currencyCode: CAD
 name: 'Canadian Dollar'
 numericCode: '124'
-symbol: CA$
+symbol: $
 fractionDigits: 2

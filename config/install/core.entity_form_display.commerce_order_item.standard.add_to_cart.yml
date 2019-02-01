@@ -16,7 +16,8 @@ content:
     type: commerce_product_variation_attributes
     weight: 0
     region: content
-    settings: {  }
+    settings:
+      enable_form_element: '1'
     third_party_settings: {  }
   quantity:
     type: number

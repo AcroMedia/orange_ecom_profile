@@ -5,6 +5,7 @@ dependencies:
     - commerce_product.commerce_product_type.standard
     - core.entity_view_display.comment.product_review.default
     - field.field.commerce_product.standard.body
+    - field.field.commerce_product.standard.field_image_hover
     - field.field.commerce_product.standard.field_images
     - field.field.commerce_product.standard.field_meta_tags
     - field.field.commerce_product.standard.field_paragraph_reference
@@ -86,6 +87,7 @@ content:
     region: content
 hidden:
   created: true
+  field_image_hover: true
   field_images: true
   field_meta_tags: true
   field_paragraphs_reference: true

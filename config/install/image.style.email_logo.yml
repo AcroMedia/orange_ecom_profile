@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+name: email_logo
+label: 'Email Logo'
+effects:
+  684c829a-b1a0-462c-91ae-9d6f3f4cb90b:
+    uuid: 684c829a-b1a0-462c-91ae-9d6f3f4cb90b
+    id: image_scale
+    weight: 1
+    data:
+      width: 500
+      height: 150
+      upscale: false

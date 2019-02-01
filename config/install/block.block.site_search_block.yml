@@ -2,20 +2,19 @@ langcode: en
 status: true
 dependencies:
   config:
-    - views.view.store
+    - views.view.site_search
   module:
     - views
   theme:
     - orange_ecom_starter
-_core:
-id: product_listing_site_search
+id: site_search_block
 theme: orange_ecom_starter
 region: site_search
-weight: -11
+weight: -10
 provider: null
-plugin: 'views_exposed_filter_block:store-product_listing'
+plugin: 'views_exposed_filter_block:site_search-site_search'
 settings:
-  id: 'views_exposed_filter_block:store-product_listing'
+  id: 'views_exposed_filter_block:site_search-site_search'
   label: ''
   provider: views
   label_display: '0'

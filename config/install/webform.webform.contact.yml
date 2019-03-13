@@ -15,7 +15,7 @@ id: contact
 title: 'Contact Us'
 description: 'Basic email contact webform.'
 category: null
-elements: "name:\n  '#type': textfield\n  '#title': 'Full Name'\n  '#description': 'Your first and last name'\n  '#placeholder': 'John Anderson'\n  '#required': true\nemail:\n  '#type': email\n  '#title': 'Email Address'\n  '#placeholder': email@address.com\n  '#required': true\nyour_phone_number:\n  '#type': tel\n  '#title': 'Phone Number'\n  '#placeholder': 555-555-5555\n  '#autocomplete': 'off'\nmessage:\n  '#type': textarea\n  '#title': Message\n  '#required': true\n  '#test': 'Please ignore this email.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send Message'\n"
+elements: "name:\n  '#type': textfield\n  '#title': 'Full Name'\n  '#description': 'Your first and last name'\n  '#placeholder': 'John Anderson'\n  '#required': true\nemail:\n  '#type': email\n  '#title': 'Email Address'\n  '#placeholder': email@address.com\n  '#required': true\nyour_phone_number:\n  '#type': tel\n  '#title': 'Phone Number'\n  '#placeholder': 555-555-5555\n  '#autocomplete': 'off'\nmessage:\n  '#type': textarea\n  '#title': Message\n  '#required': true\n  '#test': 'Please ignore this email.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send Message'"
 css: ''
 javascript: ''
 settings:

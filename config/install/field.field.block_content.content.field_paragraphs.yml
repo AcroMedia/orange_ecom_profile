@@ -1,0 +1,116 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.content
+    - field.storage.block_content.field_paragraphs
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.carousel
+    - paragraphs.paragraphs_type.content_carousel
+    - paragraphs.paragraphs_type.content_strap
+    - paragraphs.paragraphs_type.cta_strap
+    - paragraphs.paragraphs_type.featured_products
+    - paragraphs.paragraphs_type.image_content
+    - paragraphs.paragraphs_type.image_strap
+    - paragraphs.paragraphs_type.logo_carousel
+    - paragraphs.paragraphs_type.standard_content
+    - paragraphs.paragraphs_type.strap
+    - paragraphs.paragraphs_type.tabs
+    - paragraphs.paragraphs_type.webform
+    - paragraphs.paragraphs_type.webform_content
+  module:
+    - entity_reference_revisions
+id: block_content.content.field_paragraphs
+field_name: field_paragraphs
+entity_type: block_content
+bundle: content
+label: Components
+description: 'Displays components within this block.<br>See the <a href="/livecss#components" target="_blank">Live CSS</a> for component information & previews.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      accordion: accordion
+      carousel: carousel
+      content_carousel: content_carousel
+      content_strap: content_strap
+      cta_strap: cta_strap
+      featured_products: featured_products
+      image_content: image_content
+      image_strap: image_strap
+      logo_carousel: logo_carousel
+      standard_content: standard_content
+      strap: strap
+      tabs: tabs
+      webform: webform
+      webform_content: webform_content
+    target_bundles_drag_drop:
+      accordion:
+        enabled: true
+        weight: 22
+      accordion_item:
+        weight: 23
+        enabled: false
+      button:
+        weight: 24
+        enabled: false
+      carousel:
+        enabled: true
+        weight: 25
+      carousel_slide:
+        weight: 26
+        enabled: false
+      content_carousel:
+        enabled: true
+        weight: 27
+      content_strap:
+        enabled: true
+        weight: 28
+      content_strap_column:
+        weight: 29
+        enabled: false
+      cta:
+        weight: 30
+        enabled: false
+      cta_strap:
+        enabled: true
+        weight: 31
+      featured_products:
+        enabled: true
+        weight: 32
+      image_content:
+        enabled: true
+        weight: 33
+      image_strap:
+        enabled: true
+        weight: 34
+      logo:
+        weight: 35
+        enabled: false
+      logo_carousel:
+        enabled: true
+        weight: 36
+      standard_content:
+        enabled: true
+        weight: 37
+      strap:
+        enabled: true
+        weight: 38
+      tab:
+        weight: 39
+        enabled: false
+      tabs:
+        enabled: true
+        weight: 40
+      webform:
+        enabled: true
+        weight: 41
+      webform_content:
+        enabled: true
+        weight: 42
+field_type: entity_reference_revisions

@@ -5,6 +5,7 @@ dependencies:
     - commerce_product.commerce_product_type.standard
     - core.entity_view_mode.commerce_product.summary
     - field.field.commerce_product.standard.body
+    - field.field.commerce_product.standard.field_image_hover
     - field.field.commerce_product.standard.field_images
     - field.field.commerce_product.standard.field_meta_tags
     - field.field.commerce_product.standard.field_paragraph_reference
@@ -37,6 +38,7 @@ content:
 hidden:
   body: true
   created: true
+  field_image_hover: true
   field_meta_tags: true
   field_paragraph_reference: true
   field_paragraphs_reference: true

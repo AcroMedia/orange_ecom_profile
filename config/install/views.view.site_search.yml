@@ -2,13 +2,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block.block.site_search_block
     - field.storage.node.body
     - search_api.index.site
   module:
     - better_exposed_filters
     - search_api
     - text
+_core:
 id: site_search
 label: 'Site Search'
 module: views

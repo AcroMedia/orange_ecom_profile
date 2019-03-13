@@ -30,6 +30,7 @@ third_party_settings:
         fragsize: 0
     advanced:
       index_prefix: ''
+_core:
 id: site
 name: Site
 description: 'General site search.'

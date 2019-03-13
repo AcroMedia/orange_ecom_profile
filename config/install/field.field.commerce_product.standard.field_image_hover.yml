@@ -6,12 +6,13 @@ dependencies:
     - field.storage.commerce_product.field_image_hover
   module:
     - image
+_core:
 id: commerce_product.standard.field_image_hover
 field_name: field_image_hover
 entity_type: commerce_product
 bundle: standard
 label: 'Teaser Hover Image'
-description: 'An optional image that will display when a user hovers over the product teaser thumbnail image.'
+description: 'An optional image that will display when a user hovers over the product teaser thumbnail image. Example use case: You have a t-shirt product and would like to show a model wearing the shirt on hover.'
 required: false
 translatable: false
 default_value: {  }

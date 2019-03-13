@@ -5,6 +5,7 @@ dependencies:
     - commerce_product
     - file
     - image
+_core:
 id: commerce_product.field_image_hover
 field_name: field_image_hover
 entity_type: commerce_product

@@ -199,7 +199,6 @@ permissions:
   - 'view own unpublished content'
   - 'view own webform submission'
   - 'view page revisions'
-  - 'view profile'
   - 'view standard commerce_order'
   - 'view standard commerce_product'
   - 'view the administration theme'

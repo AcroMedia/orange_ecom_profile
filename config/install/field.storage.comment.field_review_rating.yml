@@ -10,7 +10,7 @@ field_name: field_review_rating
 entity_type: comment
 type: fivestar
 settings:
-  voting_tag: vote
+  vote_type: vote
 module: fivestar
 locked: false
 cardinality: 1

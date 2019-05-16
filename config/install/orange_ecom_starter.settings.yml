@@ -1,0 +1,23 @@
+features:
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+logo:
+  use_default: true
+favicon:
+  use_default: true
+site_logo: {  }
+copyright_name: ''
+facebook_url: ''
+twitter_url: ''
+instagram_url: ''
+youtube_url: ''
+linkedin_url: ''
+pinterest_url: ''
+email_wrapper_bg_color: ''
+email_footer_signature: ''
+footer_message:
+  value: "<h3>Need a hand?</h3>\r\n\r\n<p>Check out our: <a href=\"#\">frequently asked questions</a><br />\r\nEmail us: <a href=\"#\">customerservice@domain.com</a><br />\r\nCall us toll free: <a href=\"#\">1-800-555-5555</a></p>\r\n"
+  format: html
+_core:

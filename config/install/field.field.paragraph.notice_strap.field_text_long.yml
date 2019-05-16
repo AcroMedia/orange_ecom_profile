@@ -2,18 +2,18 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.content
-    - field.storage.block_content.body
+    - field.storage.paragraph.field_text_long
+    - paragraphs.paragraphs_type.notice_strap
   module:
     - text
 _core:
-id: block_content.content.body
-field_name: body
-entity_type: block_content
-bundle: content
+id: paragraph.notice_strap.field_text_long
+field_name: field_text_long
+entity_type: paragraph
+bundle: notice_strap
 label: Body
 description: ''
-required: false
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''

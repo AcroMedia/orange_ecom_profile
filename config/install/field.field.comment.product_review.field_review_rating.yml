@@ -26,5 +26,7 @@ settings:
   allow_revote: 0
   allow_ownvote: 1
   rated_while: viewing
-  target: ''
+  enable_voting_target: false
+  target_bridge_field: ''
+  target_fivestar_field: ''
 field_type: fivestar

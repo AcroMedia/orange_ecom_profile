@@ -1,0 +1,94 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.notice_strap
+    - field.storage.block_content.field_paragraph
+    - paragraphs.paragraphs_type.notice_strap
+  module:
+    - entity_reference_revisions
+_core:
+id: block_content.notice_strap.field_paragraph
+field_name: field_paragraph
+entity_type: block_content
+bundle: notice_strap
+label: 'Notice Strap'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      notice_strap: notice_strap
+    target_bundles_drag_drop:
+      accordion:
+        weight: 23
+        enabled: false
+      accordion_item:
+        weight: 24
+        enabled: false
+      button:
+        weight: 25
+        enabled: false
+      carousel:
+        weight: 26
+        enabled: false
+      carousel_slide:
+        weight: 27
+        enabled: false
+      content_carousel:
+        weight: 28
+        enabled: false
+      content_strap:
+        weight: 29
+        enabled: false
+      content_strap_column:
+        weight: 30
+        enabled: false
+      cta:
+        weight: 31
+        enabled: false
+      cta_strap:
+        weight: 32
+        enabled: false
+      featured_products:
+        weight: 33
+        enabled: false
+      image_content:
+        weight: 34
+        enabled: false
+      image_strap:
+        weight: 35
+        enabled: false
+      logo:
+        weight: 36
+        enabled: false
+      logo_carousel:
+        weight: 37
+        enabled: false
+      notice_strap:
+        enabled: true
+        weight: 38
+      standard_content:
+        weight: 39
+        enabled: false
+      strap:
+        weight: 40
+        enabled: false
+      tab:
+        weight: 41
+        enabled: false
+      tabs:
+        weight: 42
+        enabled: false
+      webform:
+        weight: 43
+        enabled: false
+      webform_content:
+        weight: 44
+        enabled: false
+field_type: entity_reference_revisions

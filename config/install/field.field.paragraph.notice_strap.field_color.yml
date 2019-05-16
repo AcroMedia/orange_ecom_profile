@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_color
+    - paragraphs.paragraphs_type.notice_strap
+  module:
+    - color_field
+_core:
+id: paragraph.notice_strap.field_color
+field_name: field_color
+entity_type: paragraph
+bundle: notice_strap
+label: 'Text Color'
+description: '<p>Changes all text color within the strap. WYSIWYG color changes will override this color.</p>'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 1
+field_type: color_field_type

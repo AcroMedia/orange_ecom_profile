@@ -11,7 +11,6 @@ label: Shipping
 plugin: multistep_default
 configuration:
   display_checkout_progress: true
-  display_checkout_progress_breadcrumb_links: false
   panes:
     login:
       allow_guest_checkout: true
@@ -36,3 +35,4 @@ configuration:
       view: commerce_checkout_order_summary
       step: _sidebar
       weight: 5
+  display_checkout_progress_breadcrumb_links: false

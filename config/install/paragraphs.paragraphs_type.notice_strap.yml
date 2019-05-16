@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+id: notice_strap
+label: 'Notice Strap'
+icon_uuid: null
+description: 'Component: A strap to notify or alert users.'
+behavior_plugins: {  }

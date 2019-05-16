@@ -35,17 +35,18 @@ content:
     third_party_settings: {  }
   mail:
     label: above
-    type: string
+    type: email_mailto
     weight: 0
     region: content
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
   order_items:
     type: commerce_order_item_table
     weight: 0
-    label: above
-    settings: {  }
+    label: hidden
+    settings:
+      use_view: true
+      view: commerce_order_item_table
     third_party_settings: {  }
     region: content
   placed:

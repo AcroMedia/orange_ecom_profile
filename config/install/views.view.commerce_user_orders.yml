@@ -1,5 +1,5 @@
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - commerce_order
@@ -511,7 +511,7 @@ display:
           tokenize: false
           content:
             value: 'You have not placed any orders with us yet.'
-            format: basic_html
+            format: html
           plugin_id: text
       relationships: {  }
       arguments:

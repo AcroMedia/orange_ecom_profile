@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+id: notice_strap
+label: 'Notice Strap'
+revision: 0
+description: 'A strap that displays a notice/text to users. Useful for displaying alert/brief messages to site users.'

@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_boolean
+    - paragraphs.paragraphs_type.notice_strap
+_core:
+id: paragraph.notice_strap.field_boolean
+field_name: field_boolean
+entity_type: paragraph
+bundle: notice_strap
+label: 'Users Can Close'
+description: 'Users can close the notice strap.<br />After a user closes the notice, they will not receive the notice again for their current session.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -2,10 +2,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.content
+    - block_content.type.notice_strap
 _core:
-id: block_content.content
+id: block_content.notice_strap
 target_entity_type_id: block_content
-target_bundle: content
+target_bundle: notice_strap
 default_langcode: site_default
 language_alterable: false

@@ -50,6 +50,7 @@ settings:
             - Embed
             - Blockquote
             - Table
+            - product
         -
           name: Tools
           items:

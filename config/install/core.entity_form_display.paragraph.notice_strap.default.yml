@@ -1,0 +1,62 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.notice_strap.field_bg_color
+    - field.field.paragraph.notice_strap.field_boolean
+    - field.field.paragraph.notice_strap.field_color
+    - field.field.paragraph.notice_strap.field_text_long
+    - paragraphs.paragraphs_type.notice_strap
+  module:
+    - color_field
+    - text
+_core:
+id: paragraph.notice_strap.default
+targetEntityType: paragraph
+bundle: notice_strap
+mode: default
+content:
+  field_bg_color:
+    weight: 1
+    settings:
+      show_input: '1'
+      palette: ''
+      show_buttons: '1'
+      allow_empty: '1'
+      show_palette: '0'
+      show_palette_only: '0'
+    third_party_settings: {  }
+    type: color_field_widget_spectrum
+    region: content
+  field_boolean:
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_color:
+    weight: 2
+    settings:
+      show_input: '1'
+      palette: ''
+      show_buttons: '1'
+      allow_empty: '1'
+      show_palette: '0'
+      show_palette_only: '0'
+    third_party_settings: {  }
+    type: color_field_widget_spectrum
+    region: content
+  field_text_long:
+    weight: 0
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

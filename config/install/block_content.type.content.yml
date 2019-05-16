@@ -1,7 +1,8 @@
 langcode: en
 status: true
 dependencies: {  }
+_core:
 id: content
 label: Content
 revision: 0
-description: 'A standard content block. Useful for adding text, images, or components.'
+description: 'A standard content block. Useful for adding text, images or components.'

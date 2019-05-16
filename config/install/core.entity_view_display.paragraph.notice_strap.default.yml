@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.notice_strap.field_bg_color
+    - field.field.paragraph.notice_strap.field_boolean
+    - field.field.paragraph.notice_strap.field_color
+    - field.field.paragraph.notice_strap.field_text_long
+    - paragraphs.paragraphs_type.notice_strap
+  module:
+    - text
+_core:
+id: paragraph.notice_strap.default
+targetEntityType: paragraph
+bundle: notice_strap
+mode: default
+content:
+  field_text_long:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  field_bg_color: true
+  field_boolean: true
+  field_color: true

@@ -84,6 +84,7 @@ dependencies:
   - advagg_js_minify
   - ajax_loader
   - better_exposed_filters
+  - block_exclude_pages
   - ctools
   - ckeditor_font
   - ckeditor_media_embed
@@ -91,6 +92,7 @@ dependencies:
   - colorbutton
   - contribute
   - comments_order
+  - entity_embed
   - entity_reference_revisions
   - editor_advanced_link
   - facets

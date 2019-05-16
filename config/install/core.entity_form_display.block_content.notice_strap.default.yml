@@ -2,28 +2,27 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.content
-    - field.field.block_content.content.body
-    - field.field.block_content.content.field_paragraphs
+    - block_content.type.notice_strap
+    - field.field.block_content.notice_strap.field_paragraph
   module:
     - paragraphs
 _core:
-id: block_content.content.default
+id: block_content.notice_strap.default
 targetEntityType: block_content
-bundle: content
+bundle: notice_strap
 mode: default
 content:
-  field_paragraphs:
+  field_paragraph:
+    type: entity_reference_paragraphs
     weight: 2
     settings:
-      title: Component
-      title_plural: Components
-      edit_mode: closed
+      title: 'Notice Strap'
+      title_plural: 'Notice Straps'
+      edit_mode: open
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: _none
+      default_paragraph_type: notice_strap
     third_party_settings: {  }
-    type: entity_reference_paragraphs
     region: content
   info:
     type: string_textfield
@@ -40,5 +39,4 @@ content:
     settings:
       include_locked: true
     third_party_settings: {  }
-hidden:
-  body: true
+hidden: {  }

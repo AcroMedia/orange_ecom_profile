@@ -12,7 +12,6 @@ label: Orange
 plugin: orange_checkout_flow
 configuration:
   display_checkout_progress: true
-  display_checkout_progress_breadcrumb_links: 1
   panes:
     login:
       allow_guest_checkout: true
@@ -48,3 +47,4 @@ configuration:
       view: ''
       step: _sidebar
       weight: '8'
+  display_checkout_progress_breadcrumb_links: 1

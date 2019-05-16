@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.standard
+    - core.entity_view_mode.commerce_product.teaser
+  module:
+    - commerce_product
+    - entity_embed
+_core:
+label: 'Embed Product Teaser'
+id: product
+type_id: entity
+type_settings:
+  entity_type: commerce_product
+  bundles:
+    - standard
+  display_plugins:
+    - 'view_mode:commerce_product.teaser'
+  entity_browser: ''
+  entity_browser_settings: null
+icon_uuid: b6b725c6-44b7-4372-ac5a-d9e92dba96d5

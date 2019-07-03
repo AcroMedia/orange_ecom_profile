@@ -27,6 +27,7 @@ third_party_settings:
         open: false
         required_fields: true
       label: 'Component Details'
+      region: content
     group_webform:
       children:
         - field_alignment
@@ -41,6 +42,7 @@ third_party_settings:
         open: false
         required_fields: true
       label: Webform
+      region: content
     group_content:
       children:
         - field_paragraphs_reference
@@ -53,6 +55,7 @@ third_party_settings:
         open: false
         required_fields: true
       label: Content
+      region: content
 _core:
 id: paragraph.webform_content.default
 targetEntityType: paragraph

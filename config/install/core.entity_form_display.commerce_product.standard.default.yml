@@ -41,6 +41,7 @@ third_party_settings:
         open: true
         required_fields: true
       label: 'Product Variations'
+      region: content
     group_tabs:
       children:
         - field_paragraphs_reference
@@ -53,6 +54,7 @@ third_party_settings:
         open: false
         required_fields: true
       label: Tabs
+      region: content
     group_featured_products:
       children:
         - field_paragraph_reference
@@ -65,6 +67,7 @@ third_party_settings:
         open: false
         required_fields: true
       label: 'Featured Products'
+      region: content
     group_product_reviews:
       children:
         - field_product_reviews
@@ -77,6 +80,7 @@ third_party_settings:
         open: false
         required_fields: true
       label: 'Product Reviews'
+      region: content
 _core:
 id: commerce_product.standard.default
 targetEntityType: commerce_product

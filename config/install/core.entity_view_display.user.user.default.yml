@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.user.user.commerce_remote_id
+    - field.field.user.user.field_display_name
   module:
     - user
 _core:
@@ -13,6 +14,7 @@ mode: default
 content: {  }
 hidden:
   commerce_remote_id: true
+  field_display_name: true
   langcode: true
   member_for: true
   profile_customer: true

@@ -24,6 +24,7 @@ third_party_settings:
         open: false
         required_fields: true
       label: 'Webform Details'
+      region: content
 _core:
 id: paragraph.webform.default
 targetEntityType: paragraph

@@ -30,6 +30,9 @@ third_party_settings:
         fragsize: 0
     advanced:
       index_prefix: ''
+    multilingual:
+      limit_to_content_language: false
+      include_language_independent: true
 _core:
 id: site
 name: Site

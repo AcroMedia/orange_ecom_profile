@@ -26,6 +26,7 @@ third_party_settings:
         open: false
         required_fields: true
       label: 'Strap Details'
+      region: content
     group_ctas:
       children:
         - field_paragraphs_reference
@@ -38,6 +39,7 @@ third_party_settings:
         open: false
         required_fields: true
       label: CTAs
+      region: content
 _core:
 id: paragraph.cta_strap.default
 targetEntityType: paragraph

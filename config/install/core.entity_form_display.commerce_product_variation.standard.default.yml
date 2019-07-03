@@ -17,7 +17,7 @@ bundle: standard
 mode: default
 content:
   field_images:
-    weight: 6
+    weight: 8
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -26,7 +26,7 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 3
+    weight: 5
     region: content
     settings:
       include_locked: true
@@ -53,14 +53,14 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 5
+    weight: 7
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   weight:
     type: physical_measurement_default
-    weight: 4
+    weight: 6
     settings:
       default_unit: ''
       allow_unit_change: true

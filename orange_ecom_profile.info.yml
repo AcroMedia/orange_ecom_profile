@@ -100,7 +100,6 @@ dependencies:
   - facets_range_widget
   - facets_summary
   - field_group
-  - fivestar
   - google_analytics
   - honeypot
   - image_effects
@@ -124,7 +123,6 @@ dependencies:
   - twig_tweak
   - userprotect
   - views_infinite_scroll
-  - votingapi
   - webform
   - webform_ui
 

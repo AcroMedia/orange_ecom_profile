@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.modal
+    - field.storage.block_content.field_integer
+id: block_content.modal.field_integer
+field_name: field_integer
+entity_type: block_content
+bundle: modal
+label: 'Time Delay'
+description: 'The time delay (in milliseconds) before the modal triggers. Example: 1200'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ms
+field_type: integer

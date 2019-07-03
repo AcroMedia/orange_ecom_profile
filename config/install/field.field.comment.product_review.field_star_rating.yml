@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.product_review
+    - field.storage.comment.field_star_rating
+  module:
+    - options
+id: comment.product_review.field_star_rating
+field_name: field_star_rating
+entity_type: comment
+bundle: product_review
+label: Rating
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 3
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

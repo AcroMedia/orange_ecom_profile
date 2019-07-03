@@ -2,16 +2,15 @@ langcode: en
 status: true
 dependencies:
   module:
-    - comment
-    - fivestar
-_core:
-id: comment.field_review_rating
-field_name: field_review_rating
-entity_type: comment
-type: fivestar
+    - block_content
+id: block_content.field_integer
+field_name: field_integer
+entity_type: block_content
+type: integer
 settings:
-  vote_type: vote
-module: fivestar
+  unsigned: false
+  size: normal
+module: core
 locked: false
 cardinality: 1
 translatable: true

@@ -33,6 +33,7 @@ third_party_settings:
         open: false
         required_fields: true
       label: 'Component Details'
+      region: content
     group_image:
       children:
         - field_image
@@ -46,6 +47,7 @@ third_party_settings:
         open: false
         required_fields: true
       label: Image
+      region: content
     group_content:
       children:
         - field_paragraphs_reference
@@ -58,6 +60,7 @@ third_party_settings:
         open: false
         required_fields: true
       label: Content
+      region: content
 _core:
 id: paragraph.image_content.default
 targetEntityType: paragraph

@@ -32,6 +32,7 @@ third_party_settings:
         open: false
         required_fields: true
       label: 'Content Strap Details'
+      region: content
     group_content:
       children:
         - field_paragraphs_reference
@@ -44,6 +45,7 @@ third_party_settings:
         open: false
         required_fields: true
       label: Content
+      region: content
 _core:
 id: paragraph.content_strap_column.default
 targetEntityType: paragraph

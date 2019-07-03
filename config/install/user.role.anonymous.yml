@@ -16,6 +16,5 @@ permissions:
   - 'view commerce_product'
   - 'view default commerce_order'
   - 'view default commerce_product'
-  - 'view own commerce_order'
   - 'view standard commerce_order'
   - 'view standard commerce_product'

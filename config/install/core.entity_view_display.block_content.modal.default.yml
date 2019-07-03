@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.modal
+    - field.field.block_content.modal.body
+    - field.field.block_content.modal.field_boolean
+    - field.field.block_content.modal.field_integer
+    - field.field.block_content.modal.field_paragraphs
+  module:
+    - entity_reference_revisions
+id: block_content.modal.default
+targetEntityType: block_content
+bundle: modal
+mode: default
+content:
+  field_paragraphs:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden:
+  body: true
+  field_boolean: true
+  field_integer: true
+  langcode: true

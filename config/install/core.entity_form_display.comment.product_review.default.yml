@@ -4,9 +4,8 @@ dependencies:
   config:
     - comment.type.product_review
     - field.field.comment.product_review.comment_body
-    - field.field.comment.product_review.field_review_rating
+    - field.field.comment.product_review.field_star_rating
   module:
-    - fivestar
     - text
 _core:
 id: comment.product_review.default
@@ -27,12 +26,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
-  field_review_rating:
+  field_star_rating:
     weight: 1
-    settings:
-      fivestar_widget: modules/contrib/fivestar/widgets/basic/basic.css
+    settings: {  }
     third_party_settings: {  }
-    type: fivestar_stars
+    type: options_buttons
     region: content
 hidden:
   langcode: true

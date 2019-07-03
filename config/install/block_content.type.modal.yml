@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: modal
+label: Modal
+revision: 0
+description: 'A modal block that pops up on the page with various configuration options.'

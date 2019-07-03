@@ -23,6 +23,7 @@ third_party_settings:
         open: false
         required_fields: true
       label: 'Tabs Content'
+      region: content
 _core:
 id: paragraph.tabs.default
 targetEntityType: paragraph

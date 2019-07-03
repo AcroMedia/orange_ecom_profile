@@ -1,0 +1,77 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.modal
+    - field.field.block_content.modal.body
+    - field.field.block_content.modal.field_boolean
+    - field.field.block_content.modal.field_integer
+    - field.field.block_content.modal.field_paragraphs
+  module:
+    - field_group
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_modal_configuration:
+      children:
+        - field_integer
+        - field_boolean
+      parent_name: ''
+      weight: 20
+      format_type: details
+      format_settings:
+        label: 'Modal Configuration'
+        open: true
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Modal Configuration'
+      region: content
+id: block_content.modal.default
+targetEntityType: block_content
+bundle: modal
+mode: default
+content:
+  field_boolean:
+    weight: 5
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_integer:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_paragraphs:
+    weight: 2
+    settings:
+      title: Component
+      title_plural: Components
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden:
+  body: true

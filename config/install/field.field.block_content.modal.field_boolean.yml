@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.modal
+    - field.storage.block_content.field_boolean
+id: block_content.modal.field_boolean
+field_name: field_boolean
+entity_type: block_content
+bundle: modal
+label: 'Display Once'
+description: 'Display the modal only once, per user, per session.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

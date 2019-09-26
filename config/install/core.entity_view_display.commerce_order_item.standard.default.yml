@@ -61,3 +61,4 @@ content:
     third_party_settings: {  }
 hidden:
   adjustments: true
+  search_api_excerpt: true

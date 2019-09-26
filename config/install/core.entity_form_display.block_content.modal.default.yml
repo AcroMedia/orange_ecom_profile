@@ -27,6 +27,7 @@ third_party_settings:
         classes: ''
       label: 'Modal Configuration'
       region: content
+_core:
 id: block_content.modal.default
 targetEntityType: block_content
 bundle: modal

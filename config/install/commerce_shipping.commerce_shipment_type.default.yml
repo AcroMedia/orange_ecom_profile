@@ -4,4 +4,5 @@ dependencies: {  }
 _core:
 id: default
 label: Default
+profileType: customer
 traits: {  }

@@ -4,6 +4,7 @@ dependencies:
   module:
     - comment
     - options
+_core:
 id: comment.field_star_rating
 field_name: field_star_rating
 entity_type: comment

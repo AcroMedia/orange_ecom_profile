@@ -3,6 +3,7 @@ status: true
 dependencies:
   module:
     - user
+_core:
 id: user.field_display_name
 field_name: field_display_name
 entity_type: user

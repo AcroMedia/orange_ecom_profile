@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.payment_methods_orange
+  module:
+    - system
+    - views
+  theme:
+    - orange_ecom_starter
+_core:
+id: views_block__payment_methods_orange_listing
+theme: orange_ecom_starter
+region: content
+weight: -10
+provider: null
+plugin: 'views_block:payment_methods_orange-listing'
+settings:
+  id: 'views_block:payment_methods_orange-listing'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*/payment-methods'
+    negate: false
+    context_mapping: {  }

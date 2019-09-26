@@ -1,8 +1,6 @@
 langcode: en
 status: true
-dependencies:
-  config:
-    - search_api_solr.solr_field_type.text_en_7_0_0
+dependencies: {  }
 _core:
 id: text_phonetic_en_7_0_0
 label: 'Fulltext Phonetic English'
@@ -81,5 +79,8 @@ field_type:
           concat: true
         -
           class: solr.RemoveDuplicatesTokenFilterFactory
+unstemmed_field_type: null
+spellcheck_field_type: null
+collated_field_type: null
 solr_configs: {  }
 text_files: {  }

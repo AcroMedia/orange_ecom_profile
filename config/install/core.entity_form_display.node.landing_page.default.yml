@@ -28,7 +28,7 @@ content:
     type: metatag_firehose
     region: content
   field_paragraphs_reference:
-    weight: 121
+    weight: 123
     settings:
       title: Component
       title_plural: Components

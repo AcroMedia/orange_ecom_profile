@@ -9,6 +9,7 @@ dependencies:
     - field.field.block_content.modal.field_paragraphs
   module:
     - entity_reference_revisions
+_core:
 id: block_content.modal.default
 targetEntityType: block_content
 bundle: modal
@@ -28,3 +29,4 @@ hidden:
   field_boolean: true
   field_integer: true
   langcode: true
+  search_api_excerpt: true

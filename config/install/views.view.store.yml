@@ -58,7 +58,7 @@ display:
                 collapsible: false
                 collapsible_label: 'Sort options'
                 combine: true
-                combine_rewrite: "Relevance Desc|Most Relevant\nPrice Asc|Price: Low -> High\nPrice Desc|Price: High -> Low\nTitle Asc|Title: A -> Z\nTitle Desc|Title: Z -> A\nCreated Desc|Newest\nCreated Asc|Oldest\nRelevance Asc|"
+                combine_rewrite: "Relevance Desc|Most Relevant\r\nPrice Asc|Price: Low to High\r\nPrice Desc|Price: High to Low\r\nCreated Desc|Newest\r\nCreated Asc|Oldest\r\nRelevance Asc|"
                 reset: false
                 reset_label: ''
                 is_secondary: false
@@ -66,6 +66,7 @@ display:
               bef_format: default
               more_options:
                 is_secondary: false
+                placeholder_text: ''
                 rewrite:
                   filter_rewrite_values: ''
           text_input_required_format: html
@@ -278,18 +279,6 @@ display:
           exposed: true
           expose:
             label: Price
-          plugin_id: search_api
-        title:
-          id: title
-          table: search_api_index_products
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: true
-          expose:
-            label: Title
           plugin_id: search_api
         created:
           id: created

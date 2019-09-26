@@ -4,6 +4,7 @@ dependencies:
   config:
     - block_content.type.modal
     - field.storage.block_content.field_boolean
+_core:
 id: block_content.modal.field_boolean
 field_name: field_boolean
 entity_type: block_content

@@ -25,5 +25,6 @@ hidden:
   mail: true
   name: true
   prices_include_tax: true
+  search_api_excerpt: true
   shipping_countries: true
   tax_registrations: true

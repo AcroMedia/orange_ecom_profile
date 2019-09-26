@@ -9,6 +9,7 @@ dependencies:
     - paragraphs.paragraphs_type.webform
   module:
     - entity_reference_revisions
+_core:
 id: block_content.modal.field_paragraphs
 field_name: field_paragraphs
 entity_type: block_content

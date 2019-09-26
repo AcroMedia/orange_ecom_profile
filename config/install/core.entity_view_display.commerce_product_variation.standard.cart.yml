@@ -34,4 +34,5 @@ hidden:
   list_price: true
   price: true
   product_id: true
+  search_api_excerpt: true
   weight: true

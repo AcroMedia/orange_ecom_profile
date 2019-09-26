@@ -29,3 +29,4 @@ hidden:
   field_paragraphs_reference: true
   langcode: true
   links: true
+  search_api_excerpt: true

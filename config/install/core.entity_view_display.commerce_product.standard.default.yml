@@ -94,5 +94,6 @@ hidden:
   field_terms_reference: true
   field_terms_reference_2: true
   langcode: true
+  search_api_excerpt: true
   stores: true
   uid: true

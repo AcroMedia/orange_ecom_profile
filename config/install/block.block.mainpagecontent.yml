@@ -9,7 +9,7 @@ _core:
 id: mainpagecontent
 theme: orange_ecom_starter
 region: content
-weight: -7
+weight: -11
 provider: null
 plugin: system_main_block
 settings:

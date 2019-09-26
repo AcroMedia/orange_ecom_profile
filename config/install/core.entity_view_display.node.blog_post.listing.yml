@@ -61,3 +61,4 @@ hidden:
   field_node_comments: true
   langcode: true
   links: true
+  search_api_excerpt: true

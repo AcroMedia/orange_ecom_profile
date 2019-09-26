@@ -42,6 +42,7 @@ dependencies:
   - quickedit
   - rdf
   - responsive_image
+  - search
   - shortcut
   - syslog
   - system
@@ -91,7 +92,9 @@ dependencies:
   - color_field
   - colorbutton
   - contribute
+  - commerce_google_tag_manager
   - comments_order
+  - easy_breadcrumb
   - entity_embed
   - entity_reference_revisions
   - editor_advanced_link
@@ -101,6 +104,7 @@ dependencies:
   - facets_summary
   - field_group
   - google_analytics
+  - google_tag
   - honeypot
   - image_effects
   - imce

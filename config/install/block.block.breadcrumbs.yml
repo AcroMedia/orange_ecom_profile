@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - orange_ecom_starter
+_core:
+id: breadcrumbs
+theme: orange_ecom_starter
+region: header
+weight: -12
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/checkout/*\r\n/cart\r\n/wishlist\r\n/user\r\n/user/*"
+    negate: true
+    context_mapping: {  }

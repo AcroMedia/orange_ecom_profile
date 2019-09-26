@@ -5,6 +5,7 @@ dependencies:
     - field.storage.user.field_display_name
   module:
     - user
+_core:
 id: user.user.field_display_name
 field_name: field_display_name
 entity_type: user

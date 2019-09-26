@@ -26,7 +26,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      view_mode: full_width
+      view_mode: default
       link: ''
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
@@ -34,3 +34,4 @@ content:
 hidden:
   langcode: true
   links: true
+  search_api_excerpt: true

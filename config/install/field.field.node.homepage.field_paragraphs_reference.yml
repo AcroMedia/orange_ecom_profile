@@ -5,6 +5,14 @@ dependencies:
     - field.storage.node.field_paragraphs_reference
     - node.type.homepage
     - paragraphs.paragraphs_type.carousel
+    - paragraphs.paragraphs_type.content_carousel
+    - paragraphs.paragraphs_type.content_strap
+    - paragraphs.paragraphs_type.cta_strap
+    - paragraphs.paragraphs_type.image_strap
+    - paragraphs.paragraphs_type.logo_carousel
+    - paragraphs.paragraphs_type.standard_content
+    - paragraphs.paragraphs_type.strap
+    - paragraphs.paragraphs_type.webform
   module:
     - entity_reference_revisions
 _core:
@@ -13,7 +21,7 @@ field_name: field_paragraphs_reference
 entity_type: node
 bundle: homepage
 label: Components
-description: ''
+description: '<p>See the <a href="/livecss#components" target="_blank">Live CSS</a> for component information & previews.</p>'
 required: false
 translatable: true
 default_value: {  }
@@ -24,6 +32,14 @@ settings:
     negate: 0
     target_bundles:
       carousel: carousel
+      standard_content: standard_content
+      webform: webform
+      content_carousel: content_carousel
+      content_strap: content_strap
+      cta_strap: cta_strap
+      image_strap: image_strap
+      logo_carousel: logo_carousel
+      strap: strap
     target_bundles_drag_drop:
       carousel:
         enabled: true
@@ -41,8 +57,8 @@ settings:
         weight: -17
         enabled: false
       standard_content:
+        enabled: true
         weight: -16
-        enabled: false
       tab:
         weight: -15
         enabled: false
@@ -50,9 +66,48 @@ settings:
         weight: -14
         enabled: false
       webform:
+        enabled: true
         weight: -13
-        enabled: false
       webform_content:
         weight: -12
         enabled: false
+      button:
+        weight: 26
+        enabled: false
+      content_carousel:
+        enabled: true
+        weight: 29
+      content_strap:
+        enabled: true
+        weight: 30
+      content_strap_column:
+        weight: 31
+        enabled: false
+      cta:
+        weight: 32
+        enabled: false
+      cta_strap:
+        enabled: true
+        weight: 33
+      image_content:
+        weight: 35
+        enabled: false
+      image_strap:
+        enabled: true
+        weight: 36
+      logo:
+        weight: 37
+        enabled: false
+      logo_carousel:
+        enabled: true
+        weight: 38
+      notice_strap:
+        weight: 39
+        enabled: false
+      section:
+        weight: 40
+        enabled: false
+      strap:
+        enabled: true
+        weight: 42
 field_type: entity_reference_revisions

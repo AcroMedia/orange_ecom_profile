@@ -53,7 +53,7 @@ content:
     type: image_image
     region: content
   field_meta_tags:
-    weight: 26
+    weight: 13
     settings: {  }
     third_party_settings: {  }
     type: metatag_firehose

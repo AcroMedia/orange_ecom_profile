@@ -10,7 +10,7 @@ _core:
 id: checkoutprogress
 theme: orange_ecom_starter
 region: above_content
-weight: -8
+weight: -12
 provider: null
 plugin: commerce_checkout_progress
 settings:

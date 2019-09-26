@@ -6,7 +6,6 @@ dependencies:
   module:
     - address
     - path
-    - text
 _core:
 id: commerce_store.online.default
 targetEntityType: commerce_store

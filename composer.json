@@ -5,7 +5,7 @@
   "homepage": "https://github.com/AcroMedia/orange_ecom_profile",
   "license": "GPL-2.0+",
   "require": {
-    "drupal/admin_toolbar": "^1.24",
+    "drupal/admin_toolbar": "^2.0",
     "drupal/advagg": "^4.0",
     "drupal/ajax_loader": "^1.4",
     "drupal/block_exclude_pages": "^1.3",

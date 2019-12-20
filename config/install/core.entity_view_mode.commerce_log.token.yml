@@ -3,6 +3,7 @@ status: true
 dependencies:
   module:
     - commerce_log
+_core:
 id: commerce_log.token
 label: Token
 targetEntityType: commerce_log

@@ -3,6 +3,7 @@ status: true
 dependencies:
   module:
     - commerce_promotion
+_core:
 id: commerce_promotion.token
 label: Token
 targetEntityType: commerce_promotion

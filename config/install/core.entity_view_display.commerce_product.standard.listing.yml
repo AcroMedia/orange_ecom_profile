@@ -16,8 +16,6 @@ dependencies:
     - field.field.commerce_product.standard.field_terms_reference
     - field.field.commerce_product.standard.field_terms_reference_2
     - field.field.commerce_product.standard.field_text_long
-    - field.field.commerce_product.standard.stores
-    - field.field.commerce_product.standard.variations
   module:
     - comment
     - commerce_product

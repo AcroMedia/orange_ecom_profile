@@ -6,7 +6,6 @@ dependencies:
   module:
     - address
     - path
-_core:
 id: commerce_store.online.default
 targetEntityType: commerce_store
 bundle: online
@@ -29,6 +28,13 @@ content:
     weight: 3
     region: content
     settings: {  }
+    third_party_settings: {  }
+  is_default:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 90
+    region: content
     third_party_settings: {  }
   langcode:
     type: language_select
@@ -78,4 +84,11 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+  timezone:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  uid: true

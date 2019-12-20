@@ -3,6 +3,7 @@ status: true
 dependencies:
   module:
     - commerce_shipping
+_core:
 id: commerce_shipment.token
 label: Token
 targetEntityType: commerce_shipment

@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - commerce_order.commerce_order_type.standard
-    - field.field.commerce_order.standard.order_items
     - field.field.commerce_order.standard.shipments
   module:
     - commerce_order

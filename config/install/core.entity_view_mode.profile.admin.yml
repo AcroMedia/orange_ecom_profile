@@ -1,10 +1,13 @@
 langcode: en
 status: true
 dependencies:
+  enforced:
+    module:
+      - commerce_order
   module:
     - profile
 _core:
-id: profile.token
-label: Token
+id: profile.admin
+label: Admin
 targetEntityType: profile
 cache: true

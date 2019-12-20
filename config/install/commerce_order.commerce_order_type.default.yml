@@ -5,6 +5,7 @@ _core:
 label: Default
 id: default
 workflow: order_default
+numberPattern: null
 refresh_mode: customer
 refresh_frequency: 300
 sendReceipt: true

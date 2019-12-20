@@ -14,8 +14,6 @@ dependencies:
     - field.field.commerce_product.standard.field_terms_reference
     - field.field.commerce_product.standard.field_terms_reference_2
     - field.field.commerce_product.standard.field_text_long
-    - field.field.commerce_product.standard.stores
-    - field.field.commerce_product.standard.variations
     - image.style.thumbnail
   module:
     - comment
@@ -94,6 +92,7 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     region: content
   created:
@@ -184,6 +183,7 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     type: text_textarea_with_summary
     region: content
@@ -233,6 +233,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
   variations:
     type: inline_entity_form_complex

@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block.block.site_search_block
     - field.storage.node.body
     - search_api.index.site
   module:
@@ -16,7 +17,6 @@ description: ''
 tag: ''
 base_table: search_api_index_site
 base_field: search_api_id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -252,6 +252,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -291,6 +293,8 @@ display:
               anonymous: '0'
               administrator: '0'
             placeholder: 'Search for articles...'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''

@@ -19,4 +19,5 @@ type_settings:
     - 'view_mode:commerce_product.teaser'
   entity_browser: ''
   entity_browser_settings: null
-icon_uuid: b6b725c6-44b7-4372-ac5a-d9e92dba96d5
+icon: {  }
+icon_uuid: null

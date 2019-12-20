@@ -6,10 +6,9 @@ dependencies:
     - commerce_product
     - search_api
   config:
-    - field.storage.commerce_product.field_terms_reference
-    - field.storage.commerce_product.field_terms_reference_2
-    - field.storage.commerce_product.variations
-    - search_api.server.solr
+    0: field.storage.commerce_product.field_terms_reference
+    1: field.storage.commerce_product.field_terms_reference_2
+    3: search_api.server.solr
 third_party_settings:
   search_api_solr:
     finalize: false

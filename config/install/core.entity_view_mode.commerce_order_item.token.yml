@@ -3,6 +3,7 @@ status: true
 dependencies:
   module:
     - commerce_order
+_core:
 id: commerce_order_item.token
 label: Token
 targetEntityType: commerce_order_item

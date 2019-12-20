@@ -2,9 +2,8 @@ langcode: en
 status: true
 dependencies:
   module:
-    - profile
-_core:
-id: profile.token
+    - paragraphs
+id: paragraph.token
 label: Token
-targetEntityType: profile
+targetEntityType: paragraph
 cache: true

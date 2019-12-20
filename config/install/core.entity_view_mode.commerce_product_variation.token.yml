@@ -3,6 +3,7 @@ status: true
 dependencies:
   module:
     - commerce_product
+_core:
 id: commerce_product_variation.token
 label: Token
 targetEntityType: commerce_product_variation

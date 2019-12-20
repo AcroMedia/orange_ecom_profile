@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - commerce_tax
+  module:
+    - commerce_tax
+    - profile
+_core:
+id: profile.tax_number
+field_name: tax_number
+entity_type: profile
+type: commerce_tax_number
+settings: {  }
+module: commerce_tax
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

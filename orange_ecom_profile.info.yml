@@ -63,6 +63,7 @@ dependencies:
   - state_machine
   - commerce
   - commerce_log
+  - commerce_number_pattern
   - commerce_checkout
   - commerce_cart
   - commerce_order

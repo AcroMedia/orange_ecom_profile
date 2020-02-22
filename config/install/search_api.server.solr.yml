@@ -21,8 +21,8 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: localhost
-    port: 8986
+    host: search
+    port: 8983
     path: /
     core: drupalorange
     timeout: 5

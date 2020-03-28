@@ -4,7 +4,7 @@ dependencies:
   config:
     - field.field.paragraph.cta_strap.field_bg_color
     - field.field.paragraph.cta_strap.field_color
-    - field.field.paragraph.cta_strap.field_paragraphs_reference
+    - field.field.paragraph.cta_strap.field_paragraphs
     - paragraphs.paragraphs_type.cta_strap
   module:
     - color_field
@@ -12,34 +12,21 @@ dependencies:
     - paragraphs
 third_party_settings:
   field_group:
-    group_strap_details:
+    group_display_options:
       children:
-        - field_bg_color
         - field_color
-        - group_ctas
+        - field_bg_color
       parent_name: ''
       weight: 0
       format_type: details
+      region: content
       format_settings:
         id: ''
         classes: ''
+        description: ''
         open: false
         required_fields: true
-      label: 'Strap Details'
-      region: content
-    group_ctas:
-      children:
-        - field_paragraphs_reference
-      parent_name: group_strap_details
-      weight: 3
-      format_type: details
-      format_settings:
-        id: ''
-        classes: ''
-        open: false
-        required_fields: true
-      label: CTAs
-      region: content
+      label: 'Display Options'
 _core:
 id: paragraph.cta_strap.default
 targetEntityType: paragraph
@@ -47,7 +34,7 @@ bundle: cta_strap
 mode: default
 content:
   field_bg_color:
-    weight: 1
+    weight: 3
     settings:
       show_input: '1'
       palette: ''
@@ -70,17 +57,24 @@ content:
     third_party_settings: {  }
     type: color_field_widget_spectrum
     region: content
-  field_paragraphs_reference:
-    weight: 4
+  field_paragraphs:
+    weight: 3
     settings:
       title: CTA
       title_plural: CTAs
       edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
     third_party_settings: {  }
-    type: entity_reference_paragraphs
+    type: paragraphs
     region: content
 hidden:
   created: true

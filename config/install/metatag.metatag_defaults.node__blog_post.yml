@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+id: node__blog_post
+label: 'Content: Blog Post'
+tags:
+  article_tag: '[node:field_terms_reference]'
+  article_modified_time: '[node:changed:html_datetime]'
+  article_published_time: '[node:field_date:date:html_datetime]'
+  schema_article_about: '[node:field_terms]'
+  schema_article_name: '[current-page:title]'
+  schema_article_description: '[node:summary]'
+  schema_article_headline: '[current-page:title]'
+  schema_article_publisher: 'a:4:{s:5:"@type";s:12:"Organization";s:3:"@id";s:10:"[site:url]";s:4:"name";s:11:"[site:name]";s:3:"url";s:10:"[site:url]";}'
+  schema_article_date_published: '[node:field_date:date:html_datetime]'
+  schema_article_date_modified: '[node:changed:html_datetime]'
+  schema_article_type: BlogPosting
+  schema_article_main_entity_of_page: '[current-page:url]'
+  schema_article_image: 'a:2:{s:5:"@type";s:11:"ImageObject";s:3:"url";s:59:"[node:field_media_item:entity:field_media_image:entity:url]";}'

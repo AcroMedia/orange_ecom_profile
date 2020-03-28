@@ -2,14 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.cta.field_image
     - field.field.paragraph.cta.field_link
+    - field.field.paragraph.cta.field_media_item
     - field.field.paragraph.cta.field_text_long
     - image.style.cta
     - paragraphs.paragraphs_type.cta
   module:
-    - image
     - link
+    - media
     - text
 _core:
 id: paragraph.cta.default
@@ -17,17 +17,8 @@ targetEntityType: paragraph
 bundle: cta
 mode: default
 content:
-  field_image:
-    weight: 0
-    label: hidden
-    settings:
-      image_style: cta
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
   field_link:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       trim_length: 80
@@ -38,8 +29,17 @@ content:
     third_party_settings: {  }
     type: link
     region: content
+  field_media_item:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: cta
+      image_link: ''
+    third_party_settings: {  }
+    type: media_thumbnail
+    region: content
   field_text_long:
-    weight: 2
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }

@@ -4,19 +4,30 @@ dependencies:
   config:
     - commerce_product.commerce_product_variation_type.standard
     - core.entity_view_mode.commerce_product_variation.summary
-    - field.field.commerce_product_variation.standard.field_images
+    - field.field.commerce_product_variation.standard.field_media
     - field.field.commerce_product_variation.standard.weight
+    - image.style.product_thumbnail
   module:
     - commerce_price
+    - media
 _core:
 id: commerce_product_variation.standard.summary
 targetEntityType: commerce_product_variation
 bundle: standard
 mode: summary
 content:
+  field_media:
+    type: media_thumbnail
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: product_thumbnail
+      image_link: content
+    third_party_settings: {  }
   list_price:
     type: commerce_price_default
-    weight: 4
+    weight: 5
     region: content
     label: inline
     settings:
@@ -26,7 +37,7 @@ content:
   price:
     label: hidden
     type: commerce_price_default
-    weight: 3
+    weight: 4
     region: content
     settings:
       strip_trailing_zeroes: false
@@ -34,7 +45,7 @@ content:
     third_party_settings: {  }
   product_id:
     type: entity_reference_entity_view
-    weight: 0
+    weight: 1
     region: content
     label: hidden
     settings:
@@ -43,7 +54,7 @@ content:
     third_party_settings: {  }
   sku:
     type: string
-    weight: 2
+    weight: 3
     region: content
     label: inline
     settings:
@@ -51,14 +62,13 @@ content:
     third_party_settings: {  }
   title:
     type: string
-    weight: 1
+    weight: 2
     region: content
     label: hidden
     settings:
       link_to_entity: true
     third_party_settings: {  }
 hidden:
-  field_images: true
   langcode: true
   search_api_excerpt: true
   weight: true

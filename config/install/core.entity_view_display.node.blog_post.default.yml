@@ -5,16 +5,16 @@ dependencies:
     - core.entity_view_display.comment.node_comment.default
     - field.field.node.blog_post.body
     - field.field.node.blog_post.field_date
-    - field.field.node.blog_post.field_image
+    - field.field.node.blog_post.field_media_item
     - field.field.node.blog_post.field_meta_tags
     - field.field.node.blog_post.field_node_comments
-    - field.field.node.blog_post.field_terms_reference
+    - field.field.node.blog_post.field_terms
     - image.style.banner
     - node.type.blog_post
   module:
     - comment
     - datetime
-    - image
+    - media
     - text
     - user
 _core:
@@ -39,17 +39,17 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_image:
+  field_media_item:
     weight: 0
     label: hidden
     settings:
       image_style: banner
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: media_thumbnail
     region: content
   field_node_comments:
-    weight: 4
+    weight: 5
     label: above
     settings:
       view_mode: default
@@ -57,8 +57,8 @@ content:
     third_party_settings: {  }
     type: comment_default
     region: content
-  field_terms_reference:
-    weight: 3
+  field_terms:
+    weight: 4
     label: hidden
     settings:
       link: true

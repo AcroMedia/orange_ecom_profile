@@ -3,6 +3,7 @@ status: true
 dependencies:
   module:
     - comment
+_core:
 id: comment.token
 label: Token
 targetEntityType: comment

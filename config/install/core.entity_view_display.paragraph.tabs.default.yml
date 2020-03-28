@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.tabs.field_paragraphs_reference
+    - field.field.paragraph.tabs.field_paragraphs
     - field.field.paragraph.tabs.field_tabs_layout
     - paragraphs.paragraphs_type.tabs
   module:
@@ -13,14 +13,14 @@ targetEntityType: paragraph
 bundle: tabs
 mode: default
 content:
-  field_paragraphs_reference:
-    type: entity_reference_revisions_entity_view
-    weight: 0
+  field_paragraphs:
+    weight: 1
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
     region: content
 hidden:
   field_tabs_layout: true

@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.webform.field_text_long
-    - field.field.paragraph.webform.field_webform_reference
+    - field.field.paragraph.webform.field_webform
     - paragraphs.paragraphs_type.webform
   module:
     - text
@@ -21,7 +21,7 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-  field_webform_reference:
+  field_webform:
     weight: 1
     label: hidden
     settings:

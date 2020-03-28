@@ -1,0 +1,47 @@
+entity_type_groups:
+  commerce_product:
+    default:
+      open_graph_products: open_graph_products
+      basic: basic
+      advanced: advanced
+      open_graph: open_graph
+      schema_product: schema_product
+    standard:
+      open_graph_products: open_graph_products
+      basic: basic
+      advanced: advanced
+      open_graph: open_graph
+      schema_product: schema_product
+  node:
+    blog_post:
+      basic: basic
+      advanced: advanced
+      open_graph: open_graph
+      schema_article: schema_article
+      schema_web_page: schema_web_page
+    homepage:
+      basic: basic
+      advanced: advanced
+      open_graph: open_graph
+      schema_article: schema_article
+      schema_web_page: schema_web_page
+    landing_page:
+      basic: basic
+      advanced: advanced
+      open_graph: open_graph
+      schema_article: schema_article
+      schema_web_page: schema_web_page
+    page:
+      basic: basic
+      advanced: advanced
+      open_graph: open_graph
+      schema_article: schema_article
+      schema_web_page: schema_web_page
+  taxonomy_term:
+    blog_categories:
+      basic: basic
+      advanced: advanced
+      open_graph: open_graph
+      schema_article: schema_article
+      schema_web_page: schema_web_page
+_core:

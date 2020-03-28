@@ -4,50 +4,35 @@ dependencies:
   config:
     - field.field.paragraph.strap.field_bg_color
     - field.field.paragraph.strap.field_color
-    - field.field.paragraph.strap.field_image
+    - field.field.paragraph.strap.field_media_item
     - field.field.paragraph.strap.field_opacity
-    - field.field.paragraph.strap.field_paragraphs_reference
-    - field.field.paragraph.strap.field_paragraphs_reference_2
-    - image.style.thumbnail
+    - field.field.paragraph.strap.field_paragraphs
+    - field.field.paragraph.strap.field_paragraphs_2
     - paragraphs.paragraphs_type.strap
   module:
     - color_field
     - field_group
-    - image
+    - media_library
     - paragraphs
 third_party_settings:
   field_group:
-    group_strap_details:
+    group_display_options:
       children:
         - field_color
         - field_bg_color
-        - field_image
+        - field_media_item
         - field_opacity
-        - group_strap_content
       parent_name: ''
       weight: 0
       format_type: details
+      region: content
       format_settings:
         id: ''
         classes: ''
+        description: ''
         open: false
         required_fields: true
-      label: 'Strap Details'
-      region: content
-    group_strap_content:
-      children:
-        - field_paragraphs_reference
-        - field_paragraphs_reference_2
-      parent_name: group_strap_details
-      weight: 4
-      format_type: details
-      format_settings:
-        id: ''
-        classes: ''
-        open: false
-        required_fields: true
-      label: 'Strap Content'
-      region: content
+      label: 'Display Options'
 _core:
 id: paragraph.strap.default
 targetEntityType: paragraph
@@ -56,7 +41,7 @@ mode: default
 content:
   field_bg_color:
     type: color_field_widget_spectrum
-    weight: 1
+    weight: 2
     region: content
     settings:
       show_input: '1'
@@ -68,7 +53,7 @@ content:
     third_party_settings: {  }
   field_color:
     type: color_field_widget_spectrum
-    weight: 0
+    weight: 1
     region: content
     settings:
       show_input: '1'
@@ -78,44 +63,57 @@ content:
       show_palette: '0'
       show_palette_only: '0'
     third_party_settings: {  }
-  field_image:
-    weight: 2
+  field_media_item:
+    weight: 3
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
-    type: image_image
+    type: media_library_widget
     region: content
   field_opacity:
-    weight: 3
+    weight: 4
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
-  field_paragraphs_reference:
-    weight: 4
+  field_paragraphs:
+    weight: 5
     settings:
       title: Component
       title_plural: Components
       edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
     third_party_settings: {  }
-    type: entity_reference_paragraphs
+    type: paragraphs
     region: content
-  field_paragraphs_reference_2:
-    type: entity_reference_paragraphs
-    weight: 5
+  field_paragraphs_2:
+    weight: 6
     settings:
       title: Button
       title_plural: Buttons
       edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
     third_party_settings: {  }
+    type: paragraphs
     region: content
 hidden:
   created: true

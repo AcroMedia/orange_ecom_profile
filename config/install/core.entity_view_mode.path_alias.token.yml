@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - path_alias
+_core:
+id: path_alias.token
+label: Token
+targetEntityType: path_alias
+cache: true

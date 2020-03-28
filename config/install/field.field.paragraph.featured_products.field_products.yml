@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.standard
+    - field.storage.paragraph.field_products
+    - paragraphs.paragraphs_type.featured_products
+_core:
+id: paragraph.featured_products.field_products
+field_name: field_products
+entity_type: paragraph
+bundle: featured_products
+label: Products
+description: 'Select products to be displayed. Start typing the product name you want to add, then click on the desired result.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product'
+  handler_settings:
+    target_bundles:
+      standard: standard
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

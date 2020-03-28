@@ -5,5 +5,6 @@ _core:
 id: user
 label: User
 tags:
-  title: '[user:name] | [site:name]'
   description: '[site:name]'
+  title: '[user:name] | [site:name]'
+  robots: 'noindex, nofollow, noarchive, nosnippet, noodp, noydir, noimageindex, notranslate'

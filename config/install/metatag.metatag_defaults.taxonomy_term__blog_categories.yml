@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+id: taxonomy_term__blog_categories
+label: 'Taxonomy term: Blog Categories'
+tags:
+  robots: 'index, follow'

@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.featured_products.field_products_reference
+    - field.field.paragraph.featured_products.field_products
     - field.field.paragraph.featured_products.field_string
     - paragraphs.paragraphs_type.featured_products
 _core:
@@ -11,7 +11,7 @@ targetEntityType: paragraph
 bundle: featured_products
 mode: default
 content:
-  field_products_reference:
+  field_products:
     weight: 1
     label: hidden
     settings:

@@ -5,5 +5,18 @@ _core:
 id: node
 label: Content
 tags:
-  title: '[node:title] | [site:name]'
-  description: '[node:summary]'
+  image_src: '[node:field_media_item:entity:field_media_image:entity:url]'
+  article_modified_time: '[node:changed:html_datetime]'
+  og_image: '[node:field_media_item:entity:field_media_image:entity:url]'
+  article_section: '[node:content-type]'
+  og_type: '[node:content-type:name]'
+  article_published_time: '[node:created:html_datetime]'
+  schema_article_name: '[current-page:title]'
+  schema_article_description: '[node:summary]'
+  schema_article_headline: '[current-page:title]'
+  schema_article_date_published: '[node:created:html_datetime]'
+  schema_article_date_modified: '[node:changed:html_datetime]'
+  schema_article_type: Article
+  schema_article_main_entity_of_page: '[current-page:url:absolute]'
+  schema_article_author: 'a:4:{s:5:"@type";s:12:"Organization";s:3:"@id";s:27:"[current-page:url:absolute]";s:4:"name";s:11:"[site:name]";s:3:"url";s:27:"[current-page:url:absolute]";}'
+  schema_article_image: 'a:2:{s:5:"@type";s:11:"ImageObject";s:3:"url";s:59:"[node:field_media_item:entity:field_media_image:entity:url]";}'

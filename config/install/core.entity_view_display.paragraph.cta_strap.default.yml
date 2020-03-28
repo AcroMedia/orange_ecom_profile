@@ -4,7 +4,7 @@ dependencies:
   config:
     - field.field.paragraph.cta_strap.field_bg_color
     - field.field.paragraph.cta_strap.field_color
-    - field.field.paragraph.cta_strap.field_paragraphs_reference
+    - field.field.paragraph.cta_strap.field_paragraphs
     - paragraphs.paragraphs_type.cta_strap
   module:
     - entity_reference_revisions
@@ -14,7 +14,7 @@ targetEntityType: paragraph
 bundle: cta_strap
 mode: default
 content:
-  field_paragraphs_reference:
+  field_paragraphs:
     weight: 0
     label: hidden
     settings:

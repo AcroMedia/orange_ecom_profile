@@ -5,23 +5,7 @@ dependencies:
     - field.field.paragraph.standard_content.field_text_long
     - paragraphs.paragraphs_type.standard_content
   module:
-    - field_group
     - text
-third_party_settings:
-  field_group:
-    group_component_details:
-      children:
-        - field_text_long
-      parent_name: ''
-      weight: 20
-      format_type: details
-      format_settings:
-        id: ''
-        classes: ''
-        open: false
-        required_fields: true
-      label: 'Component Details'
-      region: content
 _core:
 id: paragraph.standard_content.default
 targetEntityType: paragraph
@@ -29,7 +13,7 @@ bundle: standard_content
 mode: default
 content:
   field_text_long:
-    weight: 21
+    weight: 1
     settings:
       rows: 9
       summary_rows: 3

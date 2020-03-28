@@ -5,5 +5,6 @@ _core:
 id: button
 label: Button
 icon_uuid: null
+icon_default: null
 description: 'Sub-Component: Button link with associated options.'
 behavior_plugins: {  }

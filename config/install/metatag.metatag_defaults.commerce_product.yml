@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+id: commerce_product
+label: Product
+tags:
+  abstract: '[commerce_product:field_text_long]'
+  description: '[commerce_product:field_text_long]'
+  title: '[commerce_product:title] | [site:name]'
+  keywords: '[commerce_product:title],[commerce_product:field_terms_reference],[commerce_product:field_terms_2]'
+  og_image: '[commerce_product:field_media:0:entity:field_media_image:entity:url], [commerce_product:variations:0:entity:field_media:0:entity:field_media_image:entity:url]'
+  og_title: '[commerce_product:title]'
+  og_type: product
+  og_url: '[commerce_product:url:absolute]'
+  og_description: '[commerce_product:field_text_long:value]'
+  product_price_amount: '[commerce_product:variations:0:entity:price:number]'
+  product_price_currency: '[commerce_product:variations:0:entity:price:currency_code]'
+  schema_product_image: 'a:3:{s:5:"@type";s:11:"ImageObject";s:20:"representativeOfPage";s:4:"True";s:3:"url";s:158:"[commerce_product:field_media:0:entity:field_media_image:entity:url], [commerce_product:variations:0:entity:field_media:0:entity:field_media_image:entity:url]";}'
+  schema_product_description: '[commerce_product:field_text_long]'
+  schema_product_offers: 'a:5:{s:5:"@type";s:5:"Offer";s:3:"@id";s:27:"[current-page:url:absolute]";s:5:"price";s:51:"[commerce_product:variations:0:entity:price:number]";s:13:"priceCurrency";s:58:"[commerce_product:variations:0:entity:price:currency_code]";s:3:"url";s:27:"[current-page:url:absolute]";}'
+  schema_product_brand: 'a:2:{s:5:"@type";s:5:"Brand";s:4:"name";s:42:"[commerce_product:field_terms_2]";}'
+  schema_product_name: '[commerce_product:title]'
+  schema_product_type: Product

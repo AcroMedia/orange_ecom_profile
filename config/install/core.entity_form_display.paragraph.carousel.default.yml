@@ -2,43 +2,34 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.carousel.field_paragraphs_reference
+    - field.field.paragraph.carousel.field_paragraphs
     - paragraphs.paragraphs_type.carousel
   module:
-    - field_group
     - paragraphs
-third_party_settings:
-  field_group:
-    group_carousel_slides:
-      children:
-        - field_paragraphs_reference
-      parent_name: ''
-      weight: 20
-      format_type: details
-      format_settings:
-        id: ''
-        classes: ''
-        open: false
-        required_fields: true
-      label: 'Carousel Slides'
-      region: content
 _core:
 id: paragraph.carousel.default
 targetEntityType: paragraph
 bundle: carousel
 mode: default
 content:
-  field_paragraphs_reference:
+  field_paragraphs:
     weight: 0
     settings:
-      title: Slide
-      title_plural: Slides
+      title: 'Carousel Slide'
+      title_plural: 'Carousel Slides'
       edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: carousel_slide
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
     third_party_settings: {  }
-    type: entity_reference_paragraphs
+    type: paragraphs
     region: content
 hidden:
   created: true

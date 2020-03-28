@@ -5,5 +5,20 @@ _core:
 id: taxonomy_term
 label: 'Taxonomy term'
 tags:
-  title: '[term:name] | [site:name]'
+  abstract: '[term:description]'
   description: '[term:description]'
+  title: '[term:name] | [site:name]'
+  robots: 'noindex, nofollow, noarchive, nosnippet, noodp, noydir, noimageindex, notranslate'
+  keywords: '[term:name] '
+  article_tag: '[term:name] '
+  og_video: '[node:field_media_item:entity:field_media_image:entity:url]'
+  og_image: '[node:field_media_item:entity:field_media_image:entity:url]'
+  article_section: '[term:parent:name]'
+  og_title: '[term:name]'
+  og_type: 'category list'
+  og_url: '[term:url:absolute]'
+  og_description: '[term:description]'
+  schema_web_page_description: '[term:description]'
+  schema_web_page_type: CollectionPage
+  schema_web_page_breadcrumb: 'Yes'
+  schema_web_page_id: '[current-page:url]'

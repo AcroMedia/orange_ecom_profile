@@ -6,40 +6,22 @@ dependencies:
     - field.field.paragraph.image_content.field_bg_color
     - field.field.paragraph.image_content.field_color
     - field.field.paragraph.image_content.field_content_layout
-    - field.field.paragraph.image_content.field_image
-    - field.field.paragraph.image_content.field_paragraphs_reference
-    - image.style.thumbnail
+    - field.field.paragraph.image_content.field_media_item
+    - field.field.paragraph.image_content.field_paragraphs
     - paragraphs.paragraphs_type.image_content
   module:
     - color_field
     - field_group
-    - image
+    - media_library
     - paragraphs
 third_party_settings:
   field_group:
-    group_component_details:
-      children:
-        - field_content_layout
-        - field_bg_color
-        - field_color
-        - group_image
-        - group_content
-      parent_name: ''
-      weight: 0
-      format_type: details
-      format_settings:
-        id: ''
-        classes: ''
-        open: false
-        required_fields: true
-      label: 'Component Details'
-      region: content
     group_image:
       children:
-        - field_image
+        - field_media_item
         - field_alignment
-      parent_name: group_component_details
-      weight: 8
+      parent_name: ''
+      weight: 4
       format_type: details
       format_settings:
         id: ''
@@ -48,19 +30,22 @@ third_party_settings:
         required_fields: true
       label: Image
       region: content
-    group_content:
+    group_display_options:
       children:
-        - field_paragraphs_reference
-      parent_name: group_component_details
-      weight: 9
+        - field_content_layout
+        - field_bg_color
+        - field_color
+      parent_name: ''
+      weight: 0
       format_type: details
+      region: content
       format_settings:
         id: ''
         classes: ''
+        description: ''
         open: false
         required_fields: true
-      label: Content
-      region: content
+      label: 'Display Options'
 _core:
 id: paragraph.image_content.default
 targetEntityType: paragraph
@@ -68,13 +53,13 @@ bundle: image_content
 mode: default
 content:
   field_alignment:
-    weight: 5
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_bg_color:
-    weight: 6
+    weight: 2
     settings:
       show_input: '1'
       palette: ''
@@ -86,7 +71,7 @@ content:
     type: color_field_widget_spectrum
     region: content
   field_color:
-    weight: 7
+    weight: 3
     settings:
       show_input: '1'
       palette: ''
@@ -98,30 +83,36 @@ content:
     type: color_field_widget_spectrum
     region: content
   field_content_layout:
-    weight: 5
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
-  field_image:
-    weight: 4
+  field_media_item:
+    weight: 9
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
-    type: image_image
+    type: media_library_widget
     region: content
-  field_paragraphs_reference:
-    weight: 3
+  field_paragraphs:
+    weight: 5
     settings:
       title: Component
       title_plural: Components
       edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
     third_party_settings: {  }
-    type: entity_reference_paragraphs
+    type: paragraphs
     region: content
 hidden:
   created: true

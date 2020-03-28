@@ -2,30 +2,21 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.logo.field_image
     - field.field.paragraph.logo.field_link
+    - field.field.paragraph.logo.field_media_item
     - image.style.logo
     - paragraphs.paragraphs_type.logo
   module:
-    - image
     - link
+    - media
 _core:
 id: paragraph.logo.default
 targetEntityType: paragraph
 bundle: logo
 mode: default
 content:
-  field_image:
-    weight: 0
-    label: hidden
-    settings:
-      image_style: logo
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
   field_link:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       trim_length: 80
@@ -35,6 +26,15 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+    region: content
+  field_media_item:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: logo
+      image_link: ''
+    third_party_settings: {  }
+    type: media_thumbnail
     region: content
 hidden:
   search_api_excerpt: true

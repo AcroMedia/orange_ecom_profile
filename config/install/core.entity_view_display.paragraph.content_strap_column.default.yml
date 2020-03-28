@@ -4,9 +4,9 @@ dependencies:
   config:
     - field.field.paragraph.content_strap_column.field_bg_color
     - field.field.paragraph.content_strap_column.field_color
-    - field.field.paragraph.content_strap_column.field_image
+    - field.field.paragraph.content_strap_column.field_media_item
     - field.field.paragraph.content_strap_column.field_opacity
-    - field.field.paragraph.content_strap_column.field_paragraphs_reference
+    - field.field.paragraph.content_strap_column.field_paragraphs
     - paragraphs.paragraphs_type.content_strap_column
   module:
     - entity_reference_revisions
@@ -16,7 +16,7 @@ targetEntityType: paragraph
 bundle: content_strap_column
 mode: default
 content:
-  field_paragraphs_reference:
+  field_paragraphs:
     weight: 0
     label: hidden
     settings:
@@ -28,6 +28,6 @@ content:
 hidden:
   field_bg_color: true
   field_color: true
-  field_image: true
+  field_media_item: true
   field_opacity: true
   search_api_excerpt: true

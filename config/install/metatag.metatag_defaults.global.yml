@@ -5,4 +5,21 @@ _core:
 id: global
 label: Global
 tags:
+  canonical_url: '[current-page:url:absolute]'
+  abstract: '[node:summary]'
+  description: '[node:summary]'
   title: '[current-page:title] | [site:name]'
+  robots: 'index, follow'
+  shortlink: '[current-page:url:absolute]'
+  article_modified_time: '[node:changed:html_datetime]'
+  og_title: '[current-page:title]'
+  og_url: '[current-page:url:absolute]'
+  og_site_name: '[site:name]'
+  og_description: '[node:summary]'
+  article_published_time: '[node:created:html_datetime]'
+  og_updated_time: '[node:changed:html_datetime]'
+  schema_web_page_description: '[node:summary]'
+  schema_web_page_publisher: 'a:4:{s:5:"@type";s:12:"Organization";s:3:"@id";s:27:"[current-page:url:absolute]";s:4:"name";s:11:"[site:name]";s:3:"url";s:27:"[current-page:url:absolute]";}'
+  schema_web_page_type: WebPage
+  schema_web_page_breadcrumb: 'Yes'
+  schema_web_page_id: '[current-page:url:absolute]'

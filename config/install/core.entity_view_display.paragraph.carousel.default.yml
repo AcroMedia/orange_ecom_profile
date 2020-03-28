@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.carousel.field_paragraphs_reference
+    - field.field.paragraph.carousel.field_paragraphs
     - paragraphs.paragraphs_type.carousel
   module:
     - entity_reference_revisions
@@ -12,7 +12,7 @@ targetEntityType: paragraph
 bundle: carousel
 mode: default
 content:
-  field_paragraphs_reference:
+  field_paragraphs:
     weight: 0
     label: hidden
     settings:

@@ -5,40 +5,23 @@ dependencies:
     - field.field.paragraph.image_strap.field_alignment
     - field.field.paragraph.image_strap.field_bg_color
     - field.field.paragraph.image_strap.field_color
-    - field.field.paragraph.image_strap.field_image
-    - field.field.paragraph.image_strap.field_paragraphs_reference
-    - field.field.paragraph.image_strap.field_paragraphs_reference_2
-    - image.style.thumbnail
+    - field.field.paragraph.image_strap.field_media_item
+    - field.field.paragraph.image_strap.field_paragraphs
+    - field.field.paragraph.image_strap.field_paragraphs_2
     - paragraphs.paragraphs_type.image_strap
   module:
     - color_field
     - field_group
-    - image
+    - media_library
     - paragraphs
 third_party_settings:
   field_group:
-    group_strap_details:
-      children:
-        - field_color
-        - field_bg_color
-        - group_image
-        - group_strap_content
-      parent_name: ''
-      weight: 0
-      format_type: details
-      format_settings:
-        id: ''
-        classes: ''
-        open: false
-        required_fields: true
-      label: 'Strap Details'
-      region: content
     group_image:
       children:
-        - field_image
+        - field_media_item
         - field_alignment
-      parent_name: group_strap_details
-      weight: 7
+      parent_name: ''
+      weight: 1
       format_type: details
       format_settings:
         id: ''
@@ -47,20 +30,21 @@ third_party_settings:
         required_fields: true
       label: Image
       region: content
-    group_strap_content:
+    group_display_options:
       children:
-        - field_paragraphs_reference
-        - field_paragraphs_reference_2
-      parent_name: group_strap_details
-      weight: 8
+        - field_color
+        - field_bg_color
+      parent_name: ''
+      weight: 0
       format_type: details
+      region: content
       format_settings:
         id: ''
         classes: ''
+        description: ''
         open: false
         required_fields: true
-      label: 'Strap Content'
-      region: content
+      label: 'Display Options'
 _core:
 id: paragraph.image_strap.default
 targetEntityType: paragraph
@@ -68,13 +52,13 @@ bundle: image_strap
 mode: default
 content:
   field_alignment:
-    weight: 3
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_bg_color:
-    weight: 6
+    weight: 2
     settings:
       show_input: '1'
       palette: ''
@@ -86,7 +70,7 @@ content:
     type: color_field_widget_spectrum
     region: content
   field_color:
-    weight: 5
+    weight: 1
     settings:
       show_input: '1'
       palette: ''
@@ -97,37 +81,50 @@ content:
     third_party_settings: {  }
     type: color_field_widget_spectrum
     region: content
-  field_image:
-    weight: 2
+  field_media_item:
+    weight: 9
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
-    type: image_image
+    type: media_library_widget
     region: content
-  field_paragraphs_reference:
-    weight: 3
+  field_paragraphs:
+    weight: 2
     settings:
       title: Component
       title_plural: Components
       edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
     third_party_settings: {  }
-    type: entity_reference_paragraphs
+    type: paragraphs
     region: content
-  field_paragraphs_reference_2:
-    weight: 4
+  field_paragraphs_2:
+    type: paragraphs
+    weight: 12
     settings:
       title: Button
       title_plural: Buttons
       edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
     third_party_settings: {  }
-    type: entity_reference_paragraphs
     region: content
 hidden:
   created: true

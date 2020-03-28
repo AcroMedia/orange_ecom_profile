@@ -5,5 +5,6 @@ _core:
 id: standard_content
 label: 'Standard Content'
 icon_uuid: null
+icon_default: null
 description: 'Component: Display standard WYSIWYG content.'
 behavior_plugins: {  }

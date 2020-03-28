@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+id: default
+label: Default
+weight: 0
+container_id: GTM-XXXXXX
+data_layer: dataLayer
+include_classes: false
+whitelist_classes: ''
+blacklist_classes: ''
+include_environment: false
+environment_id: ''
+environment_token: ''
+path_toggle: 'exclude listed'
+path_list: "/admin\n/admin/*\n/batch\n/node/add*\n/node/*/edit\n/node/*/delete\n/node/*/*\n/commerce_pos/login\n/pos-customer-display"
+role_toggle: 'exclude listed'
+role_list:
+  administrator: administrator
+status_toggle: 'exclude listed'
+status_list: "403\n404"
+conditions: {  }

@@ -2,13 +2,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.product_categories.field_image
+    - field.field.taxonomy_term.product_categories.field_media_item
     - field.field.taxonomy_term.product_categories.field_meta_tags
-    - field.field.taxonomy_term.product_categories.field_paragraphs_reference
-    - image.style.thumbnail
+    - field.field.taxonomy_term.product_categories.field_paragraphs
     - taxonomy.vocabulary.product_categories
   module:
-    - image
+    - media_library
     - metatag
     - paragraphs
     - path
@@ -27,30 +26,36 @@ content:
       placeholder: ''
       rows: 5
     third_party_settings: {  }
-  field_image:
+  field_media_item:
+    type: media_library_widget
     weight: 2
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
-    type: image_image
     region: content
   field_meta_tags:
-    weight: 6
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: metatag_firehose
     region: content
-  field_paragraphs_reference:
-    type: entity_reference_paragraphs
-    weight: 4
+  field_paragraphs:
+    type: paragraphs
+    weight: 5
     settings:
       title: Component
       title_plural: Components
       edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
     third_party_settings: {  }
     region: content
   langcode:
@@ -70,8 +75,15 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
     third_party_settings: {  }
 hidden: {  }

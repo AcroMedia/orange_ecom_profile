@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block.block.site_search_block
     - field.storage.node.body
     - search_api.index.site
   module:

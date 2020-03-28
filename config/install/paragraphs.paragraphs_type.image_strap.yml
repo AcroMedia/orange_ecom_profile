@@ -5,5 +5,6 @@ _core:
 id: image_strap
 label: 'Image Strap'
 icon_uuid: null
+icon_default: null
 description: 'Component: A strap with an image featured.'
 behavior_plugins: {  }

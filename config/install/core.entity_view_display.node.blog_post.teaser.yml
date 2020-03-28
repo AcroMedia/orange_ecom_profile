@@ -5,14 +5,14 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.blog_post.body
     - field.field.node.blog_post.field_date
-    - field.field.node.blog_post.field_image
+    - field.field.node.blog_post.field_media_item
     - field.field.node.blog_post.field_meta_tags
     - field.field.node.blog_post.field_node_comments
-    - field.field.node.blog_post.field_terms_reference
+    - field.field.node.blog_post.field_terms
     - image.style.banner
     - node.type.blog_post
   module:
-    - image
+    - media
     - user
 _core:
 id: node.blog_post.teaser
@@ -20,9 +20,9 @@ targetEntityType: node
 bundle: blog_post
 mode: teaser
 content:
-  field_image:
-    type: image
-    weight: 0
+  field_media_item:
+    type: media_thumbnail
+    weight: 1
     region: content
     label: hidden
     settings:
@@ -34,7 +34,7 @@ hidden:
   field_date: true
   field_meta_tags: true
   field_node_comments: true
-  field_terms_reference: true
+  field_terms: true
   langcode: true
   links: true
   search_api_excerpt: true

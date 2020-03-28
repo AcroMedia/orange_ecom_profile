@@ -4,7 +4,7 @@ dependencies:
   config:
     - commerce_product.commerce_product_variation_type.standard
     - core.entity_view_mode.commerce_product_variation.cart
-    - field.field.commerce_product_variation.standard.field_images
+    - field.field.commerce_product_variation.standard.field_media
     - field.field.commerce_product_variation.standard.weight
 _core:
 id: commerce_product_variation.standard.cart
@@ -29,7 +29,7 @@ content:
       link_to_entity: true
     third_party_settings: {  }
 hidden:
-  field_images: true
+  field_media: true
   langcode: true
   list_price: true
   price: true

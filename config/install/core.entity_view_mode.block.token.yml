@@ -3,6 +3,7 @@ status: true
 dependencies:
   module:
     - block
+_core:
 id: block.token
 label: Token
 targetEntityType: block

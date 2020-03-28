@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_item_2
+    - media.type.image
+    - paragraphs.paragraphs_type.carousel_slide
+_core:
+id: paragraph.carousel_slide.field_media_item_2
+field_name: field_media_item_2
+entity_type: paragraph
+bundle: carousel_slide
+label: 'Image For Mobile'
+description: 'Optional image that will be shown for mobile devices instead of the primary image.<br>Recommended size: 768x565 px or larger.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

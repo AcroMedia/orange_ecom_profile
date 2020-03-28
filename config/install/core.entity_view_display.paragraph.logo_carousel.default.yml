@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.logo_carousel.field_paragraphs_reference
+    - field.field.paragraph.logo_carousel.field_paragraphs
     - paragraphs.paragraphs_type.logo_carousel
   module:
     - entity_reference_revisions
@@ -12,8 +12,8 @@ targetEntityType: paragraph
 bundle: logo_carousel
 mode: default
 content:
-  field_paragraphs_reference:
-    weight: 0
+  field_paragraphs:
+    weight: 1
     label: hidden
     settings:
       view_mode: default

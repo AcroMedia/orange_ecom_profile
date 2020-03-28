@@ -3,12 +3,11 @@ status: true
 dependencies:
   config:
     - commerce_product.commerce_product_variation_type.standard
-    - field.field.commerce_product_variation.standard.field_images
+    - field.field.commerce_product_variation.standard.field_media
     - field.field.commerce_product_variation.standard.weight
-    - image.style.thumbnail
   module:
     - commerce_price
-    - image
+    - media_library
     - physical
 _core:
 id: commerce_product_variation.standard.default
@@ -16,13 +15,12 @@ targetEntityType: commerce_product_variation
 bundle: standard
 mode: default
 content:
-  field_images:
+  field_media:
+    type: media_library_widget
     weight: 8
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
-    type: image_image
     region: content
   langcode:
     type: language_select

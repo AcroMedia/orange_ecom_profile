@@ -1,0 +1,94 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraphs_2
+    - paragraphs.paragraphs_type.button
+    - paragraphs.paragraphs_type.image_strap
+  module:
+    - entity_reference_revisions
+_core:
+id: paragraph.image_strap.field_paragraphs_2
+field_name: field_paragraphs_2
+entity_type: paragraph
+bundle: image_strap
+label: Buttons
+description: 'Display buttons at the bottom of the strap.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      button: button
+    target_bundles_drag_drop:
+      accordion:
+        weight: 23
+        enabled: false
+      accordion_item:
+        weight: 24
+        enabled: false
+      button:
+        enabled: true
+        weight: 25
+      carousel:
+        weight: 26
+        enabled: false
+      carousel_slide:
+        weight: 27
+        enabled: false
+      content_carousel:
+        weight: 28
+        enabled: false
+      content_strap:
+        weight: 29
+        enabled: false
+      content_strap_column:
+        weight: 30
+        enabled: false
+      cta:
+        weight: 31
+        enabled: false
+      cta_strap:
+        weight: 32
+        enabled: false
+      featured_products:
+        weight: 33
+        enabled: false
+      image_content:
+        weight: 34
+        enabled: false
+      image_strap:
+        weight: 35
+        enabled: false
+      logo:
+        weight: 36
+        enabled: false
+      logo_carousel:
+        weight: 37
+        enabled: false
+      notice_strap:
+        weight: 38
+        enabled: false
+      standard_content:
+        weight: 39
+        enabled: false
+      strap:
+        weight: 40
+        enabled: false
+      tab:
+        weight: 41
+        enabled: false
+      tabs:
+        weight: 42
+        enabled: false
+      webform:
+        weight: 43
+        enabled: false
+      webform_content:
+        weight: 44
+        enabled: false
+field_type: entity_reference_revisions

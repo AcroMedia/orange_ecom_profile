@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - commerce_order
+  module:
+    - profile
+_core:
+id: profile.billing
+label: Billing
+targetEntityType: profile
+cache: true

@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.standard
+    - field.storage.commerce_product_variation.field_media
+    - media.type.image
+    - media.type.remote_video
+_core:
+id: commerce_product_variation.standard.field_media
+field_name: field_media
+entity_type: commerce_product_variation
+bundle: standard
+label: 'Variation Media'
+description: 'Images and remote videos will be displayed in a carousel.<br>Recommended size: 600x600 px or larger. Tightly cropped product shots are ideal.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      remote_video: remote_video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

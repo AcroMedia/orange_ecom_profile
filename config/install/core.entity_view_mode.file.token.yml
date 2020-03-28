@@ -3,6 +3,7 @@ status: true
 dependencies:
   module:
     - file
+_core:
 id: file.token
 label: Token
 targetEntityType: file

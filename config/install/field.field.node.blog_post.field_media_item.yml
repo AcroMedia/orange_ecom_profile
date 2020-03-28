@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media_item
+    - media.type.image
+    - node.type.blog_post
+_core:
+id: node.blog_post.field_media_item
+field_name: field_media_item
+entity_type: node
+bundle: blog_post
+label: 'Featured Image'
+description: 'The image displayed as the featured image for this post and listing pages.<br>Recommended size: 1530×400 px or larger.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

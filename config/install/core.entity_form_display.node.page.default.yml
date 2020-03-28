@@ -3,14 +3,13 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_image
+    - field.field.node.page.field_media_item
     - field.field.node.page.field_meta_tags
-    - field.field.node.page.field_paragraphs_reference
-    - field.field.node.page.field_paragraphs_reference_2
-    - image.style.thumbnail
+    - field.field.node.page.field_paragraphs
+    - field.field.node.page.field_paragraphs_2
     - node.type.page
   module:
-    - image
+    - media_library
     - metatag
     - paragraphs
     - path
@@ -33,46 +32,59 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_image:
+  field_media_item:
+    type: media_library_widget
     weight: 2
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
-    type: image_image
     region: content
   field_meta_tags:
-    weight: 10
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     type: metatag_firehose
     region: content
-  field_paragraphs_reference:
-    type: entity_reference_paragraphs
-    weight: 11
+  field_paragraphs:
+    weight: 4
     settings:
       title: Component
       title_plural: Components
       edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
     third_party_settings: {  }
+    type: paragraphs
     region: content
-  field_paragraphs_reference_2:
-    type: entity_reference_paragraphs
-    weight: 12
+  field_paragraphs_2:
+    type: paragraphs
+    weight: 5
     settings:
       title: Component
       title_plural: Components
       edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
     third_party_settings: {  }
     region: content
   langcode:
@@ -84,7 +96,7 @@ content:
     region: content
   path:
     type: path
-    weight: 8
+    weight: 10
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -92,21 +104,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 8
     third_party_settings: {  }
     region: content
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 9
+    weight: 11
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 9
     third_party_settings: {  }
     region: content
   title:
@@ -119,7 +131,7 @@ content:
     region: content
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 6
     settings:
       match_operator: CONTAINS
       size: 60

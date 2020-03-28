@@ -4,7 +4,7 @@ dependencies:
   config:
     - field.field.node.homepage.body
     - field.field.node.homepage.field_meta_tags
-    - field.field.node.homepage.field_paragraphs_reference
+    - field.field.node.homepage.field_paragraphs
     - node.type.homepage
   module:
     - metatag
@@ -39,17 +39,24 @@ content:
     third_party_settings: {  }
     type: metatag_firehose
     region: content
-  field_paragraphs_reference:
-    weight: 123
+  field_paragraphs:
+    type: paragraphs
+    weight: 124
     settings:
       title: Component
       title_plural: Components
       edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
     third_party_settings: {  }
-    type: entity_reference_paragraphs
     region: content
   langcode:
     type: language_select

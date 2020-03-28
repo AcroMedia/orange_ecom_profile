@@ -3,28 +3,11 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.webform.field_text_long
-    - field.field.paragraph.webform.field_webform_reference
+    - field.field.paragraph.webform.field_webform
     - paragraphs.paragraphs_type.webform
   module:
-    - field_group
     - text
     - webform
-third_party_settings:
-  field_group:
-    group_webform_details:
-      children:
-        - field_text_long
-        - field_webform_reference
-      parent_name: ''
-      weight: 20
-      format_type: details
-      format_settings:
-        id: ''
-        classes: ''
-        open: false
-        required_fields: true
-      label: 'Webform Details'
-      region: content
 _core:
 id: paragraph.webform.default
 targetEntityType: paragraph
@@ -32,7 +15,7 @@ bundle: webform
 mode: default
 content:
   field_text_long:
-    weight: 23
+    weight: 1
     settings:
       rows: 9
       summary_rows: 3
@@ -41,8 +24,8 @@ content:
     third_party_settings: {  }
     type: text_textarea_with_summary
     region: content
-  field_webform_reference:
-    weight: 24
+  field_webform:
+    weight: 2
     settings:
       default_data: false
     third_party_settings: {  }

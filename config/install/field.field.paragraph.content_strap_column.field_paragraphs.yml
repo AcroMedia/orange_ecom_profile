@@ -1,0 +1,98 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraphs
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.content_strap_column
+    - paragraphs.paragraphs_type.standard_content
+    - paragraphs.paragraphs_type.webform
+  module:
+    - entity_reference_revisions
+_core:
+id: paragraph.content_strap_column.field_paragraphs
+field_name: field_paragraphs
+entity_type: paragraph
+bundle: content_strap_column
+label: 'Content Components'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      standard_content: standard_content
+      accordion: accordion
+      webform: webform
+    target_bundles_drag_drop:
+      standard_content:
+        enabled: true
+        weight: -45
+      accordion:
+        enabled: true
+        weight: -44
+      accordion_item:
+        weight: -43
+        enabled: false
+      button:
+        weight: -42
+        enabled: false
+      carousel:
+        weight: -41
+        enabled: false
+      carousel_slide:
+        weight: -40
+        enabled: false
+      content_carousel:
+        weight: -39
+        enabled: false
+      content_strap:
+        weight: -38
+        enabled: false
+      content_strap_column:
+        weight: -37
+        enabled: false
+      cta:
+        weight: -36
+        enabled: false
+      cta_strap:
+        weight: -35
+        enabled: false
+      featured_products:
+        weight: -34
+        enabled: false
+      image_content:
+        weight: -33
+        enabled: false
+      image_strap:
+        weight: -32
+        enabled: false
+      logo:
+        weight: -31
+        enabled: false
+      logo_carousel:
+        weight: -30
+        enabled: false
+      notice_strap:
+        weight: -29
+        enabled: false
+      strap:
+        weight: -28
+        enabled: false
+      tab:
+        weight: -27
+        enabled: false
+      tabs:
+        weight: -26
+        enabled: false
+      webform:
+        enabled: true
+        weight: -25
+      webform_content:
+        weight: -24
+        enabled: false
+field_type: entity_reference_revisions

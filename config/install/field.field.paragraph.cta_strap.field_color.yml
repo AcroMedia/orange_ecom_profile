@@ -12,11 +12,11 @@ field_name: field_color
 entity_type: paragraph
 bundle: cta_strap
 label: 'Text Color'
-description: ''
+description: 'Changes all text contained within this strap.'
 required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  opacity: 1
+  opacity: 0
 field_type: color_field_type

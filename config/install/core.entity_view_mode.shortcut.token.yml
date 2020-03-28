@@ -3,6 +3,7 @@ status: true
 dependencies:
   module:
     - shortcut
+_core:
 id: shortcut.token
 label: Token
 targetEntityType: shortcut

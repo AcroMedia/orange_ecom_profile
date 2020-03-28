@@ -2,16 +2,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.carousel_slide.field_image
-    - field.field.paragraph.carousel_slide.field_image_2
     - field.field.paragraph.carousel_slide.field_link
+    - field.field.paragraph.carousel_slide.field_media_item
+    - field.field.paragraph.carousel_slide.field_media_item_2
     - field.field.paragraph.carousel_slide.field_string
     - field.field.paragraph.carousel_slide.field_text_long
     - image.style.carousel_slide_mobile
     - paragraphs.paragraphs_type.carousel_slide
   module:
-    - image
     - link
+    - media
     - text
 _core:
 id: paragraph.carousel_slide.default
@@ -19,26 +19,8 @@ targetEntityType: paragraph
 bundle: carousel_slide
 mode: default
 content:
-  field_image:
-    weight: 0
-    label: hidden
-    settings:
-      image_style: carousel_slide
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
-  field_image_2:
-    weight: 1
-    label: hidden
-    settings:
-      image_style: carousel_slide_mobile
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
   field_link:
-    weight: 4
+    weight: 6
     label: hidden
     settings:
       trim_length: 80
@@ -49,8 +31,26 @@ content:
     third_party_settings: {  }
     type: link
     region: content
+  field_media_item:
+    type: media_thumbnail
+    weight: 1
+    label: hidden
+    settings:
+      image_style: carousel_slide
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_media_item_2:
+    type: media_thumbnail
+    weight: 3
+    label: hidden
+    settings:
+      image_style: carousel_slide_mobile
+      image_link: ''
+    third_party_settings: {  }
+    region: content
   field_string:
-    weight: 2
+    weight: 4
     label: hidden
     settings:
       link_to_entity: false
@@ -58,7 +58,7 @@ content:
     type: string
     region: content
   field_text_long:
-    weight: 3
+    weight: 5
     label: hidden
     settings: {  }
     third_party_settings: {  }

@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_media_item
+    - media.type.image
+    - taxonomy.vocabulary.product_categories
+_core:
+id: taxonomy_term.product_categories.field_media_item
+field_name: field_media_item
+entity_type: taxonomy_term
+bundle: product_categories
+label: 'Category Image'
+description: 'This image will be displayed within the Store when this category is selected.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

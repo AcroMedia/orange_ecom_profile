@@ -3,14 +3,14 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.taxonomy_term.teaser
-    - field.field.taxonomy_term.product_categories.field_image
+    - field.field.taxonomy_term.product_categories.field_media_item
     - field.field.taxonomy_term.product_categories.field_meta_tags
-    - field.field.taxonomy_term.product_categories.field_paragraphs_reference
+    - field.field.taxonomy_term.product_categories.field_paragraphs
     - image.style.half_screen
     - taxonomy.vocabulary.product_categories
   module:
     - entity_reference_revisions
-    - image
+    - media
     - text
 _core:
 id: taxonomy_term.product_categories.teaser
@@ -25,8 +25,8 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_image:
-    type: image
+  field_media_item:
+    type: media_thumbnail
     weight: 0
     region: content
     label: hidden
@@ -34,9 +34,9 @@ content:
       image_style: half_screen
       image_link: ''
     third_party_settings: {  }
-  field_paragraphs_reference:
+  field_paragraphs:
     type: entity_reference_revisions_entity_view
-    weight: 2
+    weight: 3
     region: content
     label: hidden
     settings:

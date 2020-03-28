@@ -6,9 +6,9 @@ dependencies:
     - commerce_product
     - search_api
   config:
-    0: field.storage.commerce_product.field_terms_reference
-    1: field.storage.commerce_product.field_terms_reference_2
-    3: search_api.server.solr
+    - field.storage.commerce_product.field_terms
+    - field.storage.commerce_product.field_terms_2
+    - search_api.server.solr
 third_party_settings:
   search_api_solr:
     finalize: false
@@ -48,31 +48,30 @@ field_settings:
     dependencies:
       module:
         - commerce_product
-  field_terms_reference:
+  field_terms:
     label: Categories
     datasource_id: 'entity:commerce_product'
-    property_path: field_terms_reference
+    property_path: field_terms
     type: string
     dependencies:
       config:
-        - field.storage.commerce_product.field_terms_reference
-  field_terms_reference_2:
+        - field.storage.commerce_product.field_terms
+  field_terms_2:
     label: Brands
     datasource_id: 'entity:commerce_product'
-    property_path: field_terms_reference_2
+    property_path: field_terms_2
     type: string
     dependencies:
       config:
-        - field.storage.commerce_product.field_terms_reference_2
+        - field.storage.commerce_product.field_terms_2
   number:
     label: 'Variations » Product variation » Price » Number'
     datasource_id: 'entity:commerce_product'
     property_path: 'variations:entity:price:number'
     type: decimal
     dependencies:
-      config:
-        - field.storage.commerce_product.variations
       module:
+        - commerce_product
         - commerce_product
         - commerce_product
   sku:
@@ -82,9 +81,8 @@ field_settings:
     type: text
     boost: !!float 2
     dependencies:
-      config:
-        - field.storage.commerce_product.variations
       module:
+        - commerce_product
         - commerce_product
         - commerce_product
   status:
@@ -116,7 +114,7 @@ processor_settings:
   aggregated_field: {  }
   hierarchy:
     fields:
-      field_terms_reference: taxonomy_term-parent
+      field_terms: taxonomy_term-parent
     weights:
       preprocess_index: -45
   highlight:
@@ -134,9 +132,7 @@ processor_settings:
     fields:
       - sku
       - title
-    weights:
-      preprocess_index: -20
-      preprocess_query: -20
+  language_with_fallback: {  }
   rendered_item: {  }
   solr_date_range:
     weights:
@@ -148,16 +144,10 @@ processor_settings:
     exceptions:
       mexican: mexic
       texan: texa
-    weights:
-      preprocess_index: 0
-      preprocess_query: 0
   transliteration:
     all_fields: false
     fields:
       - title
-    weights:
-      preprocess_index: -20
-      preprocess_query: -20
 tracker_settings:
   default:
     indexing_order: fifo

@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.full_width
-    - field.field.paragraph.logo_carousel.field_paragraphs_reference
+    - field.field.paragraph.logo_carousel.field_paragraphs
     - paragraphs.paragraphs_type.logo_carousel
   module:
     - entity_reference_revisions
@@ -13,14 +13,14 @@ targetEntityType: paragraph
 bundle: logo_carousel
 mode: full_width
 content:
-  field_paragraphs_reference:
-    weight: 0
+  field_paragraphs:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    region: content
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
-    region: content
 hidden:
   search_api_excerpt: true

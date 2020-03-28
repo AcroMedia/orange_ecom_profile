@@ -3,10 +3,11 @@ domain_mode: 0
 cross_domains: ''
 visibility:
   request_path_mode: 0
-  request_path_pages: "/admin\r\n/admin/*\r\n/batch\r\n/node/add*"
-  user_role_mode: 0
-  user_role_roles: {  }
-  user_account_mode: 0
+  request_path_pages: "/admin\r\n/admin/*\r\n/batch\r\n/node/add*\r\n/node/*/edit\r\n/node/*/delete\r\n/node/*/*\r\n/commerce_pos/login\r\n/pos-customer-display"
+  user_role_mode: 1
+  user_role_roles:
+    administrator: administrator
+  user_account_mode: 1
 track:
   outbound: true
   mailto: true
@@ -15,9 +16,9 @@ track:
   colorbox: true
   linkid: false
   urlfragments: false
-  userid: false
+  userid: true
   messages: {  }
-  site_search: false
+  site_search: true
   adsense: false
   displayfeatures: false
 privacy:

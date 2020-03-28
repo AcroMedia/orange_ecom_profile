@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media_item
+    - media.type.image
+    - node.type.page
+_core:
+id: node.page.field_media_item
+field_name: field_media_item
+entity_type: node
+bundle: page
+label: 'Page Banner'
+description: 'A banner image that will be displayed across the top of the page.<br>Recommended size: 1530×400 px or larger.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

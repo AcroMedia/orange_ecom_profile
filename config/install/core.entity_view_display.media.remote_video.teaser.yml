@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.teaser
+    - field.field.media.remote_video.field_media_oembed_video
+    - image.style.product_thumbnail
+    - media.type.remote_video
+  module:
+    - image
+_core:
+id: media.remote_video.teaser
+targetEntityType: media
+bundle: remote_video
+mode: teaser
+content:
+  thumbnail:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: product_thumbnail
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_media_oembed_video: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  uid: true

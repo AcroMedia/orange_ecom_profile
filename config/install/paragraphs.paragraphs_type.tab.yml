@@ -5,5 +5,6 @@ _core:
 id: tab
 label: Tab
 icon_uuid: null
+icon_default: null
 description: 'Sub-Component: A tab item that displays within tabs.'
 behavior_plugins: {  }

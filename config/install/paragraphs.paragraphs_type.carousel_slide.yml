@@ -5,5 +5,6 @@ _core:
 id: carousel_slide
 label: 'Carousel Slide'
 icon_uuid: null
+icon_default: null
 description: 'Sub-Component: A slide element that displays within a Carousel.'
 behavior_plugins: {  }

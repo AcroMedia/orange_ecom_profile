@@ -1,0 +1,8 @@
+account: XXXXXX
+snippet_version: 6
+visibility_pages: 0
+pages: "/admin\r\n/admin/*\r\n/batch\r\n/node/add*\r\n/node/*/edit\r\n/node/*/delete\r\n/node/*/*\r\n/commerce_pos/login\r\n/pos-customer-display"
+visibility_roles: 1
+roles:
+  administrator: administrator
+_core:

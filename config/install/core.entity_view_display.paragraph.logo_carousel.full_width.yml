@@ -7,7 +7,6 @@ dependencies:
     - paragraphs.paragraphs_type.logo_carousel
   module:
     - entity_reference_revisions
-_core:
 id: paragraph.logo_carousel.full_width
 targetEntityType: paragraph
 bundle: logo_carousel

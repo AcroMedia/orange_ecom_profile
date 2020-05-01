@@ -6,7 +6,6 @@ dependencies:
     - field.storage.comment.comment_body
   module:
     - text
-_core:
 id: comment.node_comment.comment_body
 field_name: comment_body
 entity_type: comment

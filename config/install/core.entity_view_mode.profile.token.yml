@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - profile
-_core:
 id: profile.token
 label: Token
 targetEntityType: profile

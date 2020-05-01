@@ -10,7 +10,6 @@ dependencies:
     - link
     - media_library
     - text
-_core:
 id: paragraph.cta.default
 targetEntityType: paragraph
 bundle: cta

@@ -1,7 +1,6 @@
 langcode: en
 status: true
 dependencies: {  }
-_core:
 name: 'Media Categories'
 vid: media_categories
 description: 'Categories associated with media entities.'

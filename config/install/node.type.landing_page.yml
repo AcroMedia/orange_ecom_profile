@@ -10,7 +10,6 @@ third_party_settings:
       - header
       - main
     parent: 'main:'
-_core:
 name: 'Landing Page'
 type: landing_page
 description: 'A full width page displaying dynamic components.'

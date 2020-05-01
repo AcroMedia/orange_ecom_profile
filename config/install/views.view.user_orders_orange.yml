@@ -8,7 +8,6 @@ dependencies:
     - options
     - state_machine
     - user
-_core:
 id: user_orders_orange
 label: 'Orange User Orders'
 module: views

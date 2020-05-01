@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - block_content.type.content
-_core:
 id: block_content.content
 target_entity_type_id: block_content
 target_bundle: content

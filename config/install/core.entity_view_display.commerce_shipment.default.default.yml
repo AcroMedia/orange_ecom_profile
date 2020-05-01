@@ -8,7 +8,6 @@ dependencies:
     - commerce_shipping
     - entity_reference_revisions
     - state_machine
-_core:
 id: commerce_shipment.default.default
 targetEntityType: commerce_shipment
 bundle: default

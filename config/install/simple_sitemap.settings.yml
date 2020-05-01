@@ -14,4 +14,3 @@ enabled_entity_types:
   - taxonomy_term
   - menu_link_content
   - commerce_product
-_core:

@@ -6,7 +6,6 @@ dependencies:
     - node.type.blog_post
   module:
     - text
-_core:
 id: node.blog_post.body
 field_name: body
 entity_type: node

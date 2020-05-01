@@ -6,7 +6,6 @@ dependencies:
       - commerce_order
   module:
     - profile
-_core:
 id: profile.admin
 label: Admin
 targetEntityType: profile

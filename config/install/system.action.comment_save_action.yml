@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - comment
-_core:
 id: comment_save_action
 label: 'Save comment'
 type: comment

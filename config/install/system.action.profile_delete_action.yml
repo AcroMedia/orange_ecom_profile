@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - profile
-_core:
 id: profile_delete_action
 label: 'Delete selected profile'
 type: profile

@@ -2,7 +2,6 @@ theme: current
 defaults:
   sender: swiftmailer
   formatter: swiftmailer
-_core:
 modules:
   swiftmailer:
     none:

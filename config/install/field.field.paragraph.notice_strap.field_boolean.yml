@@ -4,7 +4,6 @@ dependencies:
   config:
     - field.storage.paragraph.field_boolean
     - paragraphs.paragraphs_type.notice_strap
-_core:
 id: paragraph.notice_strap.field_boolean
 field_name: field_boolean
 entity_type: paragraph

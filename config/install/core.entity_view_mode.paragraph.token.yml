@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - paragraphs
-_core:
 id: paragraph.token
 label: Token
 targetEntityType: paragraph

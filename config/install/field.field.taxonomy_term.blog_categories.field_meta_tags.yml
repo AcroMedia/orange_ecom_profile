@@ -6,7 +6,6 @@ dependencies:
     - taxonomy.vocabulary.blog_categories
   module:
     - metatag
-_core:
 id: taxonomy_term.blog_categories.field_meta_tags
 field_name: field_meta_tags
 entity_type: taxonomy_term

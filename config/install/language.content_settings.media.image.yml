@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - media.type.image
-_core:
 id: media.image
 target_entity_type_id: media
 target_bundle: image

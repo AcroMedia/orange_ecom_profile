@@ -6,7 +6,6 @@ dependencies:
   module:
     - better_exposed_filters
     - search_api
-_core:
 id: store
 label: Store
 module: views

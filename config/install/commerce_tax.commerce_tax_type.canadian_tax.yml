@@ -1,7 +1,6 @@
 langcode: en
 status: true
 dependencies: {  }
-_core:
 id: canadian_tax
 label: 'Canadian Tax'
 plugin: canadian_sales_tax

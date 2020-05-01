@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - commerce_order
-_core:
 id: commerce_order_item.cart_block
 label: 'Cart Block'
 targetEntityType: commerce_order_item

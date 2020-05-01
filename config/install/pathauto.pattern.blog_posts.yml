@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - node
-_core:
 id: blog_posts
 label: 'Blog Posts'
 type: 'canonical_entities:node'

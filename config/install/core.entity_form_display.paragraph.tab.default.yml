@@ -7,7 +7,6 @@ dependencies:
     - paragraphs.paragraphs_type.tab
   module:
     - text
-_core:
 id: paragraph.tab.default
 targetEntityType: paragraph
 bundle: tab

@@ -5,7 +5,6 @@ dependencies:
     - core.entity_view_mode.commerce_product.teaser
   module:
     - commerce_product
-_core:
 id: featured_products
 label: 'Featured Products'
 module: views

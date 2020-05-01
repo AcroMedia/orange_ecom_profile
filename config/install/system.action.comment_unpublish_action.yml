@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - comment
-_core:
 id: comment_unpublish_action
 label: 'Unpublish comment'
 type: comment

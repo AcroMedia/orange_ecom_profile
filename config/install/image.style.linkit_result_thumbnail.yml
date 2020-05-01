@@ -1,7 +1,6 @@
 langcode: en
 status: true
 dependencies: {  }
-_core:
 name: linkit_result_thumbnail
 label: 'Linkit result thumbnail'
 effects:

@@ -7,7 +7,6 @@ dependencies:
     - views
   theme:
     - orange_ecom_starter
-_core:
 id: product_listing_site_search
 theme: orange_ecom_starter
 region: site_search

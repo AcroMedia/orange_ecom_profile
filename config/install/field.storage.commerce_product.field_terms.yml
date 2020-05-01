@@ -4,7 +4,6 @@ dependencies:
   module:
     - commerce_product
     - taxonomy
-_core:
 id: commerce_product.field_terms
 field_name: field_terms
 entity_type: commerce_product

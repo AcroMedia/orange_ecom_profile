@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.commerce_shipment.user
   module:
     - commerce_shipping
-_core:
 id: commerce_shipment.default.user
 targetEntityType: commerce_shipment
 bundle: default

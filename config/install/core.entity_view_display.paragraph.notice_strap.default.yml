@@ -9,7 +9,6 @@ dependencies:
     - paragraphs.paragraphs_type.notice_strap
   module:
     - text
-_core:
 id: paragraph.notice_strap.default
 targetEntityType: paragraph
 bundle: notice_strap

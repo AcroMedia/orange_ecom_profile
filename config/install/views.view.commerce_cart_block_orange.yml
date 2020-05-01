@@ -10,7 +10,6 @@ dependencies:
     - commerce_cart
     - commerce_order
     - commerce_price
-_core:
 id: commerce_cart_block_orange
 label: 'Orange Cart Block'
 module: views

@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - contact
-_core:
 id: contact_message.token
 label: Token
 targetEntityType: contact_message

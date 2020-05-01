@@ -5,7 +5,6 @@ dependencies:
     - field.storage.node.field_terms
     - node.type.blog_post
     - taxonomy.vocabulary.blog_categories
-_core:
 id: node.blog_post.field_terms
 field_name: field_terms
 entity_type: node

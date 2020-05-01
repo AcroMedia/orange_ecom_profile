@@ -21,7 +21,6 @@ dependencies:
     - paragraphs.paragraphs_type.webform_content
   module:
     - entity_reference_revisions
-_core:
 id: block_content.content.field_paragraphs
 field_name: field_paragraphs
 entity_type: block_content

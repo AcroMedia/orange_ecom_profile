@@ -78,7 +78,6 @@ third_party_settings:
         required_fields: true
       label: 'Product Reviews'
       region: content
-_core:
 id: commerce_product.standard.default
 targetEntityType: commerce_product
 bundle: standard

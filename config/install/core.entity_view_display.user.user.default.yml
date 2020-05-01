@@ -6,7 +6,6 @@ dependencies:
     - field.field.user.user.field_display_name
   module:
     - user
-_core:
 id: user.user.default
 targetEntityType: user
 bundle: user

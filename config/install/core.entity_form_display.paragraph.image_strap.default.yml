@@ -45,7 +45,6 @@ third_party_settings:
         open: false
         required_fields: true
       label: 'Display Options'
-_core:
 id: paragraph.image_strap.default
 targetEntityType: paragraph
 bundle: image_strap

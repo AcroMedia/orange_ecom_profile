@@ -6,7 +6,6 @@ dependencies:
     - paragraphs.paragraphs_type.button
   module:
     - link
-_core:
 id: paragraph.button.field_link
 field_name: field_link
 entity_type: paragraph

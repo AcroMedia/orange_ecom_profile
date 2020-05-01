@@ -8,7 +8,6 @@ dependencies:
   module:
     - commerce_order
     - commerce_price
-_core:
 id: commerce_checkout_order_summary
 label: 'Checkout Order Summary'
 module: views

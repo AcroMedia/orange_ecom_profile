@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - paragraphs
-_core:
 id: paragraph.field_opacity
 field_name: field_opacity
 entity_type: paragraph

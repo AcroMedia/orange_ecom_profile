@@ -10,7 +10,6 @@ dependencies:
     - paragraphs.paragraphs_type.content_strap_column
   module:
     - entity_reference_revisions
-_core:
 id: paragraph.content_strap_column.default
 targetEntityType: paragraph
 bundle: content_strap_column

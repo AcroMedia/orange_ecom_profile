@@ -5,7 +5,6 @@ dependencies:
     - field.field.paragraph.featured_products.field_products
     - field.field.paragraph.featured_products.field_string
     - paragraphs.paragraphs_type.featured_products
-_core:
 id: paragraph.featured_products.default
 targetEntityType: paragraph
 bundle: featured_products

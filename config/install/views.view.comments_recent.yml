@@ -5,7 +5,6 @@ dependencies:
     - comment
     - node
     - user
-_core:
 id: comments_recent
 label: 'Recent comments'
 module: views

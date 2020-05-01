@@ -4,7 +4,6 @@ dependencies:
   module:
     - comment
     - text
-_core:
 id: comment.comment_body
 field_name: comment_body
 entity_type: comment

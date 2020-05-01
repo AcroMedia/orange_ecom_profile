@@ -10,7 +10,6 @@ dependencies:
     - entity_reference_revisions
     - text
     - user
-_core:
 id: node.homepage.default
 targetEntityType: node
 bundle: homepage

@@ -1,7 +1,6 @@
 langcode: en
 status: true
 dependencies: {  }
-_core:
 id: text_en_7_0_0
 label: 'English Text Field'
 minimum_solr_version: 7.0.0

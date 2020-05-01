@@ -9,7 +9,6 @@ dependencies:
     - inline_entity_form
     - path
     - text
-_core:
 id: commerce_product.default.default
 targetEntityType: commerce_product
 bundle: default

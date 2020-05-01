@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - node.type.page
-_core:
 id: node.page
 target_entity_type_id: node
 target_bundle: page

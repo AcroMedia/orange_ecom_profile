@@ -4,7 +4,6 @@ dependencies:
   enforced:
     module:
       - webform
-_core:
 id: marital_status
 label: 'Marital status'
 category: Demographic

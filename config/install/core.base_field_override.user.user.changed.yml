@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - user
-_core:
 id: user.user.changed
 field_name: changed
 entity_type: user

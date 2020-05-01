@@ -5,7 +5,6 @@ dependencies:
     - field.storage.paragraph.field_media_item
     - media.type.image
     - paragraphs.paragraphs_type.content_strap_column
-_core:
 id: paragraph.content_strap_column.field_media_item
 field_name: field_media_item
 entity_type: paragraph

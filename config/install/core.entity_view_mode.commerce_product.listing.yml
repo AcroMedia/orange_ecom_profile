@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - commerce_product
-_core:
 id: commerce_product.listing
 label: Listing
 targetEntityType: commerce_product

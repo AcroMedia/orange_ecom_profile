@@ -9,7 +9,6 @@ dependencies:
     - media
     - taxonomy
     - user
-_core:
 id: media
 label: Media
 module: views

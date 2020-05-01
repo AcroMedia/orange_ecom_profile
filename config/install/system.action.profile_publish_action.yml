@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - profile
-_core:
 id: profile_publish_action
 label: 'Publish selected profile'
 type: profile

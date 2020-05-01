@@ -8,7 +8,6 @@ dependencies:
     - paragraphs.paragraphs_type.cta_strap
   module:
     - entity_reference_revisions
-_core:
 id: paragraph.cta_strap.default
 targetEntityType: paragraph
 bundle: cta_strap

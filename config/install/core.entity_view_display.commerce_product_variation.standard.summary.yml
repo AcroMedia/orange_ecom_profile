@@ -10,7 +10,6 @@ dependencies:
   module:
     - commerce_price
     - media
-_core:
 id: commerce_product_variation.standard.summary
 targetEntityType: commerce_product_variation
 bundle: standard

@@ -6,7 +6,6 @@ dependencies:
     - field.storage.comment.field_star_rating
   module:
     - options
-_core:
 id: comment.product_review.field_star_rating
 field_name: field_star_rating
 entity_type: comment

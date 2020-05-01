@@ -6,7 +6,6 @@ dependencies:
     - paragraphs.paragraphs_type.notice_strap
   module:
     - text
-_core:
 id: paragraph.notice_strap.field_text_long
 field_name: field_text_long
 entity_type: paragraph

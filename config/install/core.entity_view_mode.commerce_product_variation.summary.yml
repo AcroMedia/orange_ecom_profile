@@ -6,7 +6,6 @@ dependencies:
       - commerce_checkout
   module:
     - commerce_product
-_core:
 id: commerce_product_variation.summary
 label: Summary
 targetEntityType: commerce_product_variation

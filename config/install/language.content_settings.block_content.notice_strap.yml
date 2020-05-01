@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - block_content.type.notice_strap
-_core:
 id: block_content.notice_strap
 target_entity_type_id: block_content
 target_bundle: notice_strap

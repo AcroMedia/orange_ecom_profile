@@ -5,7 +5,6 @@ dependencies:
     - ckeditor_media_embed
     - editor
     - entity_embed
-_core:
 name: HTML
 format: html
 weight: 0

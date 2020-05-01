@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - comment
-_core:
 id: comment_delete_action
 label: 'Delete comment'
 type: comment

@@ -7,7 +7,6 @@ dependencies:
     - commerce_order
     - state_machine
     - user
-_core:
 id: commerce_order.default.default
 targetEntityType: commerce_order
 bundle: default

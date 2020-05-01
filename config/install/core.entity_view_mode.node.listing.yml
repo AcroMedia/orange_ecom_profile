@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - node
-_core:
 id: node.listing
 label: Listing
 targetEntityType: node

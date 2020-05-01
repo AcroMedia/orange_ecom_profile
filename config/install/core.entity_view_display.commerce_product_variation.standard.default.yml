@@ -7,7 +7,6 @@ dependencies:
     - field.field.commerce_product_variation.standard.weight
   module:
     - commerce_price
-_core:
 id: commerce_product_variation.standard.default
 targetEntityType: commerce_product_variation
 bundle: standard

@@ -7,7 +7,6 @@ dependencies:
     - paragraphs.paragraphs_type.accordion_item
   module:
     - text
-_core:
 id: paragraph.accordion_item.default
 targetEntityType: paragraph
 bundle: accordion_item

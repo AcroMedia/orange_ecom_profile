@@ -4,7 +4,6 @@ dependencies:
   module:
     - options
     - paragraphs
-_core:
 id: paragraph.field_button_style
 field_name: field_button_style
 entity_type: paragraph

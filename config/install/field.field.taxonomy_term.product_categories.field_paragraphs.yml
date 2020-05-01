@@ -19,7 +19,6 @@ dependencies:
     - taxonomy.vocabulary.product_categories
   module:
     - entity_reference_revisions
-_core:
 id: taxonomy_term.product_categories.field_paragraphs
 field_name: field_paragraphs
 entity_type: taxonomy_term

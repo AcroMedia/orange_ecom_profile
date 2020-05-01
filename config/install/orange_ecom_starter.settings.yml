@@ -20,4 +20,3 @@ email_footer_signature: ''
 footer_message:
   value: "<h3>Need a hand?</h3>\r\n\r\n<p>Check out our: <a href=\"#\">frequently asked questions</a><br />\r\nEmail us: <a href=\"#\">customerservice@domain.com</a><br />\r\nCall us toll free: <a href=\"#\">1-800-555-5555</a></p>\r\n"
   format: html
-_core:

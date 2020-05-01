@@ -5,7 +5,6 @@ dependencies:
     - filter.format.html
   module:
     - ckeditor
-_core:
 format: html
 editor: ckeditor
 settings:

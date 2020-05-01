@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - node.type.homepage
-_core:
 id: node.homepage.promote
 field_name: promote
 entity_type: node

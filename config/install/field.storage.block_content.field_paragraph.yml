@@ -5,7 +5,6 @@ dependencies:
     - block_content
     - entity_reference_revisions
     - paragraphs
-_core:
 id: block_content.field_paragraph
 field_name: field_paragraph
 entity_type: block_content

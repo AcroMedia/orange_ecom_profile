@@ -5,7 +5,6 @@ dependencies:
     - commerce_product.commerce_product_variation_type.default
   module:
     - commerce_price
-_core:
 id: commerce_product_variation.default.default
 targetEntityType: commerce_product_variation
 bundle: default

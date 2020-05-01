@@ -4,7 +4,6 @@ dependencies:
   module:
     - media
     - taxonomy
-_core:
 id: taxonomy_term.field_media_item
 field_name: field_media_item
 entity_type: taxonomy_term

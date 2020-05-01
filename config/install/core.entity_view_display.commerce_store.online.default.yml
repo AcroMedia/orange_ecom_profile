@@ -5,7 +5,6 @@ dependencies:
     - commerce_store.commerce_store_type.online
   module:
     - address
-_core:
 id: commerce_store.online.default
 targetEntityType: commerce_store
 bundle: online

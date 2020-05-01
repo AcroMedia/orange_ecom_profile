@@ -5,7 +5,6 @@ dependencies:
     - commerce_product.commerce_product_type.standard
     - field.storage.commerce_product.field_media_item
     - media.type.image
-_core:
 id: commerce_product.standard.field_media_item
 field_name: field_media_item
 entity_type: commerce_product

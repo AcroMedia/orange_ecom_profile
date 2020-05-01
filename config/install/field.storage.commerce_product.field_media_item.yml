@@ -4,7 +4,6 @@ dependencies:
   module:
     - commerce_product
     - media
-_core:
 id: commerce_product.field_media_item
 field_name: field_media_item
 entity_type: commerce_product

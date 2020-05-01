@@ -1,7 +1,6 @@
 langcode: en
 status: true
 dependencies: {  }
-_core:
 id: search_api__views_page__store__product_listing
 name: 'search_api:views_page__store__product_listing'
 filter_key: ''

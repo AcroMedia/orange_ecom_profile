@@ -1,7 +1,6 @@
 langcode: en
 status: true
 dependencies: {  }
-_core:
 id: order_default
 label: Default
 targetEntityType: commerce_order

@@ -6,7 +6,6 @@ dependencies:
       - commerce_shipping
   module:
     - profile
-_core:
 id: profile.shipping
 label: Shipping
 targetEntityType: profile

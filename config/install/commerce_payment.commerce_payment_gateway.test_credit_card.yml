@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - commerce_payment_example
-_core:
 id: test_credit_card
 label: 'Test Credit Card'
 weight: null

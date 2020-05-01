@@ -7,7 +7,6 @@ dependencies:
     - paragraphs.paragraphs_type.tab
   module:
     - entity_reference_revisions
-_core:
 id: commerce_product.standard.field_paragraphs
 field_name: field_paragraphs
 entity_type: commerce_product

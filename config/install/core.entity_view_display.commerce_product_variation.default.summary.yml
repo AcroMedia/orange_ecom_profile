@@ -9,7 +9,6 @@ dependencies:
       - commerce_checkout
   module:
     - commerce_price
-_core:
 id: commerce_product_variation.default.summary
 targetEntityType: commerce_product_variation
 bundle: default

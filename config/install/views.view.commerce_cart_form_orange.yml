@@ -16,7 +16,6 @@ dependencies:
     - commerce_price
     - commerce_product
     - media
-_core:
 id: commerce_cart_form_orange
 label: 'Orange Cart Form'
 module: views

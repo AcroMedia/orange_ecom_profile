@@ -4,7 +4,6 @@ dependencies:
   module:
     - media
     - paragraphs
-_core:
 id: paragraph.field_media_item_2
 field_name: field_media_item_2
 entity_type: paragraph

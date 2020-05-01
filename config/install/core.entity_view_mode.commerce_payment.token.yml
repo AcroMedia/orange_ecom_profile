@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - commerce_payment
-_core:
 id: commerce_payment.token
 label: Token
 targetEntityType: commerce_payment

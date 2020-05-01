@@ -12,7 +12,6 @@ dependencies:
     - paragraphs
     - path
     - text
-_core:
 id: taxonomy_term.product_categories.default
 targetEntityType: taxonomy_term
 bundle: product_categories

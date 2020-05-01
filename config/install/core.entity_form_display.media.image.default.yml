@@ -9,7 +9,6 @@ dependencies:
   module:
     - image
     - path
-_core:
 id: media.image.default
 targetEntityType: media
 bundle: image

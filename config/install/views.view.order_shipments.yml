@@ -5,7 +5,6 @@ dependencies:
     - commerce_price
     - commerce_shipping
     - state_machine
-_core:
 id: order_shipments
 label: 'Order Shipments'
 module: views

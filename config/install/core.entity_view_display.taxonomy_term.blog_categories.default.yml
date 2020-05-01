@@ -7,7 +7,6 @@ dependencies:
   module:
     - metatag
     - text
-_core:
 id: taxonomy_term.blog_categories.default
 targetEntityType: taxonomy_term
 bundle: blog_categories

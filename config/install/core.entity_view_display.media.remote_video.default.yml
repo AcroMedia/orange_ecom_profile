@@ -6,7 +6,6 @@ dependencies:
     - media.type.remote_video
   module:
     - media
-_core:
 id: media.remote_video.default
 targetEntityType: media
 bundle: remote_video

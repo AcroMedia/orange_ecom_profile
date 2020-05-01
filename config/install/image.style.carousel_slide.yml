@@ -1,7 +1,6 @@
 langcode: en
 status: true
 dependencies: {  }
-_core:
 name: carousel_slide
 label: 'Carousel Slide'
 effects:

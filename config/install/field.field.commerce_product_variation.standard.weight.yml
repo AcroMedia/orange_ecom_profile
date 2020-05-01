@@ -6,7 +6,6 @@ dependencies:
     - field.storage.commerce_product_variation.weight
   module:
     - physical
-_core:
 id: commerce_product_variation.standard.weight
 field_name: weight
 entity_type: commerce_product_variation

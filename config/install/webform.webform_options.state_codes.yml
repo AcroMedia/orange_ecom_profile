@@ -4,7 +4,6 @@ dependencies:
   enforced:
     module:
       - webform
-_core:
 id: state_codes
 label: 'State codes'
 category: Geographic

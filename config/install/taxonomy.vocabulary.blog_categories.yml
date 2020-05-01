@@ -1,7 +1,6 @@
 langcode: en
 status: true
 dependencies: {  }
-_core:
 name: 'Blog Categories'
 vid: blog_categories
 description: ''

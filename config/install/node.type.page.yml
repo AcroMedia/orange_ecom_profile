@@ -10,7 +10,6 @@ third_party_settings:
       - header
       - main
     parent: 'main:'
-_core:
 name: Page
 type: page
 description: 'A basic content page.'

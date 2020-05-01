@@ -7,7 +7,6 @@ dependencies:
     - paragraphs.paragraphs_type.button
   module:
     - link
-_core:
 id: paragraph.button.default
 targetEntityType: paragraph
 bundle: button

@@ -8,7 +8,6 @@ dependencies:
     - views
   theme:
     - orange_ecom_starter
-_core:
 id: product_listing_exposed_filters
 theme: orange_ecom_starter
 region: store_filters

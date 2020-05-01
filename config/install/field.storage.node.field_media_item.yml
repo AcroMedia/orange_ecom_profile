@@ -4,7 +4,6 @@ dependencies:
   module:
     - media
     - node
-_core:
 id: node.field_media_item
 field_name: field_media_item
 entity_type: node

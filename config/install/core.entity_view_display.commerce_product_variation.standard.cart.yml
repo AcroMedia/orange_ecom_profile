@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.commerce_product_variation.cart
     - field.field.commerce_product_variation.standard.field_media
     - field.field.commerce_product_variation.standard.weight
-_core:
 id: commerce_product_variation.standard.cart
 targetEntityType: commerce_product_variation
 bundle: standard

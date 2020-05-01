@@ -6,7 +6,6 @@ dependencies:
     - paragraphs.paragraphs_type.image_strap
   module:
     - options
-_core:
 id: paragraph.image_strap.field_alignment
 field_name: field_alignment
 entity_type: paragraph

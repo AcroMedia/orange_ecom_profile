@@ -13,7 +13,6 @@ dependencies:
     - link
     - media
     - text
-_core:
 id: paragraph.carousel_slide.default
 targetEntityType: paragraph
 bundle: carousel_slide

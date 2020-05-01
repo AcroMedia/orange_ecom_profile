@@ -7,7 +7,6 @@ dependencies:
     - paragraphs.paragraphs_type.logo_carousel
   module:
     - entity_reference_revisions
-_core:
 id: paragraph.logo_carousel.field_paragraphs
 field_name: field_paragraphs
 entity_type: paragraph

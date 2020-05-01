@@ -4,7 +4,6 @@ dependencies:
   module:
     - paragraphs
     - text
-_core:
 id: paragraph.field_text_long
 field_name: field_text_long
 entity_type: paragraph

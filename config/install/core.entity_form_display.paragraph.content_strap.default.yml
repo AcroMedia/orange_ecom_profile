@@ -6,7 +6,6 @@ dependencies:
     - paragraphs.paragraphs_type.content_strap
   module:
     - paragraphs
-_core:
 id: paragraph.content_strap.default
 targetEntityType: paragraph
 bundle: content_strap

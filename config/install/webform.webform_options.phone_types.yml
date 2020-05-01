@@ -4,7 +4,6 @@ dependencies:
   enforced:
     module:
       - webform
-_core:
 id: phone_types
 label: 'Phone type'
 category: Demographic

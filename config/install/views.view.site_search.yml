@@ -8,7 +8,6 @@ dependencies:
     - better_exposed_filters
     - search_api
     - text
-_core:
 id: site_search
 label: 'Site Search'
 module: views

@@ -7,7 +7,6 @@ dependencies:
   module:
     - user
     - webform
-_core:
 id: webform_submissions
 label: 'Webform submissions'
 module: views

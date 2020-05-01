@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - node
-_core:
 id: node_default
 label: 'Node Default'
 type: 'canonical_entities:node'

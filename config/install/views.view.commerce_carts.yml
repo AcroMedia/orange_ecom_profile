@@ -10,7 +10,6 @@ dependencies:
     - commerce_price
     - commerce_store
     - user
-_core:
 id: commerce_carts
 label: Carts
 module: views

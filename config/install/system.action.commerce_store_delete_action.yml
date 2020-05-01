@@ -7,7 +7,6 @@ dependencies:
   module:
     - commerce_store
     - entity
-_core:
 id: commerce_store_delete_action
 label: 'Delete store'
 type: commerce_store

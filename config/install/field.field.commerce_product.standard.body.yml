@@ -6,7 +6,6 @@ dependencies:
     - field.storage.commerce_product.body
   module:
     - text
-_core:
 id: commerce_product.standard.body
 field_name: body
 entity_type: commerce_product

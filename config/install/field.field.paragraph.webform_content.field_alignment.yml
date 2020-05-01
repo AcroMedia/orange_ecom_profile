@@ -6,7 +6,6 @@ dependencies:
     - paragraphs.paragraphs_type.webform_content
   module:
     - options
-_core:
 id: paragraph.webform_content.field_alignment
 field_name: field_alignment
 entity_type: paragraph

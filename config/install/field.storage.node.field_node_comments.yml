@@ -4,7 +4,6 @@ dependencies:
   module:
     - comment
     - node
-_core:
 id: node.field_node_comments
 field_name: field_node_comments
 entity_type: node

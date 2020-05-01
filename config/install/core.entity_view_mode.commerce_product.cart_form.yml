@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - commerce_product
-_core:
 id: commerce_product.cart_form
 label: 'Cart Form'
 targetEntityType: commerce_product

@@ -7,7 +7,6 @@ dependencies:
     - paragraphs.paragraphs_type.featured_products
   module:
     - entity_reference_revisions
-_core:
 id: commerce_product.standard.field_paragraph
 field_name: field_paragraph
 entity_type: commerce_product

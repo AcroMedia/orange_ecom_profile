@@ -5,7 +5,6 @@ dependencies:
     - commerce_payment
     - commerce_promotion
     - commerce_shipping
-_core:
 id: default
 label: Default
 plugin: multistep_default

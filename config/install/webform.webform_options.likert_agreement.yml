@@ -4,7 +4,6 @@ dependencies:
   enforced:
     module:
       - webform
-_core:
 id: likert_agreement
 label: 'Likert: Agreement'
 category: Likert

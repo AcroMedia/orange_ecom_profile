@@ -6,7 +6,6 @@ dependencies:
     - field.storage.commerce_product_variation.field_media
     - media.type.image
     - media.type.remote_video
-_core:
 id: commerce_product_variation.standard.field_media
 field_name: field_media
 entity_type: commerce_product_variation

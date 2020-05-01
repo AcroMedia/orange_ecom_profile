@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - taxonomy.vocabulary.media_categories
-_core:
 id: taxonomy_term.media_categories.default
 targetEntityType: taxonomy_term
 bundle: media_categories

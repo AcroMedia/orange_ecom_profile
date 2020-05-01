@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - commerce_product
-_core:
 id: products
 label: Products
 type: 'canonical_entities:commerce_product'

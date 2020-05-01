@@ -5,4 +5,3 @@ pages: "/admin\r\n/admin/*\r\n/batch\r\n/node/add*\r\n/node/*/edit\r\n/node/*/de
 visibility_roles: 1
 roles:
   administrator: administrator
-_core:

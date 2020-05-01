@@ -1,7 +1,6 @@
 langcode: en
 status: true
 dependencies: {  }
-_core:
 id: webform_submission
 label: 'Webform submission'
 tags:

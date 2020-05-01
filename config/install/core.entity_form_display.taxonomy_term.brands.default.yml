@@ -8,7 +8,6 @@ dependencies:
     - metatag
     - path
     - text
-_core:
 id: taxonomy_term.brands.default
 targetEntityType: taxonomy_term
 bundle: brands

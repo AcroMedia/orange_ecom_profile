@@ -5,7 +5,6 @@ dependencies:
     - field.storage.node.field_media_item
     - media.type.image
     - node.type.blog_post
-_core:
 id: node.blog_post.field_media_item
 field_name: field_media_item
 entity_type: node

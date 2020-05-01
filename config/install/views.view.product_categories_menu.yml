@@ -6,7 +6,6 @@ dependencies:
   module:
     - taxonomy
     - user
-_core:
 id: product_categories_menu
 label: 'Product Categories Menu'
 module: views

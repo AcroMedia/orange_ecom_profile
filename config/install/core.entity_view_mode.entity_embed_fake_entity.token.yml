@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - entity_embed
-_core:
 id: entity_embed_fake_entity.token
 label: Token
 targetEntityType: entity_embed_fake_entity

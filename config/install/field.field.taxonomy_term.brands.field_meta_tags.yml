@@ -6,7 +6,6 @@ dependencies:
     - taxonomy.vocabulary.brands
   module:
     - metatag
-_core:
 id: taxonomy_term.brands.field_meta_tags
 field_name: field_meta_tags
 entity_type: taxonomy_term

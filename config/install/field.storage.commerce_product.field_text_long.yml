@@ -4,7 +4,6 @@ dependencies:
   module:
     - commerce_product
     - text
-_core:
 id: commerce_product.field_text_long
 field_name: field_text_long
 entity_type: commerce_product

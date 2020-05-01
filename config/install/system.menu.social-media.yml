@@ -1,7 +1,6 @@
 langcode: zxx
 status: true
 dependencies: {  }
-_core:
 id: social-media
 label: 'Social Media'
 description: 'Social media links. Use the social platform name for the ''Menu link title'' and the platform''s icon will be used automatically.'

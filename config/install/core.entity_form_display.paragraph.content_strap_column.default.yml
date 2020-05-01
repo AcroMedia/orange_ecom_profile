@@ -32,7 +32,6 @@ third_party_settings:
         open: false
         required_fields: true
       label: 'Display Options'
-_core:
 id: paragraph.content_strap_column.default
 targetEntityType: paragraph
 bundle: content_strap_column

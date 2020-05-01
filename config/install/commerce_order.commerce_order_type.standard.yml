@@ -13,7 +13,6 @@ third_party_settings:
     checkout_flow: orange
   commerce_shipping:
     shipment_type: standard
-_core:
 label: Standard
 id: standard
 workflow: order_default

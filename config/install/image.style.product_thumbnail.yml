@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - image_effects
-_core:
 name: product_thumbnail
 label: 'Product Thumbnail'
 effects:

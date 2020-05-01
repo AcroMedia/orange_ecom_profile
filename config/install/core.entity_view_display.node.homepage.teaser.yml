@@ -10,7 +10,6 @@ dependencies:
   module:
     - text
     - user
-_core:
 id: node.homepage.teaser
 targetEntityType: node
 bundle: homepage

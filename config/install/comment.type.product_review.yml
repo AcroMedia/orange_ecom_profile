@@ -1,7 +1,6 @@
 langcode: en
 status: true
 dependencies: {  }
-_core:
 id: product_review
 label: 'Product Review'
 target_entity_type_id: commerce_product

@@ -6,7 +6,6 @@ dependencies:
     - profile.type.customer
   module:
     - address
-_core:
 id: profile.customer.address
 field_name: address
 entity_type: profile

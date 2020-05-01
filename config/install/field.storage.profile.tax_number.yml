@@ -7,7 +7,6 @@ dependencies:
   module:
     - commerce_tax
     - profile
-_core:
 id: profile.tax_number
 field_name: tax_number
 entity_type: profile

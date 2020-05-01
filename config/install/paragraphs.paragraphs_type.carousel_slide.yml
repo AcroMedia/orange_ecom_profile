@@ -1,7 +1,6 @@
 langcode: en
 status: true
 dependencies: {  }
-_core:
 id: carousel_slide
 label: 'Carousel Slide'
 icon_uuid: null

@@ -7,7 +7,6 @@ dependencies:
     - menu_block
   theme:
     - orange_ecom_starter
-_core:
 id: user_account_menu
 theme: orange_ecom_starter
 region: user_nav
@@ -19,6 +18,8 @@ settings:
   label: 'User Account Navigation'
   provider: menu_block
   label_display: '0'
+  follow: 0
+  follow_parent: child
   level: 1
   depth: 1
   expand: 0

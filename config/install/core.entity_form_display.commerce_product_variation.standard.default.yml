@@ -9,7 +9,6 @@ dependencies:
     - commerce_price
     - media_library
     - physical
-_core:
 id: commerce_product_variation.standard.default
 targetEntityType: commerce_product_variation
 bundle: standard

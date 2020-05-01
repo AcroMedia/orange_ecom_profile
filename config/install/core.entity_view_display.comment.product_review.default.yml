@@ -7,7 +7,6 @@ dependencies:
     - field.field.comment.product_review.field_star_rating
   module:
     - text
-_core:
 id: comment.product_review.default
 targetEntityType: comment
 bundle: product_review

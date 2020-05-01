@@ -7,7 +7,6 @@ dependencies:
 third_party_settings:
   commerce_order:
     customer_profile_type: true
-_core:
 id: customer
 label: Customer
 display_label: 'Customer information'

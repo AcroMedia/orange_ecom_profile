@@ -6,7 +6,6 @@ dependencies:
     - paragraphs.paragraphs_type.accordion_item
   module:
     - text
-_core:
 id: paragraph.accordion_item.field_text_long
 field_name: field_text_long
 entity_type: paragraph

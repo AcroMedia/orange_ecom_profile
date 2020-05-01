@@ -7,7 +7,6 @@ dependencies:
     - paragraphs.paragraphs_type.content_strap
   module:
     - entity_reference_revisions
-_core:
 id: paragraph.content_strap.full_width
 targetEntityType: paragraph
 bundle: content_strap

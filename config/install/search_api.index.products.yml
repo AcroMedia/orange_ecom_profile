@@ -34,7 +34,6 @@ third_party_settings:
     multilingual:
       limit_to_content_language: false
       include_language_independent: true
-_core:
 id: products
 name: Products
 description: 'Store catalog.'

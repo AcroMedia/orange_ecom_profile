@@ -4,7 +4,6 @@ dependencies:
   config:
     - field.storage.paragraph.field_opacity
     - paragraphs.paragraphs_type.strap
-_core:
 id: paragraph.strap.field_opacity
 field_name: field_opacity
 entity_type: paragraph

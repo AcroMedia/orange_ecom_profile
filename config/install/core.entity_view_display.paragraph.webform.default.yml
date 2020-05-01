@@ -8,7 +8,6 @@ dependencies:
   module:
     - text
     - webform
-_core:
 id: paragraph.webform.default
 targetEntityType: paragraph
 bundle: webform

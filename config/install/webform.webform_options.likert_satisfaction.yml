@@ -4,7 +4,6 @@ dependencies:
   enforced:
     module:
       - webform
-_core:
 id: likert_satisfaction
 label: 'Likert: Satisfaction'
 category: Likert

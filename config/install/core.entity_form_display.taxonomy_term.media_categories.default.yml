@@ -5,7 +5,6 @@ dependencies:
     - taxonomy.vocabulary.media_categories
   module:
     - path
-_core:
 id: taxonomy_term.media_categories.default
 targetEntityType: taxonomy_term
 bundle: media_categories

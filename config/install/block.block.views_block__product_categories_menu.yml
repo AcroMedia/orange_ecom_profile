@@ -7,7 +7,6 @@ dependencies:
     - views
   theme:
     - orange_ecom_starter
-_core:
 id: views_block__product_categories_menu
 theme: orange_ecom_starter
 region: primary_nav

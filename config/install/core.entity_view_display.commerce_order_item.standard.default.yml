@@ -5,7 +5,6 @@ dependencies:
     - commerce_order.commerce_order_item_type.standard
   module:
     - commerce_price
-_core:
 id: commerce_order_item.standard.default
 targetEntityType: commerce_order_item
 bundle: standard

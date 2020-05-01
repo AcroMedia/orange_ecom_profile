@@ -10,7 +10,6 @@ dependencies:
       - commerce_product
   module:
     - commerce_product
-_core:
 id: commerce_order_item.default.add_to_cart
 targetEntityType: commerce_order_item
 bundle: default

@@ -9,7 +9,6 @@ dependencies:
   module:
     - link
     - media
-_core:
 id: paragraph.logo.default
 targetEntityType: paragraph
 bundle: logo

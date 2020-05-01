@@ -6,7 +6,6 @@ dependencies:
     - paragraphs.paragraphs_type.button
   module:
     - options
-_core:
 id: paragraph.button.field_button_style
 field_name: field_button_style
 entity_type: paragraph

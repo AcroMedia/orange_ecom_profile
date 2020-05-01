@@ -7,7 +7,6 @@ dependencies:
     - paragraphs.paragraphs_type.carousel_slide
   module:
     - entity_reference_revisions
-_core:
 id: paragraph.carousel.field_paragraphs
 field_name: field_paragraphs
 entity_type: paragraph

@@ -8,7 +8,6 @@ dependencies:
     - media.type.image
   module:
     - image
-_core:
 id: media.image.default
 targetEntityType: media
 bundle: image

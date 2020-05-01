@@ -33,7 +33,6 @@ third_party_settings:
     multilingual:
       limit_to_content_language: false
       include_language_independent: true
-_core:
 id: site
 name: Site
 description: 'General site search.'

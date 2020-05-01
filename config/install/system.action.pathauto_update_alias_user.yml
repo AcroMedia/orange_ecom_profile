@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - pathauto
-_core:
 id: pathauto_update_alias_user
 label: 'Update URL alias'
 type: user

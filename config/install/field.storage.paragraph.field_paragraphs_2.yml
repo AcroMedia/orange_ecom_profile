@@ -4,7 +4,6 @@ dependencies:
   module:
     - entity_reference_revisions
     - paragraphs
-_core:
 id: paragraph.field_paragraphs_2
 field_name: field_paragraphs_2
 entity_type: paragraph

@@ -9,7 +9,6 @@ dependencies:
     - options
     - state_machine
     - user
-_core:
 id: commerce_orders
 label: Orders
 module: views

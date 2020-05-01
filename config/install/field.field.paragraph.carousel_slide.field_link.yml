@@ -6,7 +6,6 @@ dependencies:
     - paragraphs.paragraphs_type.carousel_slide
   module:
     - link
-_core:
 id: paragraph.carousel_slide.field_link
 field_name: field_link
 entity_type: paragraph

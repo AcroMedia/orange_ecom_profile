@@ -31,4 +31,3 @@ configuration:
       enabled: true
       expiration: 172800
       disallowed_paths: {  }
-_core:

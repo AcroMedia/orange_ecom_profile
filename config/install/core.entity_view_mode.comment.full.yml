@@ -3,7 +3,6 @@ status: false
 dependencies:
   module:
     - comment
-_core:
 id: comment.full
 label: 'Full comment'
 targetEntityType: comment

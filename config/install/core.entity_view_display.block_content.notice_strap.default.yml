@@ -6,7 +6,6 @@ dependencies:
     - field.field.block_content.notice_strap.field_paragraph
   module:
     - entity_reference_revisions
-_core:
 id: block_content.notice_strap.default
 targetEntityType: block_content
 bundle: notice_strap

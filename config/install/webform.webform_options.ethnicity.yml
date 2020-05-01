@@ -4,7 +4,6 @@ dependencies:
   enforced:
     module:
       - webform
-_core:
 id: ethnicity
 label: Ethnicity
 category: Demographic

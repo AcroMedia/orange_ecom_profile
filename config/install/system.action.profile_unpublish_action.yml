@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - profile
-_core:
 id: profile_unpublish_action
 label: 'Unpublish selected profile'
 type: profile

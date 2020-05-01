@@ -7,7 +7,6 @@ dependencies:
     - menu_block
   theme:
     - orange_ecom_starter
-_core:
 id: header_sub_navigation
 theme: orange_ecom_starter
 region: left_sidebar
@@ -19,6 +18,8 @@ settings:
   label: 'Header - Sub Navigation'
   provider: menu_block
   label_display: '0'
+  follow: 0
+  follow_parent: child
   level: 2
   depth: 0
   expand: 0

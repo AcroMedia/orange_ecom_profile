@@ -14,7 +14,6 @@ dependencies:
   module:
     - entity_reference_revisions
     - media
-_core:
 id: paragraph.image_content.full_width
 targetEntityType: paragraph
 bundle: image_content

@@ -5,7 +5,6 @@ dependencies:
     - commerce
     - commerce_store
     - user
-_core:
 id: commerce_stores
 label: Stores
 module: views

@@ -8,7 +8,6 @@ dependencies:
     - commerce_cart
     - commerce_order
     - commerce_price
-_core:
 id: commerce_cart_form
 label: 'Cart form'
 module: views

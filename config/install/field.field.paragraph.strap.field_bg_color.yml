@@ -6,7 +6,6 @@ dependencies:
     - paragraphs.paragraphs_type.strap
   module:
     - color_field
-_core:
 id: paragraph.strap.field_bg_color
 field_name: field_bg_color
 entity_type: paragraph

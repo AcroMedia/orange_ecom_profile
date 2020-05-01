@@ -7,7 +7,6 @@ dependencies:
   module:
     - commerce_order
     - entity
-_core:
 id: commerce_order_delete_action
 label: 'Delete order'
 type: commerce_order

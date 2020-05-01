@@ -8,7 +8,6 @@ dependencies:
     - commerce_order
     - entity_reference_revisions
     - options
-_core:
 id: commerce_order.default.user
 targetEntityType: commerce_order
 bundle: default

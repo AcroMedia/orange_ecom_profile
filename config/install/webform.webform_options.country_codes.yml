@@ -4,7 +4,6 @@ dependencies:
   enforced:
     module:
       - webform
-_core:
 id: country_codes
 label: 'Country codes'
 category: Geographic

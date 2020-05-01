@@ -9,7 +9,6 @@ dependencies:
     - paragraphs.paragraphs_type.webform
   module:
     - entity_reference_revisions
-_core:
 id: paragraph.image_content.field_paragraphs
 field_name: field_paragraphs
 entity_type: paragraph

@@ -4,7 +4,6 @@ dependencies:
   config:
     - commerce_order.commerce_order_item_type.standard
     - core.entity_view_mode.commerce_order_item.cart
-_core:
 id: commerce_order_item.standard.cart
 targetEntityType: commerce_order_item
 bundle: standard

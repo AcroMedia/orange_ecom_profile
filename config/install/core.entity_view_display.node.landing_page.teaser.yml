@@ -8,7 +8,6 @@ dependencies:
     - node.type.landing_page
   module:
     - user
-_core:
 id: node.landing_page.teaser
 targetEntityType: node
 bundle: landing_page

@@ -5,7 +5,6 @@ dependencies:
     - system
   theme:
     - orange_ecom_starter
-_core:
 id: breadcrumbs
 theme: orange_ecom_starter
 region: header

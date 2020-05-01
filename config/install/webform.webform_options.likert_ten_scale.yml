@@ -4,7 +4,6 @@ dependencies:
   enforced:
     module:
       - webform
-_core:
 id: likert_ten_scale
 label: 'Likert: Ten Scale'
 category: Likert

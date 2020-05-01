@@ -5,7 +5,6 @@ dependencies:
     - commerce_product
     - entity_reference_revisions
     - paragraphs
-_core:
 id: commerce_product.field_paragraphs
 field_name: field_paragraphs
 entity_type: commerce_product

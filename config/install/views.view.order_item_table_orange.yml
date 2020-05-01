@@ -10,7 +10,6 @@ dependencies:
     - commerce_price
     - commerce_product
     - media
-_core:
 id: order_item_table_orange
 label: 'Orange Order Items'
 module: views

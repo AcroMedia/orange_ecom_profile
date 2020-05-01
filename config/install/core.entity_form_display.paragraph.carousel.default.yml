@@ -6,7 +6,6 @@ dependencies:
     - paragraphs.paragraphs_type.carousel
   module:
     - paragraphs
-_core:
 id: paragraph.carousel.default
 targetEntityType: paragraph
 bundle: carousel

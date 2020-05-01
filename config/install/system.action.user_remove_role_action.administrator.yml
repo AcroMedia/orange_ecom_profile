@@ -5,7 +5,6 @@ dependencies:
     - user.role.administrator
   module:
     - user
-_core:
 id: user_remove_role_action.administrator
 label: 'Remove the Administrator role from the selected users'
 type: user

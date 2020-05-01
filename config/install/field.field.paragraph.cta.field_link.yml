@@ -6,7 +6,6 @@ dependencies:
     - paragraphs.paragraphs_type.cta
   module:
     - link
-_core:
 id: paragraph.cta.field_link
 field_name: field_link
 entity_type: paragraph

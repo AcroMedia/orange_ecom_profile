@@ -10,7 +10,6 @@ dependencies:
       - commerce_order
   module:
     - address
-_core:
 id: profile.customer.default
 targetEntityType: profile
 bundle: customer

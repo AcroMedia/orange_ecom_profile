@@ -4,7 +4,6 @@ dependencies:
   module:
     - commerce_order
     - commerce_price
-_core:
 id: commerce_order_item_table
 label: 'Order items'
 module: views

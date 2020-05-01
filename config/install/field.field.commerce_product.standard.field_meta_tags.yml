@@ -6,7 +6,6 @@ dependencies:
     - field.storage.commerce_product.field_meta_tags
   module:
     - metatag
-_core:
 id: commerce_product.standard.field_meta_tags
 field_name: field_meta_tags
 entity_type: commerce_product

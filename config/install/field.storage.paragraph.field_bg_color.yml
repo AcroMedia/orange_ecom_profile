@@ -4,7 +4,6 @@ dependencies:
   module:
     - color_field
     - paragraphs
-_core:
 id: paragraph.field_bg_color
 field_name: field_bg_color
 entity_type: paragraph

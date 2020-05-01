@@ -8,7 +8,6 @@ dependencies:
 third_party_settings:
   content_translation:
     enabled: false
-_core:
 id: comment.node_comment
 target_entity_type_id: comment
 target_bundle: node_comment

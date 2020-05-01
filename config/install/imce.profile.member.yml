@@ -1,7 +1,6 @@
 langcode: en
 status: true
 dependencies: {  }
-_core:
 id: member
 label: 'Member profile'
 description: 'Configuration for site members'

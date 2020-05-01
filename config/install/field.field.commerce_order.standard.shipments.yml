@@ -4,7 +4,6 @@ dependencies:
   config:
     - commerce_order.commerce_order_type.standard
     - field.storage.commerce_order.shipments
-_core:
 id: commerce_order.standard.shipments
 field_name: shipments
 entity_type: commerce_order

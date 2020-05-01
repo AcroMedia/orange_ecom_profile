@@ -5,7 +5,6 @@ dependencies:
     - commerce_cart
   theme:
     - orange_ecom_starter
-_core:
 id: cart
 theme: orange_ecom_starter
 region: user_nav

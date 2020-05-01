@@ -15,7 +15,6 @@ dependencies:
     - field.field.commerce_product.standard.field_terms
     - field.field.commerce_product.standard.field_terms_2
     - field.field.commerce_product.standard.field_text_long
-_core:
 id: commerce_product.standard.summary
 targetEntityType: commerce_product
 bundle: standard

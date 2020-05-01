@@ -5,7 +5,6 @@ dependencies:
     - field.storage.taxonomy_term.field_media_item
     - media.type.image
     - taxonomy.vocabulary.product_categories
-_core:
 id: taxonomy_term.product_categories.field_media_item
 field_name: field_media_item
 entity_type: taxonomy_term

@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - media.type.remote_video
-_core:
 id: media.remote_video
 target_entity_type_id: media
 target_bundle: remote_video

@@ -5,7 +5,6 @@ dependencies:
     - commerce_product.commerce_product_type.standard
     - field.storage.commerce_product.field_terms
     - taxonomy.vocabulary.product_categories
-_core:
 id: commerce_product.standard.field_terms
 field_name: field_terms
 entity_type: commerce_product

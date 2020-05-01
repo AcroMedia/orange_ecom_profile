@@ -3,7 +3,6 @@ status: true
 dependencies:
   theme:
     - orange_ecom_starter
-_core:
 id: tabs
 theme: orange_ecom_starter
 region: above_content

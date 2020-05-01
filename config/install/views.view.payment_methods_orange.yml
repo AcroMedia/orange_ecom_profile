@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - commerce_payment
-_core:
 id: payment_methods_orange
 label: 'Orange Payment Methods'
 module: views

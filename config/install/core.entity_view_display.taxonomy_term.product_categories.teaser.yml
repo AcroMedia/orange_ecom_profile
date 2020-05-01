@@ -12,7 +12,6 @@ dependencies:
     - entity_reference_revisions
     - media
     - text
-_core:
 id: taxonomy_term.product_categories.teaser
 targetEntityType: taxonomy_term
 bundle: product_categories

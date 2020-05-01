@@ -14,7 +14,6 @@ dependencies:
     - media_library
     - taxonomy
     - user
-_core:
 id: media_library
 label: 'Media library'
 module: views

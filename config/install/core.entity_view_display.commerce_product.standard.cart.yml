@@ -17,7 +17,6 @@ dependencies:
     - field.field.commerce_product.standard.field_text_long
   module:
     - commerce_product
-_core:
 id: commerce_product.standard.cart
 targetEntityType: commerce_product
 bundle: standard

@@ -6,7 +6,6 @@ dependencies:
 third_party_settings:
   commerce_tax:
     taxable_type: physical_goods
-_core:
 label: Standard
 id: standard
 purchasableEntityType: commerce_product_variation

@@ -8,7 +8,6 @@ dependencies:
     - paragraphs.paragraphs_type.tabs
   module:
     - entity_reference_revisions
-_core:
 id: paragraph.tabs.full_width
 targetEntityType: paragraph
 bundle: tabs

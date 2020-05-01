@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - webform
-_core:
 id: webform_submission_make_unlock_action
 label: 'Unlock submission'
 type: webform_submission

@@ -7,7 +7,6 @@ dependencies:
     - paragraphs.paragraphs_type.standard_content
   module:
     - text
-_core:
 id: paragraph.standard_content.full_width
 targetEntityType: paragraph
 bundle: standard_content

@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - taxonomy
-_core:
 id: taxonomy_term_publish_action
 label: 'Publish taxonomy term'
 type: taxonomy_term

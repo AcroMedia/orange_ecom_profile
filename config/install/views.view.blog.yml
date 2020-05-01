@@ -9,7 +9,6 @@ dependencies:
     - datetime
     - node
     - user
-_core:
 id: blog
 label: Blog
 module: views

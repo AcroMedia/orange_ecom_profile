@@ -12,7 +12,6 @@ dependencies:
   module:
     - address
     - commerce_tax
-_core:
 id: profile.customer.admin
 targetEntityType: profile
 bundle: customer

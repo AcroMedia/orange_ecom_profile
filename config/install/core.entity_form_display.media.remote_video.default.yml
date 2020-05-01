@@ -7,7 +7,6 @@ dependencies:
   module:
     - media
     - path
-_core:
 id: media.remote_video.default
 targetEntityType: media
 bundle: remote_video

@@ -1,5 +1,9 @@
 # Drupal Orange E-Commerce Profile
 
+**Notice**\
+Development for this theme has moved to [Drupal.org](https://drupal.org). If you want to submit issues, develop, or use this theme please visit the [new project page](https://www.drupal.org/project/orange_ecom_profile).\
+No pull requests submitted to this repository will be accepted.
+
 > Custom profile by Acro Media Inc.
 
 An installation profile for Drupal 8.x that includes [Commerce 8.2.x](https://github.com/drupalcommerce/commerce) and common modules for projects.
